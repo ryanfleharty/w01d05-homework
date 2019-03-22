@@ -19,3 +19,14 @@ var y = x;
 // whatever percent of time is necessary, so usuaslly about 60%-40%.
 
 // B. Strings
+// 1
+let firstVariable = "hello world";
+firstVariable = 5;
+let secondVariable = firstVariable;
+secondVariable = 8;
+// the value of firstVariable is 5.
+// 2
+const yourName = "Will";
+const newStr = `Hello, my name is ${youtName}.`
+
+// C. Booleans
