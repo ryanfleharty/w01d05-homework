@@ -217,3 +217,11 @@ console.log(sumNatNum);
 //    You could model any type of list in an array, months of the 
 //    year, vehicles in a garage, types of different mode growing in my
 //    fridge, etc... 
+
+//B. Easy Does It
+//1. Create an array that contains three quotes and store it in a 
+//   called quotes.
+
+const arr = ["quote0", "quote1", "quote1"];
+
+
