@@ -59,4 +59,26 @@ let yourName = 'Adam';
 console.log("Hello, my name is " + yourName);
 
 
+// C. Booleans
+
+//1. Using the provided variable def's, replace the blanks so that 
+//   the log stmts print true in the console. 
+
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+console.log(true !== false);
+console.log(false === false === false === false === false === false === true);
+console.log(false === false)
+console.log(e === 'Kevin');
+console.log(a < b < c);
+console.log(a === a !== d);
+console.log(48 == '48');
+
 
