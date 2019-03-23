@@ -148,3 +148,15 @@ for (let i = 0; i <= 10; i++){
     }
 }
 
+//C. Give me Five
+
+//1. For the numbers 0 to 100, print "i found a number. High five!" 
+//   if the number is a multiple of 5. 
+
+for(let i = 0; i <= 100; i++){
+    if(i % 5 === 0){
+        console.log(`I found a ${i}, high five!!!`)
+    } else {
+        console.log(i)
+    }
+}
