@@ -59,3 +59,47 @@ const areYouACow = (animal) => {
   }
   return animal
 }
+
+// D. DRIVER'S ED
+// 1
+const personsAge = 17;
+// 2
+if (personsAge >= 16) {
+  console.log("Here are the keys");
+// 3
+} else {
+  console.log("Sorry, youre too young");
+}
+
+
+// II. Loops
+// A. THE BASICS
+// 1
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+// 2
+for (let i = 10; i <= 400; i++) {
+  console.log(i);
+}
+// 3
+for (let i = 12; i <= 400; i += 3) {
+  console.log(i);
+}
+
+// B. GET EVEN
+// 1-2
+for (let i = 2; i <= 100; i += 2) {
+  console.log(i + "<-- is an even number");
+}
+// C. GIVE ME FIVE
+// 1
+for (let i = 0; i <= 100; i ++) {
+  if (i % 5 === 0) {
+    console.log(`I found a ${i}. High Five!`);
+  } else if (i % 3 === 0) {
+    console.log(`I found a ${i}. Three is a crowd.`);
+  }
+}
+
+// D. SAVINGS ACCOUNT
