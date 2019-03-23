@@ -388,3 +388,13 @@ const printNewGreeting = (name) => {
 
 printNewGreeting("Slimer");
 
+//B. printCool - Write a function printCool that accepts one parameter
+//   name, as an argument. Function should print the name and message 
+//   saying they are cool
+
+const printCool = (name) => {
+    return console.log(`${name} is in the cool kids club`)
+};
+
+printCool("Mr. Cool Guy");
+
