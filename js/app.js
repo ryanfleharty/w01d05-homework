@@ -1,3 +1,4 @@
+console.log("js works");
 // 1. How do we assign a value to a variable ?
     // a. Make up a name for the variable (consider the name carefully because a good name communicates its utility)
     // b. choose how you want to declare your variable (let , const, var) 
@@ -24,3 +25,23 @@
     // Is this a trick question? What are my assumptions? Do I have experience solving similar problems? Do I need to do research? how fast can I type??
     // a beginner should spend most of his time planning and whiteboarding and only typing it in after it is solved on paper.  With some more experiencee,
     // it is helpful to type as you go so you can use console.log and debugger software. even then, more time should be spent planning before you start typing.
+
+// ### B.Strings
+
+// 1. Create a variable called`firstVariable`.
+//   - Assign it the value of the string`"Hello World"`
+//   - Change the value of this variable to some number.
+//   - Store the value of`firstVariable` in a new variable called`secondVariable`
+//   - Change the value of`secondVariable` to any string. 
+//   - What is the value of`firstVariable` ?
+let firstVariable = "Hello World";
+    firstVariable = 4;
+let secondVariable = firstVariable;
+    secondVariable = "four";
+    // firstVariable; => 4
+
+// 2. Create a variable called`yourName` and set it equal to your name as a string.Then, write an expression that takes the string "Hello, my name is " and the variable`yourName` so that it returns a new string with them concatenated. 
+const yourName = "Dave";
+console.log("Hello, my name is " + yourName )
+
+// > ex: `Hello, my name is Jean Valjean`
