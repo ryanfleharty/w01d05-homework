@@ -97,3 +97,16 @@ const isCow = (animalInput) => {
 
 isCow("turtle");
 
+
+//E. Driver's Ed
+
+const isOldEnough = (age) => {
+    if(age < 16){
+        console.log("Sorry, you are too young")
+    } else {
+        console.log("Here are the keys")
+    }
+};
+
+isOldEnough(25);
+
