@@ -253,5 +253,33 @@ ourClass[4] = "Octocat";
 ourClass.push('Cloud City');
 
 
+//E. Mix It Up - Given the following array:
+
+const myArray = [5, 10, 500, 20];
+
+//1. Add the string "Egon" to the end of the array
+myArray.push("Egon");
+myArray.push("Mavis Becon");
+
+//2. Remove the 5 from the beginning of the array
+myArray.shift();
+
+//3. Add the string "Bob Marley" to the beginning of the array
+myArray.unshift("Bob Marley");
+
+//4. Remove the string from the end of the array
+myArray.pop();
+
+//5. Reverse this array using Array.prototype.reverse()
+myArray.reverse();
+    // The array was mutated. This means it was changed.
+
+
+
+
+
+
+
+
 
 
