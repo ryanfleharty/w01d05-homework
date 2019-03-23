@@ -604,6 +604,21 @@ user.age = user.age += 1;
 user.location = "Denver";
 
 
+//D. Shopaholic
+
+//1. User purchased an item "carbohydrates"
+user.purchased.push("carbohydrates");
+
+//2. User purchased "peace of mind"
+user.purchased.push("peace of mind");
+
+//3. User purchased "Merino jodhpurs"
+user.purchased.push("Merino jodhpurs");
+
+//4. log just merino jodhpurs to the console
+console.log(user.purchased[2]);
+
+
 //E. Object-within-object
 
 //1. Add a new object to your object - friend, with its own
@@ -642,6 +657,23 @@ user.friend.purchased.push("A latte");
 //7. Console.log just the latte from the friends purchased array
 
 console.log(user.friend.purchased[1]);
+
+
+//F. Loops
+
+//1. Write a for loop that iterates over the USERS purchased array
+//   and prints each item in the array to the console. 
+
+for (i = 0; i < user.purchased.length; i++){
+    console.log(user.purchased[i])
+};
+
+//2. Write a for loop that iterates over the friends purchased items
+
+for (i = 0; i < user.friend.purchased.length; i++){
+    console.log(user.friend.purchased[i])
+};
+
 
 
 
