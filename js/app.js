@@ -578,6 +578,24 @@ console.log(getRandomElement(arrQuotes));
 
 
 
+// OBJECTS
+
+//A. Make a User Object
+
+const user = {
+    "name": "Adam",
+    "email": "awolfmil@gmail.com",
+    "age": 32,
+    "purchased": []
+};
+
+//B. Update the User
+
+//1. Update user email address
+user.email = "changedmyemail@gmail.com";
+
+//2. Update the user age
+user.age = user.age += 1;
 
 
 
