@@ -168,7 +168,7 @@ for(let i = 0; i <= 100; i++){
 
 let bank_account = 0;
 
-for (i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++){
     bank_account = bank_account + i;
 };
 
@@ -180,13 +180,25 @@ console.log(bank_account);
 
 let raiseAccount = 0;
 
-for (i = 0; i <= 100; i++){
+for (let i = 0; i <= 100; i++){
     raiseAccount = raiseAccount + (i * 2);
 }
 
 console.log(raiseAccount);
 
 
+//E. Multiples of 3 and 5
 
+//Find the sum of all the multiples of 3 or 5 below 1000. 
+
+let sumNatNum = 0;
+
+for (let i = 0; i <= 1000; i++){
+    if (i % 3 === 0 || i % 5 === 0){
+        sumNatNum = sumNatNum + i;
+    }
+};
+
+console.log(sumNatNum);
 
 
