@@ -485,6 +485,23 @@ const printLongestWord = (strArr) => {
         }
     }
     return max;
-}
+};
 
 console.log(printLongestWord(["BoJack", "Princessdiannaross", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+
+//I. transmogrify - write a function that accepts three number arguments. 
+//   The function should return the "transmogrified" numbers, which means
+//   the product of the first two, to the power of the third 
+//   Math.pow((x * y), z)
+
+
+const transmogrify = (num1, num2, num3) => {
+    let transNums = Math.pow((num1 * num2), num3);
+    return transNums;
+};
+
+
+console.log(transmogrify(5, 3, 2));
+
+
