@@ -140,3 +140,11 @@ for (let i = 12; i <= 4000; i += 3){
 //   inclusive of 10. Then, adjust it so that it prints an indicator
 //   with the even numbers
 
+for (let i = 0; i <= 10; i++){
+    if(i % 2 === 0){
+        console.log(`${i} <== thats an even boi`)
+    } else {
+        console.log(`${i} <== this is one odd duck`)
+    }
+}
+
