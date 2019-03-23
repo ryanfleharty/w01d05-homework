@@ -424,3 +424,17 @@ const isVowel = (char) => {
 console.log(isVowel("u"));
 
 
+//E. getTwoLengths - write a function getTwoLengths that accepts 2 parameters
+//   strings, and returns an array of numbers where each number is the length
+//   of the corresponding string. 
+
+const getTwoLengths = (stringOne, stringTwo) => {
+    let arr = [];
+    let arrVal1 = stringOne.length;
+    arr.push(arrVal1);
+    let arrVal2 = stringTwo.length;
+    arr.push(arrVal2);
+    return console.log(arr);
+}
+
+getTwoLengths("string one", "strings twos");
