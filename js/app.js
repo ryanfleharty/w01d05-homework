@@ -597,5 +597,9 @@ user.email = "changedmyemail@gmail.com";
 //2. Update the user age
 user.age = user.age += 1;
 
+//C. Adding keys and values
+
+//1. Add a new key and value to the user object
+user.location = "Denver";
 
 
