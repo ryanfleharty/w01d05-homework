@@ -293,7 +293,85 @@ isBigBoi(checkNum);
 
 
 
+//G. Monkey In the Middle
+// write an if else stmt that prints little number if less than 5
+// if the num entered is bigger than 10, log big number
+// otherwise, log monkey
 
 
+
+const monkeyNum = (num) => {
+    if (num < 5){
+        console.log("little number");
+    } else if (num > 10) {
+        console.log("big number");
+    } else {
+        console.log("monkey");
+    }
+}
+
+let monkNum = 7;
+monkeyNum(monkNum);
+
+
+//H. What's In Your Closet? 
+//Given the following 2 objects...
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+//1. Use bracket notation to access items in kristynsCloset, log
+//   the sentence "Kristyn is rocking that" + 3rdItem + today.
+
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+
+//2. Add "raybans" to Kristyns closet after "yellow knit hat" 
+kristynsCloset.splice(5, 0, "raybans");
+
+//3. Modify Kristyns "yellow knit hat" to "stained knit hat"
+kristynsCloset[6] = "stained knit hat";
+
+//4. Access the first element in Thom's shirts array
+let shirt = thomsCloset[0][0];
+
+//5. Access an item from Thom's pants array
+let pants = thomsCloset[1][1];
+
+//6. Access an item from Thom's accessory array
+let shades = thomsCloset[2][2];
+
+//7. Make a sentence about how good Thom looks
+console.log(`Damnnnn, Thom is on fire with his ${shirt}, ${pants}, and killer ${shades}`);
+
+//8. Modify the name of Thom's PJ pants to "Footie Pajamas"
+thomsCloset[1][2] = "Footie Pajamas";
 
 
