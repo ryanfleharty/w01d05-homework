@@ -202,3 +202,18 @@ for (let i = 0; i <= 1000; i++){
 console.log(sumNatNum);
 
 
+// III. Arrays & Control Flow
+
+//A. Talk About It
+
+//1. What are the things in an array called? 
+//   Values stored at Indexes.
+
+//2. Are arrays always in order? 
+//   No they are not, which is often the problem. .sort() and other
+//   methods can help with this. 
+
+//3.  What real life thing could you model with an array? 
+//    You could model any type of list in an array, months of the 
+//    year, vehicles in a garage, types of different mode growing in my
+//    fridge, etc... 
