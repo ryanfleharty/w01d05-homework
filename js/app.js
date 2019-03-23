@@ -505,3 +505,79 @@ const transmogrify = (num1, num2, num3) => {
 console.log(transmogrify(5, 3, 2));
 
 
+// //J. reverseWordOrder - write a function that accepts a single
+// //   string argument and reverses the words in the string. 
+
+// // function takes in a string of multiple words
+// const reverseWordOrder = (string) => {
+//     //set up two empty string arrays, first for the final reversed string
+//     let newString = '';
+//     //second one to push the letters to until you run in to a space
+//     let getWord = '';
+
+
+//     // do while loop that pushes the letters to getWord until the letter
+//     // it is looking at is equal to " ". 
+
+//     // for loop that unshifts the words in getWord to newString that have 
+//     // been pushed to getWord
+
+
+
+
+//     return console.log(getWord);
+// };
+
+// console.log(reverseWordOrder("this would look better backwards"));
+
+
+//K. Get down and dirty with Math.random()
+
+//1. Write a function that returns a random integer between 1 and 10
+const getRandomNumber = () => {
+    let num = Math.floor(Math.random() * 10);
+    return num;
+}
+
+console.log(getRandomNumber());
+
+//2. Write a function that returns a random integer between 10 and 100
+const randoTenHund = () => {
+    let num = 10 + Math.floor(Math.random() * 90);
+    return num;
+};
+
+console.log(randoTenHund());
+
+//3. Write a function that will return a random number between 532 and 13267
+const uberRandom = () => {
+    let num = 532 + (Math.random() * 12735);
+    return num;
+};
+
+console.log(uberRandom());
+
+//4. Write a function that returns a random number between 1 and 10
+const oneAndTenRand = () => {
+    let num = Math.random() * 10;
+    return num;
+}
+console.log(oneAndTenRand());
+
+//5. Create an array of quotes. Write a function that will take an arr as 
+//   a parameter and generates a single random element from the array
+
+let arrQuotes = ["I like butter", "I like mustard", "I like jam", "I like ketchup"];
+
+const getRandomElement = (arr) => {
+    let randomElement = arr[Math.floor(Math.random() * (arr.length))];
+    return randomElement;
+};
+
+console.log(getRandomElement(arrQuotes));
+
+
+
+
+
+
