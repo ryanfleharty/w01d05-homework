@@ -375,3 +375,16 @@ console.log(`Damnnnn, Thom is on fire with his ${shirt}, ${pants}, and killer ${
 thomsCloset[1][2] = "Footie Pajamas";
 
 
+//IV. Functions
+
+//A. printGreeting - Write function with parameter name that returns
+//   greeting with the argument interpolated 
+
+
+const printNewGreeting = (name) => {
+    return console.log(`hello there, ${name}`)
+};
+
+
+printNewGreeting("Slimer");
+
