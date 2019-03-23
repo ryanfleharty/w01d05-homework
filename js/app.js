@@ -69,16 +69,27 @@ console.log("js works");
 
 //### D.The farm
 
-// 1. Declare a variable`animal`.Set it to be either "cow" or something else.
-const animal = "cow";
-// 2. Write code that will print out "mooooo" if the it is equal to`cow`.
-if (animal === "cow"){
-    console.log("moooooo");
-}
-// 3. Change your code so that if the variable`animal` is anything other than a cow, it will print "Hey! You're not a cow."
-if (animal === "cow"){
-    console.log('moooooo')
-    }else {
-        console.log("Hey you're not a cow.")
+// // 1. Declare a variable`animal`.Set it to be either "cow" or something else.
+// const animal = "cow";
+// // 2. Write code that will print out "mooooo" if the it is equal to`cow`.
+// if (animal === "cow"){
+//     console.log("moooooo");
+// }
+// // 3. Change your code so that if the variable`animal` is anything other than a cow, it will print "Hey! You're not a cow."
+// if (animal === "cow"){
+//     console.log('moooooo')
+//     }else {
+//         console.log("Hey you're not a cow.")
+//     }
+// // 4. Commit.
+// ### E.Driver's Ed
+
+// 1. Make a variable that will hold a person's age. Be semantic.
+const AgeOfPerson = 16;
+// 2. Write code that will print out "Here are the keys", if the age is 16 years or older.
+if (AgeOfPerson >= 16) {
+        console.log("Here are the keys");
+    }else{
+        console.log("Sorry, you're too young");
     }
-// 4. Commit.
+// 3. If the age is younger than 16, a message should print "Sorry, you're too young."
