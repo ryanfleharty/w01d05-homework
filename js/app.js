@@ -224,4 +224,19 @@ console.log(sumNatNum);
 
 const arr = ["quote0", "quote1", "quote1"];
 
+//C. Accessing Elements
+//Given the following array: 
+const randomThings = [1, 10, "hello", true];
+
+//1. Access the first element
+randomThings[0];
+
+//2. Change the value of "Hello" to "World"
+randomThings[2] = "World"
+
+//3. Check the value of the array to make sure it updated. 
+console.log(randomThings);
+
+
+
 
