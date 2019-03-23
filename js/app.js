@@ -597,9 +597,52 @@ user.email = "changedmyemail@gmail.com";
 //2. Update the user age
 user.age = user.age += 1;
 
+
 //C. Adding keys and values
 
 //1. Add a new key and value to the user object
 user.location = "Denver";
+
+
+//E. Object-within-object
+
+//1. Add a new object to your object - friend, with its own
+//   keys and vales
+user.friend = {
+    "name": "Dude",
+    "age": 25,
+    "location": "Rino",
+    "purchased": []
+};
+
+console.table(user);
+
+//2. Console.log your friends name
+console.log(user.friend.name);
+
+//3. Console.log your friends location
+console.log(user.friend.location);
+
+//3. Change just the friends location
+user.friend.location = "Denver";
+
+//4. Change the friends age to 55
+user.friend.age = 55;
+
+//5. The friend purchased "The One Ring", use .push() to add
+//   the one ring to the friends purchased array
+
+user.friend.purchased.push("The One Ring");
+
+//6. The friend has purchased a latte. Push it in to their 
+//   purchased array
+
+user.friend.purchased.push("A latte");
+
+//7. Console.log just the latte from the friends purchased array
+
+console.log(user.friend.purchased[1]);
+
+
 
 
