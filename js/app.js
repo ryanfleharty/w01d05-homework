@@ -82,3 +82,18 @@ console.log(a === a !== d);
 console.log(48 == '48');
 
 
+//D. The Farm
+
+const animal = "cow";
+
+const isCow = (animalInput) => {
+    if(animalInput === animal){
+        console.log(animalInput)
+        return console.log("Mooooo-ve along Bessy")
+    } else {
+        return console.log("Hey youre not a cow, get outta here!")
+    }
+}
+
+isCow("turtle");
+
