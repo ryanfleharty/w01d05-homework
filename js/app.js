@@ -438,3 +438,19 @@ const getTwoLengths = (stringOne, stringTwo) => {
 }
 
 getTwoLengths("string one", "strings twos");
+
+
+//F. getMultipleLengths - write a function that accepts a singel parameter
+//   as an argument, an array of strings. The function should return the 
+//   length of each string in the input array. 
+
+const getMultipleLengths = (strArr) => {
+    let arr = [];
+    for(let i = 0; i < strArr.length; i++){
+        let arrVal = strArr[i].length;
+        arr.push(arrVal);
+    }
+    return arr;
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
