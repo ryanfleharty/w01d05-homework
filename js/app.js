@@ -275,7 +275,21 @@ myArray.reverse();
     // The array was mutated. This means it was changed.
 
 
+//F. Biggie Smalls - Create a variable assigned to an integer. 
+//   Use an if/else statement to print out whether or not the number
+//   is a big boi or just a little guy. 
 
+let checkNum = 120;
+
+const isBigBoi = (num) => {
+    if(num < 100){
+        console.log(`You're just a little number ${num}, you aren't big enough`)
+    } else {
+        console.log(`Ohhh look how big you are ${num}, youre a big boi`)
+    }
+}
+
+isBigBoi(checkNum);
 
 
 
