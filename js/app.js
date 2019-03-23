@@ -454,3 +454,20 @@ const getMultipleLengths = (strArr) => {
 }
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+
+//G. maxOfThree - write a function that takes 3 nums as args and returns
+//   the largest of them. 
+
+const maxOfThree = (num1, num2, num3) => {
+    let inputArr = [num1, num2, num3];
+    let max = num1;
+    for (let i = 0; i < inputArr.length; i++){
+        if(inputArr[i] >= max){
+            max = inputArr[i]
+        }
+    }
+    return max;
+}
+
+console.log(maxOfThree(2, 10, 6));
