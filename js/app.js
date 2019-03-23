@@ -407,3 +407,20 @@ const calculateCube = (num) => {
 };
 
 calculateCube(5);
+
+//D. isVowel - write a function isVowel that takes a one letter string
+//   and returns true if it is a vowel.
+
+const isVowel = (char) => {
+    let char2 = char.toLowerCase();
+    if(char2 === "a" || char2 === "e" || char2 === "i" || char2 === "o" || char2 === "u"){
+        return true;
+    } else {
+        return false;
+    }
+
+};
+
+console.log(isVowel("u"));
+
+
