@@ -675,6 +675,25 @@ for (i = 0; i < user.friend.purchased.length; i++){
 };
 
 
+//G. Functions can operate as objects
+
+//1. Write a single function updateUser that takes NO parameters
+//   The function should increment the users age by 1 and make
+//   the users name uppercase. No return statement necessary. 
+
+const modUser = () => {
+    user.age = user.age += 1;
+    user.name.toUpperCase();
+};
+
+//2. Write a function oldAndLoud that does the same tasks as 
+//   updateUser, but make it take a parameter "person".
+
+const modAnyUser = (person) => {
+    person.age = person.age += 1;
+    person.name.toUpperCase();
+};
+
 
 
 
