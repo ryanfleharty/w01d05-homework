@@ -112,17 +112,31 @@ isOldEnough(25);
 
 //II. Loops
 
-//The Basics
+//A. The Basics
 
-//1. Write a loop that will print out all the nubers from 0 to 10
+//1. Write a loop that will print out all the numbers from 0 to 10
+
+for(let i = 0; i < 11; i++){
+    console.log(i)
+};
+
+//2. Write a loop that will print out all the nmbers from 10 up to 
+//   and including 400. 
+
+for (let i = 10; i < 401; i++){
+    console.log(i)
+};
+
+//3. Write a loop that will print out every third number starting 
+//   with 12 and going no higher than 4000. 
+
+for (let i = 12; i <= 4000; i += 3){
+    console.log(i)
+};
+
+//B. Get Even
+
+//   1 and 2. Write a loop that will print out all the nubers from 0 to 10
 //   inclusive of 10. Then, adjust it so that it prints an indicator
 //   with the even numbers
-
-for (let i = 0; i < 11; i++){
-    if (i % 2 === 0){
-        console.log(`${i} <-- is an even number`)
-    } else {
-        console.log(i)
-    }
-};
 
