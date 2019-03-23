@@ -110,3 +110,19 @@ const isOldEnough = (age) => {
 
 isOldEnough(25);
 
+//II. Loops
+
+//The Basics
+
+//1. Write a loop that will print out all the nubers from 0 to 10
+//   inclusive of 10. Then, adjust it so that it prints an indicator
+//   with the even numbers
+
+for (let i = 0; i < 11; i++){
+    if (i % 2 === 0){
+        console.log(`${i} <-- is an even number`)
+    } else {
+        console.log(i)
+    }
+};
+
