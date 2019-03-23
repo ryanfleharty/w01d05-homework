@@ -160,3 +160,33 @@ for(let i = 0; i <= 100; i++){
         console.log(i)
     }
 }
+
+//D. Savings Account
+
+//1. Write code that will save the sum of all numbers between 1-10
+//   to a variable called "bank_account". 
+
+let bank_account = 0;
+
+for (i = 0; i <= 10; i++){
+    bank_account = bank_account + i;
+};
+
+console.log(bank_account);
+
+//2. You got a bonus, your pay is now doubled. Write code that will
+//   save the sum of all of the numbers between 1 and 100 multiplied
+//   by 2. 
+
+let raiseAccount = 0;
+
+for (i = 0; i <= 100; i++){
+    raiseAccount = raiseAccount + (i * 2);
+}
+
+console.log(raiseAccount);
+
+
+
+
+
