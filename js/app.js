@@ -267,3 +267,11 @@ for (let i = 0; i < 1001; i++) {
 
 //3. What real-life thing could you model with an array?
 //a bowl holding all of the ingredients for a recipe
+
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a 
+//variable called quotes.
+const quotes = ['Life is short. Smile while you still have feet.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.'];
+
+
