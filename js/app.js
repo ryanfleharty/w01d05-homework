@@ -186,3 +186,4 @@ console.log(firstElement);
 randomThings[2] = "World";
 // 3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
 console.log(randomThings);
+//console.table(randomThings)
