@@ -394,12 +394,21 @@
 // as an argument.The
 // function should print the name and a message saying that that person is cool.
 
-const printCool = function (name){
-    console.log (name + " is cool");
+// const printCool = function (name){
+//     console.log (name + " is cool");
+// }
+
+// printCool("Captain Reynolds");
+
+// //`=> "Captain Reynolds is cool";`
+
+// //: red_circle: Commit.
+
+// C. `calculateCube`
+
+// Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
+const calculateCube = (x) => {
+   return (x*x)*x;
 }
 
-printCool("Captain Reynolds");
-
-//`=> "Captain Reynolds is cool";`
-
-//: red_circle: Commit.
+console.log(calculateCube(5));
