@@ -455,18 +455,46 @@
 // function `getMultipleLengths`
 // that accepts a single parameter as an argument: an ** array ** of ** strings ** .The
 // function should
-// return an array of ** numbers ** where each number is the length of the corresponding string.
-const getMultipleLengths = (strArr) => { 
-    let resultArr = [];
-    for (i=0;i<strArr.length;i++){
-        resultArr.push(strArr[i].length);
-    }
-    return resultArr
-}
+// // return an array of ** numbers ** where each number is the length of the corresponding string.
+// const getMultipleLengths = (strArr) => { 
+//     let resultArr = [];
+//     for (i=0;i<strArr.length;i++){
+//         resultArr.push(strArr[i].length);
+//     }
+//     return resultArr
+// }
 
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// // `
+// // ``
+
+// // >
+// // `=> [5, 4, 2, 2, 4]`
+
+// ###
+// G.`maxOfThree`
+
+// Define a
+// function `maxOfThree`
+// that takes three numbers as arguments and returns the largest of them.If all numbers are the same, it doesn 't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+const maxOfThree = (num1,num2,num3) => {
+    let greatest = 0;
+        if (num1 > num2) {
+            greatest = num1;
+            }else{  
+                greatest = num2;
+            } if (greatest >= num3) {
+                return greatest
+            }else {return num3}
+            
+
+        }
+console.log(maxOfThree(6, 9, 1));
+console.log(maxOfThree(30,100,3));
 // `
 // ``
 
 // >
-// `=> [5, 4, 2, 2, 4]`
+// => 9
+
+//     : red_circle: Commit.
