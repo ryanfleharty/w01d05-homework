@@ -266,6 +266,11 @@ const printCool = (name) => {
 }
 console.log(printCool("Capitan Reynolds"));
 
+//C.
+const calculateCube = (sideLength) => {
+	console.log(sideLength ** 3);
+}
+console.log(calculateCube(5));
 
 
 
