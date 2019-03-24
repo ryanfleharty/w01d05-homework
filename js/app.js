@@ -185,12 +185,23 @@ console.log(myArray);
 //mutate means to adjust, not change completely 
 
 //F.
-const myNumber = 24;
+const myNumber = 7;
 if(myNumber < 100){
 	console.log("little number");
 } else {
 	console.log("big number");
 }
+
+//G.
+if(myNumber < 5){
+	console.log("little number");
+} else if(myNumber > 10){
+	console.log("big number");
+} else {
+	console.log("monkey");
+}
+
+
 
 
 
