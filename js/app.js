@@ -168,35 +168,38 @@ console.log("js works");
 //     for (let x=arr[1];x<=arr.length-1;x++){
 //         bank_account = bank_account + x;
 //     }
-    
-    
 //  console.log(bank_account)
-    
-    
-
-
-   // console.log(bank_account)
-
 // > Check your work! Your banck_account should have $55 in it.
 
 // 2. You got a bonus! Your pay is now doubled each week.Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-const arr = []
-let bank_account = 0
-
-//create arr of 1-10
-for (let i = 1; i <= 10; i++) {
-
-arr.push(i*2)
-}
-// loop through arr add each number to bank_account
-for (let x = 0; x <= arr.length-1; x++) {
-bank_account = bank_account + arr[x]
-}
-
-
-console.log(bank_account)
+// const arr = []
+// let bank_account = 0
+// //create arr of 1-10
+// for (let i = 1; i <= 10; i++) {
+// arr.push(i*2);
+// }
+// // loop through arr add each number to bank_account
+// for (let x = 0; x <= arr.length-1; x++) {
+// bank_account = bank_account + arr[x];
+// }
+// console.log(bank_account)
 //     > Check your work! Your banck_account should have $10, 100 in it. <=== this must be a typo or I am missunderstanding what the problem is asking.
 // if each payment is doubled it goes from being 1+2+3+4+5+6+7+8+9+10 = 55
 // to 2+4+6+8+10+12+14+16+18+20 = 110
 
-// : red_circle: Commit.
+// ###
+// E.Multiples of 3 and 5
+//***/ I've read all of the instructions, but I didn't get to complete this yet.***
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// Find the sum of all the multiples of 3 or 5 below 1000. If a previous question you 've done has helpful bits of code in it that partially solves this problem, look back at them.
+const arr = []
+let sum = 0
+for (let i = 0; i<1000; i++){
+    if ((i%3===0)||(i%5===0)){
+        arr.push(i);
+    }
+}
+for(let x = 0; x <= arr.length-1; x++){
+    sum = sum + arr[x];
+}
+console.log(sum);
