@@ -280,19 +280,40 @@ console.log("js works");
 // F.Biggie Smalls
 
 // Create a variable that contains an integer.
-const num = 200;
+const num = 6;
 // Write an `if ... else`
 // statement that:
 //     1. `console.log()`
 // s "little number"
 // if the number is entered is less than ** 100 **
-if (num < 100) {
-    console.log("little number");
-}
+// if (num < 100) {
+    // console.log("little number");
+// }
 //     2. `console.log()`
 // s `big number`
 // if the number is greater than or equal to 100.
-if (num > 100) {
-    console.log("big number");
+// if (num > 100) {
+    // console.log("big number");
+// }
+//     : red_circle: Commit.
+// if (num < 100) {console.log("little number")}
+// ###
+// G.Monkey in the Middle
+
+// Write an `if ... else if ... else`
+// statement:
+
+//     1. `console.log()`
+// `little number`
+// if the number entered is less than ** 5 ** . < br >
+if (num < 5){
+    console.log("little Number");
+}else if (num > 10){
+    console.log("Big Number");
+}else{console.log("Monkey");
 }
+//     2. If the number entered is more than 10, log `big number`.
+
+// 3. Otherwise, log "monkey". < br >
+
 //     : red_circle: Commit.
