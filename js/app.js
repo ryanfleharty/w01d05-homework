@@ -224,7 +224,6 @@ console.log(myArray);
 //Yes, reverse is a mutating function. Mutation means it changes the
 //original array in memory. No, it doesn't return anything.
 
-*/
 
 //F. Biggie Smalls
 
@@ -237,4 +236,23 @@ if (myVar < 100)
 else
 {
 	console.log("big number");
+}
+
+*/
+
+//G. Monkey in the middle
+
+const myVar2 = 5;
+
+if (myVar2 < 5)
+{
+	console.log("little number");
+}
+else if (myVar2 > 10)
+{
+	console.log("big number");
+}
+else
+{
+	console.log("monkey");
 }
