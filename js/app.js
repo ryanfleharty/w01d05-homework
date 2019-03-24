@@ -82,8 +82,15 @@
 //         console.log(i);
 //     }
 // }
-for (let i = 0; i < 100; i++) {
-    if (i / 2) {
-        console.log(i + "<--- is an even number.");
+// for (let i = 0; i < 100; i++) {
+//     if (i / 2) {
+//         console.log(i + "<--- is an even number.");
+//     }
+// }
+for (let i = 1; i < 100; i++) {
+    if (i / 5) {
+        console.log("I found a " + i);
+    } else if (i / 3) {
+        console.log("Threes a crowd!");
     }
 }
