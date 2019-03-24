@@ -509,4 +509,9 @@ let user = {
 	age: "21",
 	purchased: []
 };
-console.log(user.name);
+
+//B. update user
+user.email = "blahblah@website.com";
+user.age++;
+
+console.log(user);
