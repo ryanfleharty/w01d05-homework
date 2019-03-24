@@ -146,6 +146,10 @@ console.log(totalSum);
 let quotes = ["The mountains are calling and I must go.", "And that has made all the difference.", 
 "Que sera sera."];
 
+const randomThings = [1, 10, "Hello", true];
+
+randomThings[2] = "World";
+console.log(randomThings[2]);
 
 
 
