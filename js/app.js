@@ -46,27 +46,29 @@ console.log("RUNNING");
 // Then, write an expression that takes the string "Hello, my name is " and the variable yourName so that it returns a new string with them concatenated.
     let expression = "Hello, my name is " + yourName + "!";
 // ex: Hello, my name is Jean Valjean
-// 🔴 Commit.
+
+// 🔴 Commit. //DONE
 
 // C. Booleans
 
-// Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console.
-//   const a = 4;
-//   const b = 53;
-//   const c = 57;
-//   const d = 16;
-//   const e = 'Kevin';
+// Using the provided variable definitions, replace the blanks so that all log statements print true in the console. 
+// Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console.
+  const a = 4;
+  const b = 53;
+  const c = 57;
+  const d = 16;
+  const e = 'Kevin';
 
-//   console.log(a __ b);
-//   console.log(c __ d);
-//   console.log('Name' __ 'Name');
-//   console.log(true __ false);
-//   console.log(false __ false __ false __ false __ false __ false __ true);
-//   console.log(false __ false)
-//   console.log(e ___ 'Kevin');
-//   console.log(a __ b ___ c);
-//   console.log(a __ a ___ d);
-//   console.log(48 __ '48');
+  console.log(a != b);
+  console.log(c > d);
+  console.log('Name' === 'Name');
+  console.log(true != false);
+  console.log(false || false || false|| false || false || false || true); // if ANY true, will return true
+  console.log(false === false)
+  console.log(e === 'Kevin');
+  console.log(a < b < c);
+  console.log(a == a !== d);
+  console.log(48 !== '48'); //strict equal w/ data type
 // 🔴 Commit.
 
 // D. The farm
