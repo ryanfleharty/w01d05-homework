@@ -5,7 +5,7 @@
   // you can change the value by writing the variable first, then = "new value" would follow
 
 // How do we assign an existing variable to a new variable?
-  // take the following value and set a new value for it
+  //make an assosiative array
 
 // Remind me, what are declare, assign, and define?
   //declare is to create a variable, assign and define is to set a value for the variable.
@@ -26,7 +26,46 @@
   firstVariable = "hello world"
   firstVariable = "zero"
   zero = "secondVariable"
-  secondVariable = "bye"
+  secondVariable = "bye" //output
   console.log(secondVariable);
+
   let yourName = "Davis Truong"
   console.log(`Hello, my name is ${yourName}`);
+
+  /*Using the provided variable definitions, replace the blanks so that all log statements print true in the console.
+  Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console.*/
+  const a = 4;
+    const b = 53;
+    const c = 57;
+    const d = 16;
+    const e = 'Kevin';
+
+    console.log(a < b);
+    console.log(c > d);
+    console.log('Name' === 'Name');
+    console.log(true !== false);
+    console.log(false == false == false == false == false == false !== true);
+    console.log(false === false)//f
+    console.log(e === 'Kevin');
+    console.log(a < b < c);
+    console.log(a === a != d);
+    console.log(48 !== '48');
+
+/*Declare a variable animal. Set it to be either "cow" or something else.
+Write code that will print out "mooooo" if the it is equal to cow.
+Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
+Commit.*/
+ let animal = "cow"
+   if (animal != "cow"){
+     animal = "mooooo"
+   } else {
+     animal = "Hey! You're not a cow"
+   }
+console.log(animal);
+
+// Make a variable that will hold a person's age. Be semantic.
+//let
+// Write code that will print out "Here are the keys", if the age is 16 years or older.
+//
+// If the age is younger than 16, a message should print "Sorry, you're too young."
+//
