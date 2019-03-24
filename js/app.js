@@ -46,6 +46,7 @@ console.log(48 == '48');
 //Declare a variable animal. Set it to be either "cow" or something else.
 //Write code that will print out "mooooo" if the it is equal to cow.
 //If not equal to cow, print "Hey! You're not a cow."
+/**
 let animal = "cow";
 if(animal === "cow") {
   console.log("Mooooo!");
@@ -54,3 +55,13 @@ animal = "cat";
  if(animal != "cow") {
    console.log("Hey, you're not a cow!");
  }
+ **/
+
+//Part 1E
+let joesAge = 17;
+if(joesAge > 15) {
+  console.log("Here are the keys, Joe.");
+}
+if(joesAge < 16) {
+  console.log("Sorry, you're too young, Joe.");
+}
