@@ -32,20 +32,20 @@
 
 //B. Strings
 // Create a variable called firstVariable.
-let firstVariable
+// let firstVariable
 
 // Assign it the value of the string "Hello World"
 let firstVariable = "Hello World";
 
 // Change the value of this variable to some number.
-let firstVariable = 3;
+firstVariable = 3;
 
 // Store the value of firstVariable in a new variable called 
 //secondVariable
 let secondVariable = firstVariable;
 
 // Change the value of secondVariable to any string.
-let secondVariable = 'Here is something';
+secondVariable = 'Here is something';
 
 // What is the value of firstVariable?
 'Here is something'
@@ -60,3 +60,27 @@ let yourName = 'Destiny Hillis';
 'Hello my name is ' + yourName + '.';
 
 
+
+
+//C. Booleans
+//Using the provided variable definitions, replace the blanks 
+//so that all log statements print true in the console. Answers 
+//should be all be valid JS syntax and not weird things that 
+//don't make sense but happen to print true to the console.
+
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+console.log(true !== false);
+console.log(false === false === false === false === false === false === true);
+console.log(false === false)
+console.log(e == 'Kevin');
+console.log(a < b < c);
+console.log(a * a === d);
+console.log(48 == '48');
