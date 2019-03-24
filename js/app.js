@@ -103,9 +103,24 @@ for(let i = 0; i <= 100; i++){
 	}
 }
 
+//D.
+//1.
 
+let bankAccount = 0;
 
+for(let i = 0; i <= 10; i++){
+	bankAccount = bankAccount + i;
+}
+console.log(bankAccount);
 
+//2. 
+
+let newBankAccount = 0;
+
+for(let i = 0; i <= 100; i++){
+	newBankAccount = newBankAccount + i;
+}
+console.log(newBankAccount * 2);
 
 
 
