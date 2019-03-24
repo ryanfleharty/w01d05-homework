@@ -186,8 +186,15 @@
 //  }
 // printGreeting();
 
-const printCool = (name) => {
-             let coolName = name + "Is a cool guy";
-             console.log(coolName);
-         }
-printCool("Dennis Reynolds");
+// const printCool = (name) => {
+//              let coolName = name + " Is a cool guy.";
+//              console.log(coolName);
+//          }
+// printCool("Dennis Reynolds");
+
+
+const calculateCube = (num) => {
+        let volume = num * num * num;
+        console.log(volume);
+}
+calculateCube(5);
