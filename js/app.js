@@ -8,7 +8,8 @@
 //5. It's the best, that's what it is. It helps you put your thoughts in writing so you know how to code before you start coding.
 //6. 75% of coding should be spent in psuedocoding.
 
-//Part B 
+//Part B
+/**
 let firstVariable = "Hello World";
 firstVariable = 36;
 let secondVariable = firstVariable;
@@ -19,3 +20,22 @@ console.log(firstVariable);
 let yourName = "John Michael Oro";
 let greeting = "Hello, my name is " + yourName + ".";
 console.log(greeting);
+**/
+
+//Part C
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+console.log(true != false);
+console.log(false === false === false === false === false === false === true);
+console.log(false == false)
+console.log(e === 'Kevin');
+console.log(a < b < c);
+console.log(a * a === d);
+console.log(48 == '48');
