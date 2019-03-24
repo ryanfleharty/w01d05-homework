@@ -357,7 +357,7 @@ function getTwoLengths(s1, s2)
 }
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
-*/
+
 
 function getMultipleLengths (sarr)
 {
@@ -370,3 +370,43 @@ function getMultipleLengths (sarr)
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
+*/
+
+//This is inefficient but this assignment is freaking long
+//so this is what you get.
+
+function maxOfThree (x1, x2, x3)
+{
+	if (x1 > x2)
+	{
+		if (x1 > x3)
+		{
+			return x1;
+		}
+		else
+		{
+			return x3;
+		}
+	}
+	else
+	{
+		if (x2 > x3)
+		{
+			return x2;
+		}
+		else
+		{
+			return x3;
+		}
+	}
+	
+	if (x1 == x2 || x1 == x3)
+	{
+		return x1;
+	}
+	if (x2 == x3)
+	{
+		return x2;
+	}
+}
+console.log(maxOfThree(6, 9, 1));
