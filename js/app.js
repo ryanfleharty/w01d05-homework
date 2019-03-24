@@ -120,13 +120,20 @@
 //     randomThings.splice(2,1, "World!");
 //     console.log(randomThings);
 
-const myArray = [5, 10, 500, 20]
-myArray.push("Egon", "Bang");
-myArray.splice(0,5);
-myArray.push("Bob Marley");
-myArray.shift();
-Array.prototype.reverse(myArray);
-console.log(myArray);
+// const myArray = [5, 10, 500, 20]
+// myArray.push("Egon", "Bang");
+// myArray.splice(0,5);
+// myArray.push("Bob Marley");
+// myArray.shift();
+// Array.prototype.reverse(myArray);
+// console.log(myArray);
 // Since there is only one string in the array its hard to show if it has been reverse. 
 
+
+const number = 43;
+if (number < 100) {
+    console.log("little number");
+} else if (number >= 100) {
+    console.log("Big number");
+}
 
