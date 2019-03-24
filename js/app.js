@@ -423,36 +423,36 @@ const thomsCloset = [
 //access items in kristynsCloset, log the sentence "Kristyn is 
 //rocking that " + the third item in Kristyn's closet + " today!" 
 //to the console.
-console.log('Krystyn is rocking that ' + kristynsCloset[2] + ' today!');
+// console.log('Krystyn is rocking that ' + kristynsCloset[2] + ' today!');
 
-//2. Kristyn just bought some sweet shades! Add "raybans" to 
-//her closet after "yellow knit hat".
-kristynsCloset.splice(6,0, "raybans");
-console.log(kristynsCloset);
+// //2. Kristyn just bought some sweet shades! Add "raybans" to 
+// //her closet after "yellow knit hat".
+// kristynsCloset.splice(6,0, "raybans");
+// console.log(kristynsCloset);
 
-//3. Kristyn spilled coffee on her hat... modify this item to 
-//read "stained knit hat" instead of yellow.
-kristynsCloset[5] = "stained yellow hat";
-console.log(kristynsCloset);
+// //3. Kristyn spilled coffee on her hat... modify this item to 
+// //read "stained knit hat" instead of yellow.
+// kristynsCloset[5] = "stained yellow hat";
+// console.log(kristynsCloset);
 
-//4. Put together an outfit for Thom! Using bracket notation, 
-//access the first element in Thom's shirts array.
-console.log(thomsCloset[0][0]);
+// //4. Put together an outfit for Thom! Using bracket notation, 
+// //access the first element in Thom's shirts array.
+// console.log(thomsCloset[0][0]);
 
-//5. In the same way, access one item from Thom's pants array.
-console.log(thomsCloset[1][1]);
+// //5. In the same way, access one item from Thom's pants array.
+// console.log(thomsCloset[1][1]);
 
-//6. Access one item from Thom's accessories array.
-console.log(thomsCloset[2][2]);
+// //6. Access one item from Thom's accessories array.
+// console.log(thomsCloset[2][2]);
 
-//7. Log a sentence about what Thom's wearing. Example: "Thom 
-//is looking fierce in a grey button-up, jeans and wool scarf!"
-console.log("Thom's newest outfit is a " + thomsCloset[0][0] + " with a pair of " + thomsCloset[1][1] + " and " + thomsCloset[2][2] + ".");
+// //7. Log a sentence about what Thom's wearing. Example: "Thom 
+// //is looking fierce in a grey button-up, jeans and wool scarf!"
+// console.log("Thom's newest outfit is a " + thomsCloset[0][0] + " with a pair of " + thomsCloset[1][1] + " and " + thomsCloset[2][2] + ".");
 
-//8. Get more specific about what kind of PJs Thom's wearing 
-//this winter. Modify the name of his PJ pants to Footie Pajamas.
-thomsCloset[1][2] = 'Footie Pajamas';
-console.log(thomsCloset[1]);
+// //8. Get more specific about what kind of PJs Thom's wearing 
+// //this winter. Modify the name of his PJ pants to Footie Pajamas.
+// thomsCloset[1][2] = 'Footie Pajamas';
+// console.log(thomsCloset[1]);
 
 
 // IV. Functions
@@ -514,25 +514,37 @@ console.log(thomsCloset[1]);
 //otherwise. The vowel could be upper or lower case.
 // console.log(isVowel("a"));
 // => true
-const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+// const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
 
-const isVowel = (character) => {
-    for (let i = 0; i < vowels.length; i++) {
-        if (character == vowels[i]) {
-            return true;
-        }
-        else if (character !== vowels[i]) {
-            return false;
-        }
+// const isVowel = (character) => {
+//     for (let i = 0; i < vowels.length; i++) {
+//         if (character == vowels[i]) {
+//             return true;
+//         }
+//         else if (character !== vowels[i]) {
+//             return false;
+//         }
+//     }
+// }
+
+// console.log(isVowel('A'));
+
+
+
+// E. getTwoLengths
+// Write a function getTwoLengths that accepts two parameters 
+//(strings). The function should return an array of numbers 
+//where each number is the length of the corresponding string.
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// => [4, 13]
+let lengthArray = [];
+
+const getTwoLengths = (str1, str2) => {
+        lengthArray.push(str1.length);
+        lengthArray.push(str2.length);
+        return lengthArray;
     }
-}
 
-console.log(isVowel('A'));
-
-
-
-
-
-
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 
