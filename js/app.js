@@ -607,16 +607,41 @@ const thomsCloset = [
 // => "Peanutbutter"
 
 
-const printLongestWord = (arr) => {
-    let letters = 0;
-    let maxWord = arr[0];
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length >= letters) {
-        letters = arr[i].length;
-        maxWord = arr[i];
-    }
-}
-return maxWord;
+// const printLongestWord = (arr) => {
+//     let letters = 0;
+//     let maxWord = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length >= letters) {
+//         letters = arr[i].length;
+//         maxWord = arr[i];
+//     }
+// }
+// return maxWord;
+// }
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+
+
+// I. transmogrify
+// Write a Javascript function called transmogrify. This 
+//function should accept three arguments, which you can assume 
+//will be numbers. Your function should return the 
+//"transmogrified" result.
+// The transmogrified result of three numbers is the product of 
+//the first two numbers, raised to the power of the third number.
+// For example, the transmogrified result of 5, 3, and 2 is 
+//(5 times 3) to the power of 2 is 225.
+// console.log(transmogrify(5, 3, 2));
+// => 225
+
+const transmogrify = (num1, num2, num3) => {
+    let firstNumber = num1 * num2;
+    let finalNumber = [];
+    for (let i = 0; i < num3; i++) {
+        finalNumber = firstNumber * firstNumber;
+    }     
+    return finalNumber;
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(transmogrify(5, 3, 2));
