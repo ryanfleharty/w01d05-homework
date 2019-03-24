@@ -231,8 +231,16 @@ thomsCloset[1][2] = "footie pajamas";
 
 //Part IV
 //Part 4A
+/**
 const printGreeting = (name) => {
   console.log("Hello there, " + name + "!");
 }
 
 printGreeting("Gary");
+**/
+
+//Part 4B
+const printCool = (name) => {
+  console.log(name + " is cool.");
+}
+printCool("Marlena");
