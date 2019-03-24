@@ -103,3 +103,41 @@ for (let i = 0; i <= 100; i ++) {
 }
 
 // D. SAVINGS ACCOUNT
+// 1
+const sumMoney = (limit) => {
+  let sum = 0;
+  for (let i = 1; i <= limit; i++) {
+    sum += i;
+  }
+  return sum;
+}
+let bank_account = sumMoney(10);
+console.log(bank_account);
+// 2
+bank_account = sumMoney(100) * 2;
+console.log(bank_account);
+
+// E. MULTIPLES OF 3 AND 5
+const sumFizzBuzz = (limit) => {
+  let sum = 0;
+  for (let i = 3; i <= limit; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+console.log(sumFizzBuzz(100));
+
+
+// ARRAYS & CONTROL FLOW
+// A. TALK ABOUT IT
+// 1
+// Items
+// 2
+// No
+// 3
+// The names of people in a classroom
+
+// B. EASY DOES setInterval(function () {
