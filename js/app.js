@@ -427,10 +427,37 @@ function printLongestWord(strarr)
 }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
-*/
+
 
 function transmogrify(x1, x2, x3)
 {
 	return (x1 * x2) ** x3;
 }
 console.log(transmogrify(5, 3, 2));
+
+*/
+
+function reverseWordOrder (str)
+{
+	let newstr = "";
+	let tempstr = "";
+	for (let i = str.length - 1; i >= -1; i--)
+	{
+		if (str[i] == " " || i == -1)
+		{
+			newstr = newstr + " " + tempstr;
+			tempstr = "";
+			if (i == -1)
+			{
+				return newstr;
+			}
+		}
+		else
+		{
+			tempstr = str[i] + tempstr;
+		}
+	}
+}
+
+console.log(reverseWordOrder("Ishmael me Call"));
+
