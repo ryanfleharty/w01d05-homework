@@ -514,4 +514,10 @@ let user = {
 user.email = "blahblah@website.com";
 user.age++;
 
-console.log(user);
+
+//C. Adding keys and values
+//"General Assembly wants to know your location"
+
+user.location = "1600 Pennsylvania Avenue";
+
+
