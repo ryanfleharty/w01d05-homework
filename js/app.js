@@ -130,10 +130,58 @@
 // Since there is only one string in the array its hard to show if it has been reverse. 
 
 
-const number = 43;
-if (number < 100) {
-    console.log("little number");
-} else if (number >= 100) {
-    console.log("Big number");
-}
+// const number = 43;
+// if (number < 100) {
+//     console.log("little number");
+// } else if (number >= 100) {
+//     console.log("Big number");
+// }
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+// ];
 
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//     [
+//         // These are Thom's shirts
+//         "grey button-up",
+//         "dark grey button-up",
+//         "light blue button-up",
+//         "blue button-up",
+//     ],
+//     [
+//         // These are Thom's pants
+//         "grey jeans",
+//         "jeans",
+//         "PJs"
+//     ],
+//     [
+//         // Thom's accessories
+//         "wool mittens",
+//         "wool scarf",
+//         "raybans"
+//     ]
+// ];
+
+// console.log("Kristyn is rocking that" + kristynsCloset[2] + "fo today!");
+
+// kristynsCloset.splice(6, 0, "raybans");
+// kristynsCloset.splice(5, 1, "stained knit hat");
+
+// console.log(kristynsCloset);
+
+// console.log( "Thom be looking good with his " + thomsCloset[0][0] + " " + thomsCloset[1][0] + " And " + thomsCloset[2][1] + " today." );
+// thomsCloset.splice([1][2], 0, "Footie Pajamas" );
+// console.log(thomsCloset[1]);
+
+ const printGreeting = (name) => {
+     let greetName = `Hello there ${name}`;
+     console.log(greetName);
+ }
+printGreeting();
