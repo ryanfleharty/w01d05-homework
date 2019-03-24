@@ -116,6 +116,7 @@ for (let i = 0; i < 101; i++) {
 **/
 
 //Part 2E
+/**
 let sum = 0;
 for (let i = 10; i < 1001; i++) {
   if (i % 3 === 0) {
@@ -126,3 +127,9 @@ for (let i = 10; i < 1001; i++) {
     console.log(sum);
   }
 }
+**/
+
+//Part 3A
+//1. The things in an array are called elements.
+//2. Yes, arrays order their elements by assigning them indices.
+//3. You could model a grocery list.
