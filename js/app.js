@@ -235,3 +235,121 @@ kristynsCloset[6] = "stained knit hat";
 console.log(`Thom is looking fierce in a ${thomsCloset[0][2]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][2]}!`);
 // 8
 thomsCloset[1][2] = "Footie PJs";
+
+
+// FUNCTIONS
+// A. PRINTGREETING
+const printGreeting = (name) => {
+  console.log(`Hello there ${name}!`);
+}
+// B. PRINTCOOL
+const printCool = (name) => {
+  console.log(`${name} is cool!`);
+}
+// C. CALCULATECUBE
+const calculateCube = (dimension) => {
+  let volume = dimension * dimension * dimension;
+  return volume;
+}
+// D. ISVOWEL
+const isVowel = (letter) => {
+  letter.toLowerCase();
+  if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u") {
+    return true;
+  }
+}
+// E. GETTWOLENGHTS
+const getTwoLengths = (str1,str2) => {
+  let arr = [];
+  arr[0] = str1.length;
+  arr[1] = str2.length;
+  return arr;
+}
+// F. GETMULTIPLELENGTHS
+const getMultipleLengths = (strArr) => {
+  let arr = []
+  for (i = 0; i < strArr.length; i++) {
+    arr[i] = strArr[i].length;
+  }
+  return arr;
+}
+// G. MAXOFTHREE
+const maxOfThree = (num1,num2,num3) => {
+  if (num1 > num2 && num1 > num3) {
+    return num1;
+  } else if (num2 > num3 && num2 > num1) {
+    return num2;
+  } else if (num3 > num2 && num3 > num1){
+    return num3
+  } else {
+    return num2;
+  }
+}
+// H. PRINTLONGESTWORD
+const printLongestWord = (strArr) => {
+  let longest = 0;
+  for (i = 0; i < strArr.length; i++) {
+    if (strArr[i].length > longest) {
+      longest = strArr[i].length;
+    }
+  }
+  return longest;
+}
+// I. TRANSMORGIFY
+const transmogrify = (num1,num2,num3) => {
+  return num1 * num2 ** num3;
+}
+// J. REVERSEWORDORDER
+const reverseWordOrder = (str) => {
+  let arr = [];
+  let strReversed = "";
+  let spaceArrIndex = [0];
+  str = " " + str;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      spaceArrIndex.push(i);
+    }
+  }
+  for (let i = spaceArrIndex[spaceArrIndex.length-1]; i < str.length-1; i++){
+  arr.push(str[i+1]);
+}
+  for (let i = spaceArrIndex[spaceArrIndex.length-2]; i >= 0; i--) {
+    for (let x = spaceArrIndex[i]; x < spaceArrIndex[i+1]; x++) {
+      arr.push(str[x]);
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    strReversed += arr[i];
+  }
+  return strReversed
+}
+
+console.log(reverseWordOrder("oh my god this is a test to see how well this works"));
+// K. GET DOWN AND DIRTY WITH MATH.RANDOM()
+// 1
+const randomInt = (num) => {
+  return Math.floor(Math.random() * num);
+}
+console.log(randomInt(10));
+// 2
+const randomInt2 = (num) => {
+  return Math.floor(Math.random() * num - 10) + 10;
+}
+console.log(randomInt2(100));
+// 3
+const randomInt3 = (num) => {
+  return (Math.random() * num - 532) + 532;
+}
+console.log(randomInt3(13267));
+// 4
+const randomInt4 = (num) => {
+  return (Math.random() * num);
+}
+console.log(randomInt4(10));
+// 5
+const getRandomElement = (arr) => {
+  let num = Math.floor(Math.random() * (arr.length));
+  console.log(num);
+  return arr[num]
+}
+console.log(getRandomElement(hemingwayQuotes));
