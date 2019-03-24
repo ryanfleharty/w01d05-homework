@@ -159,9 +159,22 @@ for (let i = 1; i <= 100; i++)
 
 console.log(bank_account);
 
-*/
+
 
 //E. Multiples of 3 and 5
 
 //Newsflash, I already did it. Check homework 3 or 4? Whichever it was.
+
+*/
+
+
+
+//III. Arrays and Control Flow
+
+
+//A. Talk about it:
+//1. Elements
+//2. No
+//3. For example, a list of friends in a social media app (elements would
+//   be objects)
 
