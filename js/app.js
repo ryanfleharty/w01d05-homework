@@ -169,6 +169,7 @@ if(int < 100) {
 **/
 
 //Part 3G
+/**
 const monkeyFunk = (num) => {
   if(num < 5) {
     console.log("little number");
@@ -180,3 +181,48 @@ const monkeyFunk = (num) => {
 }
 
 monkeyFunk(5);
+**/
+
+//Part 3H
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+console.log(kristynsCloset[2]);
+kristynsCloset.splice(6, 0, "raybans");
+console.log(kristynsCloset);
+kristynsCloset[5] = "stained knit hat";
+console.log(kristynsCloset);
+let thomsOutfit = [thomsCloset[0][1], thomsCloset[1][2], thomsCloset[2][1]];
+console.log(thomsOutfit);
+//thomsCloset[1][2];
+//thomsCloset[2][1];
+console.log("Thom is looking fierce in a " + thomsOutfit[0] + ", " + thomsOutfit[1] + ", and a " + thomsOutfit[2] + ".");
+thomsCloset[1][2] = "footie pajamas";
