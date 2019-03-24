@@ -240,7 +240,36 @@ printGreeting("Gary");
 **/
 
 //Part 4B
+/**
 const printCool = (name) => {
   console.log(name + " is cool.");
 }
 printCool("Marlena");
+**/
+
+//Part 4C
+/**
+const calculateCube = (num) => {
+  console.log(num * num * num);
+}
+calculateCube(5);
+**/
+
+//Part 4D
+
+const isVowel = (char) => {
+  char.toLowerCase();
+  if(char === "a") {
+    return true;
+  } else if(char === "e") {
+    return true;
+  } else if(char === "i") {
+    return true;
+  } else if(char === "o") {
+    return true;
+  } else if(char === "u") {
+    return true;
+  } else {
+    return false;
+  }
+}
