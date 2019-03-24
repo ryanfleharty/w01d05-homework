@@ -11,3 +11,24 @@
 //   code.
 //6. Something like 3/4 thinking, 1/4 typing.
 
+//B. Strings
+
+//1.
+
+let firstVariable = "Hello World";
+firstVariable = 5;
+let secondVariable = firstVariable;
+secondVariable = "This is a string";
+console.log(firstVariable);
+console.log(secondVariable);
+
+//Value of firstVariable ought to be now the same as secondVariable,
+//since they now simply point to the same location in memory.
+//(never mind, that is not the case: had to use "let" in order to
+//not run into const redefinition errors, and now the final value of
+//firstVariable is not tied to that of secondVariable (would it ever be?)
+
+//2.
+
+const yourName = "Collin Brockway";
+console.log("Hello, my name is " + yourName);
