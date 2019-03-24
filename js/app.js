@@ -47,6 +47,17 @@ console.log(a < b < c);
 console.log((a == a) < c);
 console.log(48 == '48');
 
+//D. 
+let animal = "cow";
+animal = "horse";
+
+
+if(animal == "cow"){
+	console.log("Mooooooo");	
+} else {
+	console.log("Hey, you're not a cow!");
+}
+
 
 
 
