@@ -94,7 +94,6 @@ for (let i = 12; i <= 4000; i = i + 3)
 {
 	console.log(i);
 }
-*/
 
 //B. Get even
 
@@ -108,4 +107,21 @@ for (let i = 2; i <= 100; i = i + 2)
 for (let i = 1; i <= 100; i++)
 {
 	console.log(i + (!(i % 2) && "<-- is an even number"));
+}
+*/
+
+
+//C. Give me five
+
+//1.
+for (let i = 1; i <= 100; i++)
+{
+	if (!(i % 5)) {console.log(`I found a ${i}. High five!`);}
+}
+
+//2.
+for (let i = 1; i <= 100; i++)
+{
+	if (!(i % 5)) {console.log(`I found a ${i}. High five!`);}
+	if (!(i % 3)) {console.log(`I found a ${i}. Three is a crowd`);}
 }
