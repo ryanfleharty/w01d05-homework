@@ -1,5 +1,9 @@
-//=======w01d05-homework=======
-//=======Collin Brockway=======
+//|----------------------------------------------------------|
+//|                       w01d05-homework                    |
+//|                       Collin Brockway                    |
+//|                    3/22/2019 - 3/24/2019                 |
+//|----------------------------------------------------------|
+
 
 //A. Q&A
 //1. Using let or const, for example: "let variable = 42;"
@@ -10,6 +14,14 @@
 //   of code, and thus can serve as a guide to structuring the actual
 //   code.
 //6. Something like 3/4 thinking, 1/4 typing.
+
+//|----------------------------------------------------------|
+//|       Everything below is commented out so as not to     |
+//|       spam the console, except for the current portion   |
+//|       of code that is being tested                       |
+//|----------------------------------------------------------|
+
+/*
 
 //B. Strings
 
@@ -78,8 +90,6 @@ if (personAge < 16) {console.log("Sorry, you're too young.");}
 
 //A. The Basics
 
-//Commented out temporarily so as not to spam the console
-/*
 for (let i = 0; i <= 10; i++)
 {
 	console.log(i);
@@ -108,7 +118,7 @@ for (let i = 1; i <= 100; i++)
 {
 	console.log(i + (!(i % 2) && "<-- is an even number"));
 }
-*/
+
 
 
 //C. Give me five
@@ -125,3 +135,27 @@ for (let i = 1; i <= 100; i++)
 	if (!(i % 5)) {console.log(`I found a ${i}. High five!`);}
 	if (!(i % 3)) {console.log(`I found a ${i}. Three is a crowd`);}
 }
+
+*/
+
+
+
+let bank_account = 0;
+
+for (let i = 1; i <= 10; i++)
+{
+	bank_account = bank_account + i;
+}
+
+console.log(bank_account);
+
+bank_account = 0;
+//(apparently we spent all our money on coffee or something)
+
+for (let i = 1; i <= 100; i++)
+{
+	bank_account = bank_account + (i * 2);
+}
+
+console.log(bank_account);
+
