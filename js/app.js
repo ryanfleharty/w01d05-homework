@@ -256,7 +256,7 @@ else
 	console.log("monkey");
 }
 
-*/
+
 
 const kristynsCloset = [
   "left shoe",
@@ -302,3 +302,17 @@ thomsCloset[0][2] = "Footie Pajamas";
 
 console.log(kristynsCloset);
 console.log(thomsCloset);
+*/
+
+
+
+//IV. Functions
+
+
+//A. printGreeting
+
+//Well, I guess I already did this, so check whatever previous homework
+//I did this in.
+
+//B. printCool
+
