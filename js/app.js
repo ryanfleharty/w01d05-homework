@@ -192,13 +192,36 @@ for (let i = 0; i < 101; i++) {
 // I found a 6. Three is a crowd
 // I found a 9. Three is a crowd
 // I found a 10. High five!
-for (let i = 0; i < 101; i++) {
-    if ([i] % 5 === 0) {
-        console.log('I found a ' + [i] + '. High five!')
-    }
-    if ([i] % 3 === 0) {
-        console.log('I found a ' + [i] + '. Three is a crowd.')
-    }
+// for (let i = 0; i < 101; i++) {
+//     if ([i] % 5 === 0) {
+//         console.log('I found a ' + [i] + '. High five!')
+//     }
+//     if ([i] % 3 === 0) {
+//         console.log('I found a ' + [i] + '. Three is a crowd.')
+//     }
+// }
+
+
+
+// D. Savings account
+//1. Write code that will save the sum of all the numbers between 
+//1 - 10 to a variable called bank_account.
+// Check your work! Your banck_account should have $55 in it.
+// let bank_account = 0;
+
+for (let i = 1; i < 11; i++) {
+    bank_account += i;
+    console.log(bank_account);
 }
 
+//2. You got a bonus! Your pay is now doubled each week. Write 
+//code that will save the sum of all the numbers between 1 - 100 
+//multiplied by 2.
+// Check your work! Your banck_account should have $10,100 in it.
 
+let bank_account = 0;
+
+for (let i = 1; i < 101; i++) {
+   bank_account += i * 2;
+    console.log(bank_account);
+}
