@@ -164,10 +164,25 @@ console.log(bank_account);
 
 // III. Arrays & Control flow
 // A. Talk about it:
-// What are the things in an array called?
+// 1. What are the things in an array called?
 // The things in an array are called its 'elements'.
-// Do Arrays guarantee those things will be in order?
+// 3. Do Arrays guarantee those things will be in order?
 // No you would want to sort() an array if you want them in a specific order. However, they will all have sequential indices to access the elements.
-// What real-life thing could you model with an array?
+// 5. What real-life thing could you model with an array?
 // A music player's playlist might be a good real-life thing to model in a simple array.
 
+// B. Easy Does It
+// 1. Create an array that contains three quotes and store it in a variable called quotes.
+const quotes = ["There's always an exeption to the rule.", "The king is only playing a game of 4-dimensional chess.", "Why does everybody always end up in the kitchen?"];
+console.log(quotes.toLocaleString());
+// C. Accessing elements
+// Given the following array 
+const randomThings = [1, 10, "Hello", true];
+// 1. How do you access the 1st element in the array?
+// You reference the 0th element using bracket notation.
+const firstElement = randomThings[0];
+console.log(firstElement);
+// 2. Change the value of "Hello" to "World".
+randomThings[2] = "World";
+// 3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+console.log(randomThings);
