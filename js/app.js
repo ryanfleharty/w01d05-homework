@@ -135,4 +135,11 @@ for (let i = 10; i < 1001; i++) {
 //3. You could model a grocery list.
 
 //Part 3B
+/**
 const quotes = "Hiya Howya", "Whoopsie does it", "Clean 'em first";
+**/
+//Part 3C
+const randomThings = [1, 10, "Hello", true];
+//1. randomThings[0]
+randomThings[2] = "World";
+console.log(randomThings[2]);
