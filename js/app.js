@@ -117,17 +117,17 @@ console.log("js works");
 //     console.log(i + " <-- is an evan number.");
 //}
 
-//2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+// 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
 
 //### C.Give me Five
 
-//1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
+// 1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
 
-// for (let i = 0; i <= 100; i++){
-//     if (i % 5 === 0) {
-//         console.log("I found a " + i + " High five!")
-//     }
-// }
+for (let i = 0; i <= 100; i++){
+    if (i % 5 === 0) {
+        console.log("I found a " + i + " High five!")
+    }
+}
 
 // Example Output:
 // ```
@@ -220,7 +220,7 @@ console.log("js works");
 // B.Easy Does It
 
 // 1. Create an array that contains three quotes and store it in a variable called `quotes`.
-const quotes = ["quote 1", "quote 2", "quote 3"]
+//const quotes = ["quote 1", "quote 2", "quote 3"]
 //     : red_circle: Commit.
 
 // ### C.Accessing elements
@@ -253,25 +253,25 @@ const quotes = ["quote 1", "quote 2", "quote 3"]
 // ### E.Mix It Up
 
 // Given the following array: 
-const myArray = [5, 10, 500, 20]
+// const myArray = [5, 10, 500, 20]
 
-// 1. Add the string `"Egon"`
-// to the end of the array.Add another string of your choice to the end of the array.
-myArray.push("Egon");
-myArray.push("Bill");
+// // 1. Add the string `"Egon"`
+// // to the end of the array.Add another string of your choice to the end of the array.
+// myArray.push("Egon");
+// myArray.push("Bill");
 
-// 2. Remove the `5`
-// from the beginning of the array.
-myArray.shift();
-// 3. Add the string `"Bob Marley"`
-// to the beginning of the array.
-myArray.unshift("Bob Marley");
-// 4. Remove the string of your choise from the end of the array.
-myArray.pop()
-// 5. Reverse this array using `Array.prototype.reverse()`.Did you mutate the array ? What does _mutate_ mean ? Did the `.reverse()`
-// method
-myArray.reverse()
-// return anything ?
-// I mutated the array, which means I changed the mutable elements.  Nothing was returned automatically, but when I typed the name into the console it returned a reversed array.
-//     :
-//     red_circle: Commit.
+// // 2. Remove the `5`
+// // from the beginning of the array.
+// myArray.shift();
+// // 3. Add the string `"Bob Marley"`
+// // to the beginning of the array.
+// myArray.unshift("Bob Marley");
+// // 4. Remove the string of your choise from the end of the array.
+// myArray.pop()
+// // 5. Reverse this array using `Array.prototype.reverse()`.Did you mutate the array ? What does _mutate_ mean ? Did the `.reverse()`
+// // method
+// myArray.reverse()
+// // return anything ?
+// // I mutated the array, which means I changed the mutable elements.  Nothing was returned automatically, but when I typed the name into the console it returned a reversed array.
+// //     :
+// //     red_circle: Commit.
