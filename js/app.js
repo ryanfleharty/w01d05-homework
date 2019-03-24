@@ -136,9 +136,9 @@ for (let i = 1; i <= 100; i++)
 	if (!(i % 3)) {console.log(`I found a ${i}. Three is a crowd`);}
 }
 
-*/
 
 
+//D. Bank account
 
 let bank_account = 0;
 
@@ -158,4 +158,10 @@ for (let i = 1; i <= 100; i++)
 }
 
 console.log(bank_account);
+
+*/
+
+//E. Multiples of 3 and 5
+
+//Newsflash, I already did it. Check homework 3 or 4? Whichever it was.
 
