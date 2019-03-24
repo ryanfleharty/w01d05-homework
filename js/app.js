@@ -435,7 +435,7 @@ function transmogrify(x1, x2, x3)
 }
 console.log(transmogrify(5, 3, 2));
 
-*/
+
 
 function reverseWordOrder (str)
 {
@@ -461,3 +461,38 @@ function reverseWordOrder (str)
 
 console.log(reverseWordOrder("Ishmael me Call"));
 
+*/
+
+function returnRandomInt110 ()
+{
+	return (Math.floor(Math.random() * 10));
+}
+console.log(returnRandomInt110());
+
+
+function returnRandomInt10100 ()
+{
+	//Got this from Mozilla developer info
+	//Math.floor(Math.random() * (max - min)) + min
+	return Math.floor(Math.random() * (100 - 10)) + 10;
+}
+console.log(returnRandomInt10100());
+
+function returnRandomNum532 ()
+{
+	return (Math.random() * (13267 - 532)) + 532;
+}
+console.log(returnRandomNum532());
+
+function returnRandomNum110 ()
+{
+	return (Math.random() * 10);
+}
+console.log(returnRandomNum110());
+
+const quotes = ["blah", "blah x2", "blah x3", "blah x4", "donald trump"];
+function getRandomElement(arr)
+{
+	return arr[Math.floor(Math.random() * (arr.length - 1))];
+}
+console.log(getRandomElement(quotes));
