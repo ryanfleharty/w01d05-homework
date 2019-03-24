@@ -486,11 +486,26 @@ console.log(thomsCloset[1]);
 // console.log(printCool("Captain Reynolds"));
 // => "Captain Reynolds is cool";
 
-const printCool = (name) => {
-    console.log(name + ' is cool.');
+// const printCool = (name) => {
+//     console.log(name + ' is cool.');
+// }
+
+// printCool('Captain Reynolds');
+
+
+
+// C. calculateCube
+// Write a function calculateCube that takes a single number 
+//and prints the volume of a cube made from that number.
+// console.log(calculateCube(5));
+// => 125
+
+const calculateCube = (num) => {
+     console.log((num * num) * num);
 }
 
-printCool('Captain Reynolds');
+calculateCube(5);
+
 
 
 
