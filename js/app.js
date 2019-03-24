@@ -411,7 +411,7 @@ function maxOfThree (x1, x2, x3)
 }
 console.log(maxOfThree(6, 9, 1));
 
-*/
+
 
 function printLongestWord(strarr)
 {
@@ -427,3 +427,10 @@ function printLongestWord(strarr)
 }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
+*/
+
+function transmogrify(x1, x2, x3)
+{
+	return (x1 * x2) ** x3;
+}
+console.log(transmogrify(5, 3, 2));
