@@ -157,3 +157,7 @@ for (let i = 0; i <= 100; i++) {
   bank_account += 2 * i;
 }
 console.log(bank_account);
+
+// E. Multiples of 3 and 5
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// Skipped as was already solved before in HW for Project Euler.
