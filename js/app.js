@@ -325,7 +325,6 @@ function printCool (n)
 
 printCool("Odysseus");
 
-*/
 
 
 //C. calculateCube
@@ -336,3 +335,16 @@ function calculateCube(x)
 }
 
 console.log(calculateCube(5));
+
+*/
+
+function isVowel(s)
+{
+	if (s == "a" || s == "e" || s == "i" || s == "o" || s == "u")
+	{
+		return true;
+	}
+	return false;
+}
+
+console.log(isVowel("a"));
