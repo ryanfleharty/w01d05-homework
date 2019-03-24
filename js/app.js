@@ -192,7 +192,7 @@ const randomThings = [1, 10, "Hello", true];
 randomThings[2] = "World";
 //3.
 console.log(randomThings[2]);
-*/
+
 
 //D. Change values
 
@@ -204,3 +204,23 @@ ourClass[4] = "Octocat";
 //3.
 ourClass.push("Cloud City");
 console.log(ourClass);
+
+*/
+
+//E. Mix it up
+
+const myArray = [5, 10, 500, 20];
+
+//1.
+myArray.push("Egon");
+myArray.push("my-really-great-string-with-lots-of-dashes");
+myArray.splice(0,1);
+myArray.splice(0,0,"Bob Marley");
+myArray.splice(5,1);
+myArray.reverse();
+
+console.log(myArray);
+
+//Yes, reverse is a mutating function. Mutation means it changes the
+//original array in memory. No, it doesn't return anything.
+
