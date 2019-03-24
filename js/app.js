@@ -349,10 +349,24 @@ function isVowel(s)
 
 console.log(isVowel("a"));
 
-*/
+
 
 function getTwoLengths(s1, s2)
 {
 	return [s1.length, s2.length];
 }
 console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+*/
+
+function getMultipleLengths (sarr)
+{
+	const lenarr = [];
+	for (let i = 0; i <= sarr.length - 1; i++)
+	{
+		lenarr.push(sarr[i].length);
+	}
+	return lenarr;
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
