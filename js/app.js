@@ -236,14 +236,14 @@ let animal = 'cow';
 // Find the sum of all the multiples of 3 or 5 below 1000. If 
 //a previous question you've done has helpful bits of code in 
 //it that partially solves this problem, look back at them.
-let sum = 0;
+// let sum = 0;
 
-for (let i = 0; i < 1001; i++) {
-    if ([i] % 5 === 0 || [i] % 3 === 0) {
-        sum += i;
-        console.log(sum);
-    }
-}
+// for (let i = 0; i < 1001; i++) {
+//     if ([i] % 5 === 0 || [i] % 3 === 0) {
+//         sum += i;
+//         console.log(sum);
+//     }
+// }
 
 // You just solved Project Euler problem 1!
 
@@ -270,8 +270,22 @@ for (let i = 0; i < 1001; i++) {
 
 
 // B. Easy Does It
-// Create an array that contains three quotes and store it in a 
+//1. Create an array that contains three quotes and store it in a 
 //variable called quotes.
 const quotes = ['Life is short. Smile while you still have feet.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.'];
 
 
+
+// C. Accessing elements
+//Given the following array 
+const randomThings = [1, 10, "Hello", true]
+
+//1. How do you access the 1st element in the array?
+randomThings[0];
+
+//2. Change the value of "Hello" to "World".
+randomThings[2] = "World";
+
+//3. Check the value of the array to make sure it updated the 
+//array. How? Why, yes! console.log();
+console.log(randomThings);
