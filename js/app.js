@@ -192,14 +192,44 @@ console.log("js works");
 //***/ I've read all of the instructions, but I didn't get to complete this yet.***
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000. If a previous question you 've done has helpful bits of code in it that partially solves this problem, look back at them.
-const arr = []
-let sum = 0
-for (let i = 0; i<1000; i++){
-    if ((i%3===0)||(i%5===0)){
-        arr.push(i);
-    }
-}
-for(let x = 0; x <= arr.length-1; x++){
-    sum = sum + arr[x];
-}
-console.log(sum);
+// const arr = []
+// let sum = 0
+// for (let i = 0; i<1000; i++){
+//     if ((i%3===0)||(i%5===0)){
+//         arr.push(i);
+//     }
+// }
+// for(let x = 0; x <= arr.length-1; x++){
+//     sum = sum + arr[x];
+// }
+// console.log(sum);
+// ##
+// III.Arrays & Control flow
+
+// ### A.Talk about it:
+
+//     1. What are the things in an array called ?
+        //  We call them elements 
+//     2. Do Arrays guarantee those things will be in order ?
+        // yes
+//     3. What real - life thing could you model with an array ?
+        // a shopping list, inventory, list of events, days of the week.  Anything you keep in list form.
+//     :
+//     red_circle : Commit.
+// ###
+// B.Easy Does It
+
+// 1. Create an array that contains three quotes and store it in a variable called `quotes`.
+const quotes = ["quote 1", "quote 2", "quote 3"]
+//     : red_circle: Commit.
+
+// ### C.Accessing elements
+
+// Given the following array `const randomThings = [1, 10, "Hello", true]`
+
+// 1. How do you access the 1 st element in the array ?
+
+//     2. Change the value of `"Hello"`
+// to `"World"`.
+
+// 3. Check the value of the array to make sure it updated the array.How ? Why, yes!`console.log()`;
