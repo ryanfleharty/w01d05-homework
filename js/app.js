@@ -133,3 +133,6 @@ for (let i = 10; i < 1001; i++) {
 //1. The things in an array are called elements.
 //2. Yes, arrays order their elements by assigning them indices.
 //3. You could model a grocery list.
+
+//Part 3B
+const quotes = "Hiya Howya", "Whoopsie does it", "Clean 'em first";
