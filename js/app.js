@@ -274,10 +274,25 @@ const isVowel = (char) => {
   }
 }
 **/
-
+//Part 4E
+/**
 const getTwoLengths = (len1, len2) => {
   lenArray = [len1.length, len2.length];
   console.log(lenArray);
 }
 
 getTwoLengths("Cat", "Dog");
+**/
+
+//Part 4F
+//Hat tip to Adam Wolfman for helping me out with this one.
+const getMultipleLengths = (wordArray) => {
+  let wordLengths = [];
+  for (let i = 0; i < wordArray.length; i++) {
+    let wordLength = wordArray[i].length;
+    wordLengths.push(wordLength);
+  }
+  return wordLengths;
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
