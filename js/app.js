@@ -78,6 +78,8 @@ if (personAge < 16) {console.log("Sorry, you're too young.");}
 
 //A. The Basics
 
+//Commented out temporarily so as not to spam the console
+/*
 for (let i = 0; i <= 10; i++)
 {
 	console.log(i);
@@ -91,4 +93,19 @@ for (let i = 10; i <= 400; i++)
 for (let i = 12; i <= 4000; i = i + 3)
 {
 	console.log(i);
+}
+*/
+
+//B. Get even
+
+//Print out the even numbers between 1 and 100
+for (let i = 2; i <= 100; i = i + 2)
+{
+	console.log(i);
+}
+
+//Print out all numbers and put a message next to the even ones
+for (let i = 1; i <= 100; i++)
+{
+	console.log(i + (!(i % 2) && "<-- is an even number"));
 }
