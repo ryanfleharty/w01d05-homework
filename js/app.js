@@ -184,6 +184,7 @@ monkeyFunk(5);
 **/
 
 //Part 3H
+/**
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -226,3 +227,12 @@ console.log(thomsOutfit);
 //thomsCloset[2][1];
 console.log("Thom is looking fierce in a " + thomsOutfit[0] + ", " + thomsOutfit[1] + ", and a " + thomsOutfit[2] + ".");
 thomsCloset[1][2] = "footie pajamas";
+**/
+
+//Part IV
+//Part 4A
+const printGreeting = (name) => {
+  console.log("Hello there, " + name + "!");
+}
+
+printGreeting("Gary");
