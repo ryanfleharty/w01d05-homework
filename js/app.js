@@ -205,7 +205,7 @@ ourClass[4] = "Octocat";
 ourClass.push("Cloud City");
 console.log(ourClass);
 
-*/
+
 
 //E. Mix it up
 
@@ -224,3 +224,17 @@ console.log(myArray);
 //Yes, reverse is a mutating function. Mutation means it changes the
 //original array in memory. No, it doesn't return anything.
 
+*/
+
+//F. Biggie Smalls
+
+const myVar = 1776;
+
+if (myVar < 100)
+{
+	console.log("little number");
+}
+else
+{
+	console.log("big number");
+}
