@@ -122,6 +122,18 @@ for(let i = 0; i <= 100; i++){
 }
 console.log(newBankAccount * 2);
 
+//E.
+//I've already done it, but am going to do it again for practice
+
+let totalSum = 0;
+
+for(let i = 0; i <= 1000; i++){
+	if(i % 3 === 0 || i % 5 === 0){
+		totalSum = totalSum + i;
+	}
+}
+console.log(totalSum);
+
 
 
 
