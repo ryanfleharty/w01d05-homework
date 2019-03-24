@@ -77,8 +77,13 @@
 // for (let i = 10; i <= 400; i++) {
 //     console.log(i);
 // }
-for (let i = 12; i < 4000; i++) {
-    if (i / 3) {
-        console.log(i);
+// for (let i = 12; i < 4000; i++) {
+//     if (i / 3) {
+//         console.log(i);
+//     }
+// }
+for (let i = 0; i < 100; i++) {
+    if (i / 2) {
+        console.log(i + "<--- is an even number.");
     }
 }
