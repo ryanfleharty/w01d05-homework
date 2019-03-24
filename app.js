@@ -64,8 +64,12 @@ Commit.*/
 console.log(animal);
 
 // Make a variable that will hold a person's age. Be semantic.
-//let
 // Write code that will print out "Here are the keys", if the age is 16 years or older.
-//
-// If the age is younger than 16, a message should print "Sorry, you're too young."
-//
+//If the age is younger than 16, a message should print "Sorry, you're too young."
+let yearsOld = 10
+if(yearsOld >= 16){
+  yearsOld = "Here are the keys"
+} else {
+  yearsOld = "sorry, you're too young"
+}
+console.log(personsAge);
