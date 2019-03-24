@@ -116,7 +116,17 @@
 
 // let quotes = ["alright alright alright", "would you like some coffee?", "We're here to make you think about death and feel sad and stuff."];
 
-const randomThings = [1, 10, "Hello", true];
-    randomThings.splice(2,1, "World!");
-    console.log(randomThings);
+// const randomThings = [1, 10, "Hello", true];
+//     randomThings.splice(2,1, "World!");
+//     console.log(randomThings);
+
+const myArray = [5, 10, 500, 20]
+myArray.push("Egon", "Bang");
+myArray.splice(0,5);
+myArray.push("Bob Marley");
+myArray.shift();
+Array.prototype.reverse(myArray);
+console.log(myArray);
+// Since there is only one string in the array its hard to show if it has been reverse. 
+
 
