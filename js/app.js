@@ -21,5 +21,17 @@
 //                 What percentage of time should be spent thinking about how you 're going to solve a problem vs actually typing in code to solve it?
                 // it should be 20% of thinking of how to code it and where to start, 40% of coding. And then another 40% of debugging. 
 
+let firstVariable = 'Hello world!';
+ firstVariable = 22;
 
-                
+ let secondVariable = firstVariable;
+
+ secondVariable = "chill lofi beats";
+console.log(firstVariable);
+ // First variable value is 22.
+
+ const yourName = "Ben Wall";
+
+ let phrase = "Hello, My name is " + yourName;
+ console.log(phrase);
+ 
