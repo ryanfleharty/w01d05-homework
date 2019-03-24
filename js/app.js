@@ -328,12 +328,12 @@ function isVowel(str) {
 }
 console.log(isVowel('Y'));
 
-// // E. getTwoLengths
-// // Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
-// function getTwoLengths(str1, str2) {
-//   const arr = [];
-//   arr.push(str1.length);
-//   arr.push(str2.length);
-//   return(arr);
-// }
-// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// E. getTwoLengths
+// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+function getTwoLengths(str1, str2) {
+  const arr = [];
+  arr.push(str1.length);
+  arr.push(str2.length);
+  return(arr);
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
