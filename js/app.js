@@ -134,6 +134,12 @@ for(let i = 0; i <= 1000; i++){
 }
 console.log(totalSum);
 
+//Arrays & Flow Control
+//A. 
+//1. elements
+//2. yes unless we perform actions on them to change the 
+//order or add/remove from the array
+//3. grocery list
 
 
 
