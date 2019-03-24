@@ -84,3 +84,28 @@ console.log(e == 'Kevin');
 console.log(a < b < c);
 console.log(a * a === d);
 console.log(48 == '48');
+
+
+
+
+// D. The farm
+// Declare a variable animal. Set it to be either "cow" or 
+//something else.
+let animal = 'cow';
+
+// Write code that will print out "mooooo" if the it is equal 
+//to cow.
+if (animal = 'cow') {
+    console.log('mooooo');
+}
+
+// Change your code so that if the variable animal is anything 
+//other than a cow, it will print "Hey! You're not a cow."
+animal = 'pig';
+if (animal !== 'cow') {
+    console.log("Hey! You're not a cow.");
+}
+
+
+
+
