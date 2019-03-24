@@ -5,7 +5,7 @@
   // you can change the value by writing the variable first, then = "new value" would follow
 
 // How do we assign an existing variable to a new variable?
-  // with variable that are declared by "const" can not be redefined a new variable
+  // take the following value and set a new value for it
 
 // Remind me, what are declare, assign, and define?
   //declare is to create a variable, assign and define is to set a value for the variable.
@@ -28,3 +28,5 @@
   zero = "secondVariable"
   secondVariable = "bye"
   console.log(secondVariable);
+  let yourName = "Davis Truong"
+  console.log(`Hello, my name is ${yourName}`);
