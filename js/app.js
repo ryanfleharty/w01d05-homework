@@ -314,7 +314,7 @@ console.log(thomsCloset);
 //Well, I guess I already did this, so check whatever previous homework
 //I did this in.
 
-*/
+
 
 //B. printCool
 
@@ -323,13 +323,16 @@ function printCool (n)
 	console.log(`${n} is cool`);
 }
 
-console.log(printCool("Odysseus"));
+printCool("Odysseus");
 
-
+*/
 
 
 //C. calculateCube
 
-function calculateCube()
+function calculateCube(x)
 {
+	return (x ** 3);
 }
+
+console.log(calculateCube(5));
