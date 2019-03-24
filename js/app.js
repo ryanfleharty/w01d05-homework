@@ -180,8 +180,14 @@
 // thomsCloset.splice([1][2], 0, "Footie Pajamas" );
 // console.log(thomsCloset[1]);
 
- const printGreeting = (name) => {
-     let greetName = `Hello there ${name}`;
-     console.log(greetName);
- }
-printGreeting();
+//  const printGreeting = (name) => {
+//      let greetName = `Hello there ${name}`;
+//      console.log(greetName);
+//  }
+// printGreeting();
+
+const printCool = (name) => {
+             let coolName = name + "Is a cool guy";
+             console.log(coolName);
+         }
+printCool("Dennis Reynolds");
