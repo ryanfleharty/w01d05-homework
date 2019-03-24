@@ -84,7 +84,16 @@ for (let i = 12; i < 4001; i+=3) {
 **/
 
 //Part 2B
-
+/**
 for (let i = 0; i < 101; i+=2) {
   console.log(i + " is an even number.");
+}
+**/
+
+for (let i = 0; i < 101; i++) {
+  if(i % 5 === 0) {
+    console.log("I found a " + i + ". High five!");
+  } if(i % 3 === 0) {
+    console.log("I found a " + i + ". Three's a crowd.");
+  }
 }
