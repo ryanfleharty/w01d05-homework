@@ -232,3 +232,17 @@ console.log("little number");
 } else {
   console.log("big number")
 }
+
+// G. Monkey in the Middle
+let intVar2 = 'string';
+// Write an if ... else if ... else statement:
+if (intVar2 < 5) {
+// console.log() little number if the number entered is less than 5.
+console.log("little number");
+// If the number entered is more than 10, log big number.
+} else if (intVar2 > 10) {
+  console.log("big number");
+//Otherwise, log "monkey". 
+} else {
+  console.log("monkey")
+}
