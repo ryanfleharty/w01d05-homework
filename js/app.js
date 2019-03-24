@@ -306,16 +306,34 @@ console.log(thomsCloset[1][2]);
 // B. printCool
 // Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
 function printCool(name) {
-  console.log(`${name} is cool`);
+  return (`${name} is cool`);
 }
-printCool('Captain Reynolds');
-<<<<<<< HEAD
+console.log(printCool('Captain Reynolds'));
 
 // C. calculateCube
 // Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
 function calculateCube(num) {
-  console.log(`${num * num * num} is the volume of a cube with sides ${num}`);
+  return (num * num * num);
 }
-calculateCube(3);
-=======
->>>>>>> abded440f74b5e8f9d75437e3e9c5a52923d1699
+console.log(calculateCube(5));
+
+// D. isVowel
+// Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+function isVowel(str) {
+  strLower = str.toLowerCase();
+  if (strLower === 'a' || strLower === 'e' || strLower === 'i' || strLower === 'o' || strLower === 'u' || strLower === 'y') {
+    return true;
+  }
+  return false;
+}
+console.log(isVowel('Y'));
+
+// // E. getTwoLengths
+// // Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+// function getTwoLengths(str1, str2) {
+//   const arr = [];
+//   arr.push(str1.length);
+//   arr.push(str2.length);
+//   return(arr);
+// }
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
