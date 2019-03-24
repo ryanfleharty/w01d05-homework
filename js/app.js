@@ -336,7 +336,7 @@ function calculateCube(x)
 
 console.log(calculateCube(5));
 
-*/
+
 
 function isVowel(s)
 {
@@ -348,3 +348,11 @@ function isVowel(s)
 }
 
 console.log(isVowel("a"));
+
+*/
+
+function getTwoLengths(s1, s2)
+{
+	return [s1.length, s2.length];
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
