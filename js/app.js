@@ -253,12 +253,18 @@ thomsCloset[1][1] + ", and " + thomsCloset[2][1] + "!");
 thomsCloset[1][2] = "Footie Pajamas";
 
 //Functions
-
+//A -- did it for practice again
 const printGreeting = (name) => {
 	console.log(`Hello, there ${name}!`);
 }
 
 console.log(printGreeting("Alex"));
+
+//B.
+const printCool = (name) => {
+	console.log(`${name} is cool.`);
+}
+console.log(printCool("Capitan Reynolds"));
 
 
 
