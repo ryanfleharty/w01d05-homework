@@ -58,10 +58,25 @@ animal = "cat";
  **/
 
 //Part 1E
+/**
 let joesAge = 17;
 if(joesAge > 15) {
   console.log("Here are the keys, Joe.");
 }
 if(joesAge < 16) {
   console.log("Sorry, you're too young, Joe.");
+}
+**/
+
+//Part 2A
+for (let i = 1; i < 11; i++) {
+  console.log(i);
+}
+
+for (let i = 10; i < 401; i++) {
+  console.log(i);
+}
+
+for (let i = 12; i < 4001; i+=3) {
+  console.log(i);
 }
