@@ -69,6 +69,7 @@ if(joesAge < 16) {
 **/
 
 //Part 2A
+/**
 for (let i = 1; i < 11; i++) {
   console.log(i);
 }
@@ -79,4 +80,11 @@ for (let i = 10; i < 401; i++) {
 
 for (let i = 12; i < 4001; i+=3) {
   console.log(i);
+}
+**/
+
+//Part 2B
+
+for (let i = 0; i < 101; i+=2) {
+  console.log(i + " is an even number.");
 }
