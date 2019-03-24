@@ -63,3 +63,32 @@ if (animal == "cow") {console.log("mooooo");}
 //3.
 if (animal != "cow") {console.log("Hey! You're not a cow.");}
 
+//E. Driver's Ed
+
+//1.
+const personAge = 15;
+//2.
+if (personAge >= 16) {console.log("Here are the keys");}
+//3.
+if (personAge < 16) {console.log("Sorry, you're too young.");}
+
+
+
+//II. Loops
+
+//A. The Basics
+
+for (let i = 0; i <= 10; i++)
+{
+	console.log(i);
+}
+
+for (let i = 10; i <= 400; i++)
+{
+	console.log(i);
+}
+
+for (let i = 12; i <= 4000; i = i + 3)
+{
+	console.log(i);
+}
