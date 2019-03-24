@@ -120,3 +120,25 @@ for (let i = 2; i <= 100; i += 2) {
 for (let i = 2; i <= 100; i += 2) {
   console.log(`${i} <-- is  an even number`);
 }
+
+// C. Give me Five
+// 1. For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
+for (let i = 0; i <= 100; i++) {
+  if (i === 0) {
+    // do nothing
+  } else if (i % 5 === 0) {
+    console.log(`I found a ${i}. High five!`);
+  }
+  // else do nothing
+}
+// 2. Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
+for (let i = 0; i <= 100; i++) {
+  if (i === 0) {
+    // do nothing
+  } else if (i % 5 === 0) {
+    console.log(`I found a ${i}. High five!`);
+  } else if (i % 3 === 0) {
+    console.log(`I found a ${i}. Three is a crowd`);
+  }
+  // else do nothing
+}
