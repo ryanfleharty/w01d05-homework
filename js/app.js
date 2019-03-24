@@ -193,8 +193,18 @@
 // printCool("Dennis Reynolds");
 
 
-const calculateCube = (num) => {
-        let volume = num * num * num;
-        console.log(volume);
+// const calculateCube = (num) => {
+//         let volume = num * num * num;
+//         console.log(volume);
+// }
+// calculateCube(5);
+
+const isVowel = (vowel) => {
+    if (vowel === "a" || vowel === "i" || vowel === "e" || vowel === "o" || vowel === "u"
+    || vowel === "A" || vowel === "I" || vowel === "E" || vowel === "O" || vowel === "U") {
+        console.log('true');
+    } else {
+        console.log('False')
+    }
 }
-calculateCube(5);
+isVowel("e");
