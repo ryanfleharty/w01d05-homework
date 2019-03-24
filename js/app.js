@@ -92,6 +92,16 @@ for(let i = 1; i <= 100; i++){
 	}
 }
 
+//C. 
+//1. 
+for(let i = 0; i <= 100; i++){
+	if(i % 3 === 0){
+		console.log("I found a " + i + " . Three is a crowd.");
+	}
+	if(i % 5 === 0){
+		console.log("I found a " + i + " . High five!");
+	}
+}
 
 
 
