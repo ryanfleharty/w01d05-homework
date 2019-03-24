@@ -558,24 +558,24 @@ const thomsCloset = [
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
 //NEED TO DRY IT UP
-let lengthArray2 = [];
+// let lengthArray2 = [];
 
-const getMultipleLengths = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        // let split = arr[i].split(arr);
-        // console.log(split);
+// const getMultipleLengths = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         // let split = arr[i].split(arr);
+//         // console.log(split);
 
-        lengthArray2.push(arr[0].length);
-        lengthArray2.push(arr[1].length);
-        lengthArray2.push(arr[2].length);
-        lengthArray2.push(arr[3].length);
-        lengthArray2.push(arr[4].length);
+//         lengthArray2.push(arr[0].length);
+//         lengthArray2.push(arr[1].length);
+//         lengthArray2.push(arr[2].length);
+//         lengthArray2.push(arr[3].length);
+//         lengthArray2.push(arr[4].length);
 
-        return lengthArray2;
-    }
-}
+//         return lengthArray2;
+//     }
+// }
 
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 
 
@@ -588,9 +588,35 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // console.log(maxOfThree(6, 9, 1));
 // => 9
 
-const maxOfThree = (num1, num2, num3) => {
-    let max = Math.max(num1, num2, num3);
-    return max;
+// const maxOfThree = (num1, num2, num3) => {
+//     let max = Math.max(num1, num2, num3);
+//     return max;
+// }
+
+// console.log(maxOfThree(6, 9, 1));
+
+
+
+// H. printLongestWord
+// Write a function printLongestWord that accepts a single 
+//argument, an array of strings. The method should return the 
+//longest word in the array. In case of a tie, the method 
+//should return the word that appears first in the array.
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// => "Peanutbutter"
+
+
+const printLongestWord = (arr) => {
+    let letters = 0;
+    let maxWord = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length >= letters) {
+        letters = arr[i].length;
+        maxWord = arr[i];
+    }
+}
+return maxWord;
 }
 
-console.log(maxOfThree(6, 9, 1));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
