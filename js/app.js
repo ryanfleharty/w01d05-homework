@@ -123,11 +123,11 @@ console.log("js works");
 
 // 1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
 
-for (let i = 0; i <= 100; i++){
-    if (i % 5 === 0) {
-        console.log("I found a " + i + " High five!")
-    }
-}
+// for (let i = 0; i <= 100; i++){
+//     if (i % 5 === 0) {
+//         console.log("I found a " + i + " High five!")
+//     }
+// }
 
 // Example Output:
 // ```
@@ -275,3 +275,24 @@ for (let i = 0; i <= 100; i++){
 // // I mutated the array, which means I changed the mutable elements.  Nothing was returned automatically, but when I typed the name into the console it returned a reversed array.
 // //     :
 // //     red_circle: Commit.
+
+// ###
+// F.Biggie Smalls
+
+// Create a variable that contains an integer.
+const num = 200;
+// Write an `if ... else`
+// statement that:
+//     1. `console.log()`
+// s "little number"
+// if the number is entered is less than ** 100 **
+if (num < 100) {
+    console.log("little number");
+}
+//     2. `console.log()`
+// s `big number`
+// if the number is greater than or equal to 100.
+if (num > 100) {
+    console.log("big number");
+}
+//     : red_circle: Commit.
