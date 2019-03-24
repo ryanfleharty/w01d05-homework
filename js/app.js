@@ -537,14 +537,42 @@ const thomsCloset = [
 //where each number is the length of the corresponding string.
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
 // => [4, 13]
-let lengthArray = [];
+// let lengthArray = [];
 
-const getTwoLengths = (str1, str2) => {
-        lengthArray.push(str1.length);
-        lengthArray.push(str2.length);
-        return lengthArray;
+// const getTwoLengths = (str1, str2) => {
+//         lengthArray.push(str1.length);
+//         lengthArray.push(str2.length);
+//         return lengthArray;
+//     }
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+
+
+// F. getMultipleLengths
+// Write a function getMultipleLengths that accepts a single 
+//parameter as an argument: an array of strings. The function 
+//should return an array of numbers where each number is the 
+//length of the corresponding string.
+
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// => [5, 4, 2, 2, 4]
+//NEED TO DRY IT UP
+let lengthArray2 = [];
+
+const getMultipleLengths = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        // let split = arr[i].split(arr);
+        // console.log(split);
+
+        lengthArray2.push(arr[0].length);
+        lengthArray2.push(arr[1].length);
+        lengthArray2.push(arr[2].length);
+        lengthArray2.push(arr[3].length);
+        lengthArray2.push(arr[4].length);
+
+        return lengthArray2;
     }
+}
 
-console.log(getTwoLengths("Hank", "Hippopopalous"));
-
-
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
