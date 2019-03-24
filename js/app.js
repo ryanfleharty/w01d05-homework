@@ -146,11 +146,22 @@ console.log(totalSum);
 let quotes = ["The mountains are calling and I must go.", "And that has made all the difference.", 
 "Que sera sera."];
 
+//C.
 const randomThings = [1, 10, "Hello", true];
 
 randomThings[2] = "World";
 console.log(randomThings[2]);
 
+//D.
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+console.log(ourClass[2]);
+
+ourClass[4] = "Octocat";
+
+ourClass.push("Cloud City");
+
+console.log(ourClass);
 
 
 
