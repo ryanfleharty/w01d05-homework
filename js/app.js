@@ -635,13 +635,78 @@ const thomsCloset = [
 // console.log(transmogrify(5, 3, 2));
 // => 225
 
-const transmogrify = (num1, num2, num3) => {
-    let firstNumber = num1 * num2;
-    let finalNumber = [];
-    for (let i = 0; i < num3; i++) {
-        finalNumber = firstNumber * firstNumber;
-    }     
-    return finalNumber;
-}
+// const transmogrify = (num1, num2, num3) => {
+//     let firstNumber = num1 * num2;
+//     let finalNumber = [];
+//     for (let i = 0; i < num3; i++) {
+//         finalNumber = firstNumber * firstNumber;
+//     }     
+//     return finalNumber;
+// }
 
-console.log(transmogrify(5, 3, 2));
+// console.log(transmogrify(5, 3, 2));
+
+
+
+// J. reverseWordOrder v2
+// Without using .split(), .reverse(), or .join(), write a 
+//function reverseWordOrder that accepts a single argument, a 
+//string. The function should return a string with the order of 
+//the words reversed. Don't worry about punctuation.
+
+// See if you can do it without googling.
+
+// Remember: Jim showed you today that you can index directly 
+//into a string:
+
+// "hello world"[6]
+// => "w"
+
+// That and basic loops and variables and arrays are all you 
+//need to solve this without the Array methods.
+
+// console.log(reverseWordOrder("Ishmael me Call"));
+// => "Call me Ishmael"
+
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// => "comb my on Lâncome use I"
+
+// const reverseWordOrder = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         let words = arr[i];
+//         console.log(words);
+
+//     }
+// }
+
+//console.log(reverseWordOrder("Ishmael me Call"));
+
+
+const reverseWordOrder = (str) => { 
+    
+    let reversed = "";
+    
+    for (let i = str.length -1; i >= 0; i--) {
+        reversed += str[i];
+    }
+        return reversed;
+    }
+
+    
+
+console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+//maybe for words into new array?
+
+// let str = "Ishmael me Call";
+// let words = [];
+// let rev = "";
+// for(let i = 0; i < str.length; i++) {
+//     if(str[i] == " ") {
+//         words.push(rev);
+//         rev = "";
+//     }
+// }
+
+// console.log(rev);
