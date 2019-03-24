@@ -178,11 +178,11 @@ let animal = 'cow';
 // Example Output:
 // I found a 5. High five!
 // I found a 10. High five!
-for (let i = 0; i < 101; i++) {
-    if ([i] % 5 === 0) {
-        console.log('I found a ' + [i] + '. High five!')
-    }
-}
+// for (let i = 0; i < 101; i++) {
+//     if ([i] % 5 === 0) {
+//         console.log('I found a ' + [i] + '. High five!')
+//     }
+// }
 
 //2. Add to the code from above to print out "I found a number. 
 //Three is a crowd" if the number is a multiple of three.
@@ -209,19 +209,48 @@ for (let i = 0; i < 101; i++) {
 // Check your work! Your banck_account should have $55 in it.
 // let bank_account = 0;
 
-for (let i = 1; i < 11; i++) {
-    bank_account += i;
-    console.log(bank_account);
+// for (let i = 1; i < 11; i++) {
+//     bank_account += i;
+//     console.log(bank_account);
+// }
+
+// //2. You got a bonus! Your pay is now doubled each week. Write 
+// //code that will save the sum of all the numbers between 1 - 100 
+// //multiplied by 2.
+// // Check your work! Your banck_account should have $10,100 in it.
+
+// let bank_account = 0;
+
+// for (let i = 1; i < 101; i++) {
+//    bank_account += i * 2;
+//     console.log(bank_account);
+// }
+
+
+
+// E. Multiples of 3 and 5
+// If we list all the natural numbers below 10 that are 
+//multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these 
+//multiples is 23.
+
+// Find the sum of all the multiples of 3 or 5 below 1000. If 
+//a previous question you've done has helpful bits of code in 
+//it that partially solves this problem, look back at them.
+let sum = 0;
+
+for (let i = 0; i < 1001; i++) {
+    if ([i] % 5 === 0 || [i] % 3 === 0) {
+        sum += i;
+        console.log(sum);
+    }
 }
 
-//2. You got a bonus! Your pay is now doubled each week. Write 
-//code that will save the sum of all the numbers between 1 - 100 
-//multiplied by 2.
-// Check your work! Your banck_account should have $10,100 in it.
+// You just solved Project Euler problem 1!
 
-let bank_account = 0;
+// Are you having dejà vu? This just in! From the "Read the 
+//entire problem before you start" dept: This problem was on a 
+//previous assignment. You may skip it if you've already done it, 
+//just include a comment saying that you've already done it. 
+//If you've now done the problem twice, perhaps next time 
+//you'll read the whole problem before starting it.
 
-for (let i = 1; i < 101; i++) {
-   bank_account += i * 2;
-    console.log(bank_account);
-}
