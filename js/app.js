@@ -125,14 +125,14 @@ console.log(newBankAccount * 2);
 //E.
 //I've already done it, but am going to do it again for practice
 
-let totalSum = 0;
+// let totalSum = 0;
 
-for(let i = 0; i <= 1000; i++){
-	if(i % 3 === 0 || i % 5 === 0){
-		totalSum = totalSum + i;
-	}
-}
-console.log(totalSum);
+// for(let i = 0; i <= 1000; i++){
+// 	if(i % 3 === 0 || i % 5 === 0){
+// 		totalSum = totalSum + i;
+// 	}
+// }
+// console.log(totalSum);
 
 //Arrays & Flow Control
 //A. 
@@ -272,6 +272,17 @@ const calculateCube = (sideLength) => {
 }
 console.log(calculateCube(5));
 
+//D.
+
+const isVowel = (letter) => {
+	if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"){
+		console.log(true);
+	} else {
+		console.log(false);
+	}
+}
+
+console.log(isVowel("d"));
 
 
 
