@@ -60,12 +60,25 @@
     
 // }
 
-let driversAge = 25;
+// let driversAge = 25;
 
-const givingLicense = () => {
-    if (driverAge >= 16) {
-        console.log("Here are your keys to your new car.");
-    } else if (driverAge < 16) {
-        console.log("Sorry come back when you're older.");
+// const givingLicense = () => {
+//     if (driverAge >= 16) {
+//         console.log("Here are your keys to your new car.");
+//     } else if (driverAge < 16) {
+//         console.log("Sorry come back when you're older.");
+//     }
+// }
+
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+// for (let i = 10; i <= 400; i++) {
+//     console.log(i);
+// }
+for (let i = 12; i < 4000; i++) {
+    if (i / 3) {
+        console.log(i);
     }
 }
