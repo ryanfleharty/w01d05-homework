@@ -370,7 +370,7 @@ function getMultipleLengths (sarr)
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-*/
+
 
 //This is inefficient but this assignment is freaking long
 //so this is what you get.
@@ -410,3 +410,20 @@ function maxOfThree (x1, x2, x3)
 	}
 }
 console.log(maxOfThree(6, 9, 1));
+
+*/
+
+function printLongestWord(strarr)
+{
+	let maxfound = 0;
+	for (let i = 0; i <= strarr.length - 1; i++)
+	{
+		if (strarr[i].length > strarr[maxfound].length)
+		{
+			maxfound = i;
+		}
+	}
+	return strarr[maxfound];
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
