@@ -474,27 +474,52 @@
 // ###
 // G.`maxOfThree`
 
-// Define a
+//  Define a
 // function `maxOfThree`
-// that takes three numbers as arguments and returns the largest of them.If all numbers are the same, it doesn 't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
-const maxOfThree = (num1,num2,num3) => {
-    let greatest = 0;
-        if (num1 > num2) {
-            greatest = num1;
-            }else{  
-                greatest = num2;
-            } if (greatest >= num3) {
-                return greatest
-            }else {return num3}
+//that takes three numbers as arguments and returns the largest of them.If all numbers are the same, it doesn 't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+// const maxOfThree = (num1,num2,num3) => {
+//     let greatest = 0;
+//         if (num1 > num2) {
+//             greatest = num1;
+//             }else{  
+//                 greatest = num2;
+//             } if (greatest >= num3) {
+//                 return greatest
+//             }else {return num3}
             
 
-        }
-console.log(maxOfThree(6, 9, 1));
-console.log(maxOfThree(30,100,3));
-// `
-// ``
+//         }
+// console.log(maxOfThree(6, 9, 1));
+// console.log(maxOfThree(30,100,3));
 
-// >
-// => 9
 
-//     : red_circle: Commit.
+
+// ###
+// H.
+// `printLongestWord`
+
+// Write a
+// function `printLongestWord`
+// that accepts a single argument, an ** array ** of ** strings ** .The method should
+// return the longest word in the array.In
+// case ofa tie, the method should
+// return the word that appears first in the array.
+
+
+const printLongestWord = (arr) => {
+    let longestWord = ""
+    let word = 0
+    for (let i = 0; i < arr.length; i++){
+       
+    if (arr[i].length > word){
+        word = arr[i].length;
+        longestWord = arr[i];
+        }}
+    return longestWord;
+}
+    
+   
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// `=> "Peanutbutter"`
