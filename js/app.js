@@ -109,3 +109,22 @@ if (animal !== 'cow') {
 
 
 
+// E. Driver's Ed
+// Make a variable that will hold a person's age. Be semantic.
+let personsAge = {};
+
+// Write code that will print out "Here are the keys", if the 
+//age is 16 years or older.
+if (personsAge >= 16) {
+    console.log('Here are the keys.');
+}
+
+// If the age is younger than 16, a message should print 
+//"Sorry, you're too young."
+if (personsAge < 16) {
+    console.log("Sorry, you're too young.")
+}
+
+
+
+
