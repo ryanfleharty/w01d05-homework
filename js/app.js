@@ -165,8 +165,6 @@ console.log(bank_account);
 
 //Newsflash, I already did it. Check homework 3 or 4? Whichever it was.
 
-*/
-
 
 
 //III. Arrays and Control Flow
@@ -183,3 +181,14 @@ console.log(bank_account);
 //B. Easy does it:
 
 const quotes = ["The quick brown fox jumps over the lazy dog", "Four score and seven years ago, our fathers brought forth upon this continent a new nation", "There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy."];
+*/
+
+//C. Accessing elements
+
+const randomThings = [1, 10, "Hello", true];
+
+//1. Use randomThings[0]
+//2.
+randomThings[2] = "World";
+//3.
+console.log(randomThings[2]);
