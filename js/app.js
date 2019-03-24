@@ -353,3 +353,79 @@ const getRandomElement = (arr) => {
   return arr[num]
 }
 console.log(getRandomElement(hemingwayQuotes));
+
+
+// OBJECTS
+// A. MAKE A USER OBJECT
+// 1
+const user = {
+  name: "Noah",
+  email: "email@email.com",
+  age: 25,
+  purchased: [],
+};
+
+// B. UPDATE THE USER
+// 1
+user.email = "email2.email.com";
+// 2
+user.age++;
+// 3
+
+// C. ADDING KEYS AND VALUES
+// 1
+user.location = "Seabrook";
+
+// D. SHOPAHOLIC!
+// 1
+user.purchased.push("carbohydrates");
+// 2
+user.purchased.push("peace of mind");
+// 3
+user.purchased.push("Merino jodhpurs");
+// 4
+console.log(user.purchased[2]);
+
+// E. OBJECT-WITHIN-OBJECT
+// 1
+user.friend = {
+    name: "Allie",
+    age: 26,
+    location: "Seabrook",
+    purchased: [],
+}
+// 2
+console.log(user.friend.name);
+// 3
+console.log(user.friend.location);
+// 5
+user.friend.age = 55;
+// 6
+user.friend.purchased.push("The One Ring");
+// 7
+user.friend.purchased.push("A Latte");
+// 8
+console.log(user.friend.purchased[1]);
+
+// F. LOOPS
+// 1
+for (i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+// 2
+for (i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]);
+}
+
+// G. FUNCTIONS CAN OPERATE ON OBJECTS
+// 1
+const updateUser = () => {
+  user.age++;
+  user.name.toUpperCase()
+};
+// 2
+const oldAndLoud = (person) => {
+  person.age++;
+  person.name.toUpperCase()
+};
+oldAndLoud(user.friend);
