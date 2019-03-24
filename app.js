@@ -91,4 +91,10 @@ console.log(`${i} <-- is an even number`);
 
 //For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
 //Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
-for(let)
+for(let i = 0; i<=100; i++){
+  console.log(`I found a ${i}. High five!`);
+  if (i % 3 == 0){
+    let text1 = "three is a crowd"
+    console.log(text1);
+  }
+}
