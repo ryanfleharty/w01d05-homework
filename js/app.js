@@ -294,15 +294,50 @@ const randomThings = [1, 10, "Hello", true]
 
 // D. Change values
 // Given the following array 
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 
-//1. What would you write to access the 3rd element of the array?
-ourClass[2];
+// //1. What would you write to access the 3rd element of the array?
+// ourClass[2];
 
-//2. Change the value of "Github" to "Octocat"
-ourClass[4] = "Octocat";
+// //2. Change the value of "Github" to "Octocat"
+// ourClass[4] = "Octocat";
 
-//3. Add a new element, "Cloud City" to the array.
-ourClass.push("Cloud City");
-console.log(ourClass);
+// //3. Add a new element, "Cloud City" to the array.
+// ourClass.push("Cloud City");
+// console.log(ourClass);
+
+
+// E. Mix It Up
+// Given the following array: 
+const myArray = [5, 10, 500, 20]
+
+//1. Add the string "Egon" to the end of the array. Add another 
+//string of your choice to the end of the array.
+myArray.push("Egon");
+myArray.push("Poop");
+console.log(myArray);
+
+//2. Remove the 5 from the beginning of the array.
+myArray.splice(0, 5);
+console.log(myArray);
+
+//3. Add the string "Bob Marley" to the beginning of the array.
+myArray.unshift("Bob Marley");
+console.log(myArray);
+
+//4. Remove the string of your choise from the end of the array.
+myArray.pop();
+console.log(myArray);
+
+//5. Reverse this array using Array.prototype.reverse(). Did you 
+//mutate the array? What does mutate mean? Did the .reverse() 
+//method return anything?
+myArray.reverse();
+console.log(myArray);
+//If all of the changes I made in 1-5 are commented out, yes, the 
+//array has been reversed but not mutated. Mutated means the array's
+//values would be changed.
+//If we keep 1-4 changes active, nothing happens to the array
+//because there is only 1 value.
+
 
