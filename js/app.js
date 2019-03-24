@@ -500,20 +500,34 @@ console.log(thomsCloset[1]);
 // console.log(calculateCube(5));
 // => 125
 
-const calculateCube = (num) => {
-     console.log((num * num) * num);
+// const calculateCube = (num) => {
+//      console.log((num * num) * num);
+// }
+
+// calculateCube(5);
+
+
+
+// D. isVowel
+// Write a function isVowel that takes a character (i.e. a 
+//string of length 1) and returns true if it is a vowel, false 
+//otherwise. The vowel could be upper or lower case.
+// console.log(isVowel("a"));
+// => true
+const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+
+const isVowel = (character) => {
+    for (let i = 0; i < vowels.length; i++) {
+        if (character == vowels[i]) {
+            return true;
+        }
+        else if (character !== vowels[i]) {
+            return false;
+        }
+    }
 }
 
-calculateCube(5);
-
-
-
-
-
-
-
-
-
+console.log(isVowel('A'));
 
 
 
