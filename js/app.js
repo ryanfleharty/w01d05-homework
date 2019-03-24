@@ -199,3 +199,24 @@ ourClass[4] = "Octocat";
 // 3. Add a new element, "Cloud City" to the array.
 ourClass.push('Cloud City');
 console.table(ourClass);
+
+// E. Mix It Up
+// Given the following array:
+const myArray = [5, 10, 500, 20]
+// 1. Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
+myArray.push('Egon');
+myArray.push('Marshmallow Man');
+console.table(myArray);
+// 2. Remove the 5 from the beginning of the array.
+myArray.shift();
+console.table(myArray);
+// 3. Add the string "Bob Marley" to the beginning of the array.
+myArray.unshift('Bob Marley');
+console.table(myArray);
+// 4. Remove the string of your choice from the end of the array.
+myArray.splice(5, 1);
+console.table(myArray);
+// 5. Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse() method return anything?
+myArray.reverse();
+console.table(myArray);
+//Yes the reverse() function mutates the array because it changes the contents of the originally defined arrray to be reversed. It does not return a new array but does return the original location in memory for the argument array.
