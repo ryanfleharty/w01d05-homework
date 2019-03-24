@@ -302,7 +302,7 @@ thomsCloset[0][2] = "Footie Pajamas";
 
 console.log(kristynsCloset);
 console.log(thomsCloset);
-*/
+
 
 
 
@@ -314,5 +314,22 @@ console.log(thomsCloset);
 //Well, I guess I already did this, so check whatever previous homework
 //I did this in.
 
+*/
+
 //B. printCool
 
+function printCool (n)
+{
+	console.log(`${n} is cool`);
+}
+
+console.log(printCool("Odysseus"));
+
+
+
+
+//C. calculateCube
+
+function calculateCube()
+{
+}
