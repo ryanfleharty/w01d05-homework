@@ -226,10 +226,11 @@ const quotes = ["quote 1", "quote 2", "quote 3"]
 // ### C.Accessing elements
 
 // Given the following array `const randomThings = [1, 10, "Hello", true]`
-
+const randomThings = [1, 10, "Hello", true]
 // 1. How do you access the 1 st element in the array ?
-
+randomThings[0]
 //     2. Change the value of `"Hello"`
 // to `"World"`.
-
+randomThings[2] = "Hello World"
 // 3. Check the value of the array to make sure it updated the array.How ? Why, yes!`console.log()`;
+console.log(randomThings)
