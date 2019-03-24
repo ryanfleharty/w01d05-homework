@@ -161,3 +161,13 @@ console.log(bank_account);
 // E. Multiples of 3 and 5
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Skipped as was already solved before in HW for Project Euler.
+
+// III. Arrays & Control flow
+// A. Talk about it:
+// What are the things in an array called?
+// The things in an array are called its 'elements'.
+// Do Arrays guarantee those things will be in order?
+// No you would want to sort() an array if you want them in a specific order. However, they will all have sequential indices to access the elements.
+// What real-life thing could you model with an array?
+// A music player's playlist might be a good real-life thing to model in a simple array.
+
