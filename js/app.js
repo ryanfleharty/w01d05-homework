@@ -107,9 +107,22 @@ for (let i = 0; i < 11; i++) {
   console.log(bankAccount);
 }
 **/
-
+/**
 let bankAccount = 0;
 for (let i = 0; i < 101; i++) {
   bankAccount = bankAccount + (i * 2);
   console.log(bankAccount);
+}
+**/
+
+//Part 2E
+let sum = 0;
+for (let i = 10; i < 1001; i++) {
+  if (i % 3 === 0) {
+    sum = sum + i;
+    console.log(sum);
+  } if(i % 5 === 0) {
+    sum = sum + i;
+    console.log(sum);
+  }
 }
