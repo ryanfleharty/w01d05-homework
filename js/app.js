@@ -69,7 +69,7 @@ console.log("RUNNING");
   console.log(a < b < c);
   console.log(a == a !== d);
   console.log(48 !== '48'); //strict equal w/ data type
-// 🔴 Commit.
+// 🔴 Commit. //DONE
 
 // D. The farm
 // Declare a variable animal. Set it to be either "cow" or something else.
@@ -93,15 +93,28 @@ makeNoise = () => {
     animal = "quack!";
     makeNoise(); //WILL ONLY SHOW NEW MESSAGE IF ANIMAL IS REDEFINED BEFORE
 // Commit.
-// 🔴 Commit.
+// 🔴 Commit. // DONE
 
 // E. Driver's Ed
 
 // Make a variable that will hold a person's age. Be semantic.
+    let personAge = 25;
+    
 
 // Write code that will print out "Here are the keys", if the age is 16 years or older.
+    const printMsg = () => {
+        if (personAge > 16) {
+            return "Here are the keys"
+        } else {
+            return "Sorry, your too young"
+    }};
+
+    console.log(printMsg());
 
 // If the age is younger than 16, a message should print "Sorry, you're too young."
+
+personAge = 12;  //NOW PRINTS "SORRY..."
+    console.log(printMsg());
 
 // 🔴 Commit.
 
