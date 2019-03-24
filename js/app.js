@@ -89,11 +89,27 @@ for (let i = 0; i < 101; i+=2) {
   console.log(i + " is an even number.");
 }
 **/
-
+/**
 for (let i = 0; i < 101; i++) {
   if(i % 5 === 0) {
     console.log("I found a " + i + ". High five!");
   } if(i % 3 === 0) {
     console.log("I found a " + i + ". Three's a crowd.");
   }
+}
+**/
+
+//Part 2D
+/**
+let bankAccount = 0;
+for (let i = 0; i < 11; i++) {
+  bankAccount = bankAccount + i;
+  console.log(bankAccount);
+}
+**/
+
+let bankAccount = 0;
+for (let i = 0; i < 101; i++) {
+  bankAccount = bankAccount + (i * 2);
+  console.log(bankAccount);
 }
