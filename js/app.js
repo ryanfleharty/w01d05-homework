@@ -360,7 +360,7 @@ const maxOfThree = (num1, num2, num3) => {
     currentMax = num3;
   }
   return currentMax;
-}
+};
 console.log(maxOfThree(6, 9, 1));
 
 // H. printLongestWord
@@ -376,7 +376,7 @@ const printLongestWord = (arrStr) => {
     // else do nothing and loop
   }
   return curLongestStr;
-}
+};
 console.log(printLongestWord(["BoJack", "Princesutter", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 // I. transmogrify
@@ -386,5 +386,25 @@ console.log(printLongestWord(["BoJack", "Princesutter", "Diane", "a", "Max", "Pe
 const transmogrify = (prod1, prod2, pow) => {
   const transVal = Math.pow(prod1 * prod2, pow);
   return transVal;
-}
+};
 console.log(transmogrify(5, 3, 2));
+
+// J. reverseWordOrder v2
+// Without using .split(), .reverse(), or .join(), write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+// See if you can do it without googling.
+const reverseWordOrder = (str) => {
+  let strWordsRev = '';
+  let curWordLastIndex = str.length - 1;
+  let endOfWordFlag = false;
+  for (let i = str.length; i >= 0; i--) {
+    if (str[i] === ' ' || i === 0) {
+      endOfWordFlag = true;
+      strWordsRev += str.slice(i, curWordLastIndex + 1);
+    } else if (endOfWordFlag === true) {
+      curWordLastIndex = i + 1;
+      endOfWordFlag = false;
+    } // else { //do nothing and loop //}
+  }
+  return (strWordsRev);
+};
+console.log(reverseWordOrder("Ishmael me Call"));
