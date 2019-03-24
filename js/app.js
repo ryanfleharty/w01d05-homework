@@ -295,3 +295,10 @@ console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][
 // 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = 'Footie Pajamas';
 console.log(thomsCloset[1][2]);
+
+// IV. Functions
+// A. printGreeting
+// Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
+// Like so?
+// console.log(printGreeting("Slimer"));
+// Problem skipped because further instructions indicated to skip.
