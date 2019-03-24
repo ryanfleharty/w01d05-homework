@@ -141,6 +141,12 @@ console.log(totalSum);
 //order or add/remove from the array
 //3. grocery list
 
+//B.
+
+let quotes = ["The mountains are calling and I must go.", "And that has made all the difference.", 
+"Que sera sera."];
+
+
 
 
 
