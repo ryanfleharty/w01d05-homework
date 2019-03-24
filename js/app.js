@@ -256,7 +256,7 @@ calculateCube(5);
 **/
 
 //Part 4D
-
+/**
 const isVowel = (char) => {
   char.toLowerCase();
   if(char === "a") {
@@ -273,3 +273,11 @@ const isVowel = (char) => {
     return false;
   }
 }
+**/
+
+const getTwoLengths = (len1, len2) => {
+  lenArray = [len1.length, len2.length];
+  console.log(lenArray);
+}
+
+getTwoLengths("Cat", "Dog");
