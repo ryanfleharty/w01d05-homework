@@ -526,3 +526,47 @@ user.purchased.push("carbohydrates");
 user.purchased.push("peace of mind");
 user.purchased.push("Merino jodhpurs");
 console.log(user.purchased[2]);
+
+//E. Object-within-object
+
+user.friend = {
+	name: "Ingrid Bergman",
+	age: 25,
+	location: "Hollywood",
+	purchased: []
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("A latte");
+console.log(user.friend.purchased[1]);
+
+//F. Loops
+
+for (let i = 0; i <= user.purchased.length - 1; i++)
+{
+	console.log(user.purchased[i]);
+}
+for (let i = 0; i <= user.friend.purchased.length - 1; i++)
+{
+	console.log(user.friend.purchased[i]);
+}
+
+//G. Functions can modify objects
+
+function updateUser()
+{
+	user.age++;
+	user.name = user.name.toUpperCase();
+}
+//updateUser();
+//console.log(user);
+
+function oldAndLoud(person)
+{
+	person.age++;
+	person.name = person.name.toUpperCase();
+}
+oldAndLoud(user);
+console.log(user);
