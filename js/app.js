@@ -335,25 +335,25 @@
 // ];
 
 // Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
 // // 1. What 's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + *the third item in Kristyn'
 // // s closet * +" today!"
@@ -378,4 +378,28 @@ const thomsCloset = [
 // // 8. Get more specific about what kind of PJs Thom 's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
 
 // //     : red_circle: Commit.
-thomsCloset[1][2]="Footie Pajamas"
+//thomsCloset[1][2]="Footie Pajamas"
+
+// ##
+// IV.Functions
+
+
+// A.`printGreeting` -- SKIPPED PER INSTRUCTIONS
+
+// B.`printCool`
+
+// Write a
+// function `printCool`
+// that accepts one parameter, `name`
+// as an argument.The
+// function should print the name and a message saying that that person is cool.
+
+const printCool = function (name){
+    console.log (name + " is cool");
+}
+
+printCool("Captain Reynolds");
+
+//`=> "Captain Reynolds is cool";`
+
+//: red_circle: Commit.
