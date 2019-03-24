@@ -302,3 +302,10 @@ console.log(thomsCloset[1][2]);
 // Like so?
 // console.log(printGreeting("Slimer"));
 // Problem skipped because further instructions indicated to skip.
+
+// B. printCool
+// Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
+function printCool(name) {
+  console.log(`${name} is cool`);
+}
+printCool('Captain Reynolds');
