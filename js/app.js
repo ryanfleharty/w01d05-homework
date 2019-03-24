@@ -87,10 +87,25 @@
 //         console.log(i + "<--- is an even number.");
 //     }
 // }
-for (let i = 1; i < 100; i++) {
-    if (i / 5) {
-        console.log("I found a " + i);
-    } else if (i / 3) {
-        console.log("Threes a crowd!");
-    }
-}
+// for (let i = 1; i < 100; i++) {
+//     if (i / 5) {
+//         console.log("I found a " + i);
+//     } else if (i / 3) {
+//         console.log("Threes a crowd!");
+//     }
+// }
+// const savingsAccount = () => {
+//     let startingBalace = 0;
+//     for ( let i = 0; i <= 10; i++) {
+//         let accountBalance = startingBalace += i;
+//         console.log(accountBalance);
+//     }
+//     for (let i = 0; i <= 100; i++) {
+//         let bonusPay = startingBalace += i * 2;
+//         console.log(bonusPay);
+        
+//     }
+// }
+// savingsAccount();
+
+
