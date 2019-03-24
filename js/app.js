@@ -105,16 +105,98 @@ console.log("js works");
 //    console.log(i);
 //}
 // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000.
- for (let i = 12; i <= 4000; i+= 3){
-//     if (i % 3 == 0){
-    console.log(i);
-    }
+//  for (let i = 12; i <= 4000; i+= 3){
+// //     if (i % 3 == 0){
+//     console.log(i);
+//    }
 // }
 // ### B.Get even
 
 //1. Print out the even numbers that are within the range of 1 - 100.
-for (let i=0;i<=100; i+=2){
-    console.log(i + " <-- is an evan number.");
-}
+// for (let i=0;i<=100; i+=2){
+//     console.log(i + " <-- is an evan number.");
+//}
 
 //2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+
+//### C.Give me Five
+
+//1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
+
+// for (let i = 0; i <= 100; i++){
+//     if (i % 5 === 0) {
+//         console.log("I found a " + i + " High five!")
+//     }
+// }
+
+// Example Output:
+// ```
+// I found a 5. High five!
+// I found a 10. High five!
+// ```
+
+// 2. Add to the code from above to print out "I found a `number`. Three is a crowd" if the number is a multiple of three.
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 5 === 0) {
+//         console.log( "I found a " + i + ". High five!");
+//     }
+//     else if ( i % 3 === 0 ) {
+//             console.log ("I found a "+i+". Three is a crowd");      
+//     }
+// }
+
+// > Example Output:
+// ```
+// I found a 3. Three is a crowd
+// I found a 5. High five!
+// I found a 6. Three is a crowd
+// I found a 9. Three is a crowd
+// I found a 10. High five!
+// ```
+
+// ### D.Savings account
+
+// 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called`bank_account`.
+// const arr = []
+// let bank_account = 0
+// //create arr of 1-10
+// for (let i=0; i<=10; i++) {
+    
+//     arr.push(i)+i;
+// }
+// // loop through arr add each number to bank_account
+//     for (let x=arr[1];x<=arr.length-1;x++){
+//         bank_account = bank_account + x;
+//     }
+    
+    
+//  console.log(bank_account)
+    
+    
+
+
+   // console.log(bank_account)
+
+// > Check your work! Your banck_account should have $55 in it.
+
+// 2. You got a bonus! Your pay is now doubled each week.Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+const arr = []
+let bank_account = 0
+
+//create arr of 1-10
+for (let i = 1; i <= 10; i++) {
+
+arr.push(i*2)
+}
+// loop through arr add each number to bank_account
+for (let x = 0; x <= arr.length-1; x++) {
+bank_account = bank_account + arr[x]
+}
+
+
+console.log(bank_account)
+//     > Check your work! Your banck_account should have $10, 100 in it. <=== this must be a typo or I am missunderstanding what the problem is asking.
+// if each payment is doubled it goes from being 1+2+3+4+5+6+7+8+9+10 = 55
+// to 2+4+6+8+10+12+14+16+18+20 = 110
+
+// : red_circle: Commit.
