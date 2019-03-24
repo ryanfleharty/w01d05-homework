@@ -83,3 +83,8 @@ console.log(i);
 // Write a loop that will print out every third number starting with 12 and going no higher than 4000.
 for (i = 12; i <= 4000; i+=3)
 console.log(i);
+
+// Print out the even numbers that are within the range of 1 - 100.
+// Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+for( i = 0; i<=100; i+=2)
+console.log(`${i} <-- is an even number`);
