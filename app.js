@@ -81,10 +81,14 @@ console.log(i);
 for(let i = 10; i <= 400; i++)
 console.log(i);
 // Write a loop that will print out every third number starting with 12 and going no higher than 4000.
-for (i = 12; i <= 4000; i+=3)
+for (let i = 12; i <= 4000; i+=3)
 console.log(i);
 
 // Print out the even numbers that are within the range of 1 - 100.
 // Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
-for( i = 0; i<=100; i+=2)
+for(let i = 0; i<=100; i+=2)
 console.log(`${i} <-- is an even number`);
+
+//For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
+//Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
+for(let)
