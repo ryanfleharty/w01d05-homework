@@ -139,7 +139,29 @@ for (let i = 10; i < 1001; i++) {
 const quotes = "Hiya Howya", "Whoopsie does it", "Clean 'em first";
 **/
 //Part 3C
+/**
 const randomThings = [1, 10, "Hello", true];
 //1. randomThings[0]
 randomThings[2] = "World";
 console.log(randomThings[2]);
+**/
+
+//Part 3E
+/**
+const myArray = [5, 10, 500, 20]
+myArray.push("Egon");
+myArray.shift();
+myArray.unshift("Bob Marley");
+myArray.pop();
+myArray.reverse();
+console.log(myArray);
+//The reverse method reversed the order of elements, which counts as a mutation. Mutation means change.
+**/
+
+//Part 3F
+let int = 3;
+if(int < 100) {
+  console.log("little number");
+} else {
+  console.log("big number");
+}
