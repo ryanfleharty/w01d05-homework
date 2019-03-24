@@ -461,7 +461,7 @@ function reverseWordOrder (str)
 
 console.log(reverseWordOrder("Ishmael me Call"));
 
-*/
+
 
 function returnRandomInt110 ()
 {
@@ -496,3 +496,17 @@ function getRandomElement(arr)
 	return arr[Math.floor(Math.random() * (arr.length - 1))];
 }
 console.log(getRandomElement(quotes));
+
+*/
+
+//V. Objects
+
+//A. Make a user object
+
+let user = {
+	name: "Collin Brockway",
+	email: "drbeep123@yahoo.com",
+	age: "21",
+	purchased: []
+};
+console.log(user.name);
