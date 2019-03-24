@@ -159,9 +159,24 @@ console.log(myArray);
 **/
 
 //Part 3F
+/**
 let int = 3;
 if(int < 100) {
   console.log("little number");
 } else {
   console.log("big number");
 }
+**/
+
+//Part 3G
+const monkeyFunk = (num) => {
+  if(num < 5) {
+    console.log("little number");
+  } else if(num > 10) {
+    console.log("big number");
+  } else {
+    console.log("No monkey");
+  }
+}
+
+monkeyFunk(5);
