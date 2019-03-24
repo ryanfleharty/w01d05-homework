@@ -254,3 +254,16 @@ for (let i = 0; i < 1001; i++) {
 //If you've now done the problem twice, perhaps next time 
 //you'll read the whole problem before starting it.
 
+
+
+
+// III. Arrays & Control flow
+// A. Talk about it:
+//1. What are the things in an array called?
+//values
+
+//2. Do Arrays guarantee those things will be in order?
+//no
+
+//3. What real-life thing could you model with an array?
+//a bowl holding all of the ingredients for a recipe
