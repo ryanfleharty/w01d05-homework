@@ -51,3 +51,15 @@ console.log(e === 'Kevin');
 console.log(a != b > c);
 console.log(a == a != d);
 console.log(48 == '48');
+
+//D. The Farm
+
+//1.
+const animal = "cow";
+
+//2.
+if (animal == "cow") {console.log("mooooo");}
+
+//3.
+if (animal != "cow") {console.log("Hey! You're not a cow.");}
+
