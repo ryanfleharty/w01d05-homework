@@ -309,6 +309,7 @@ function printCool(name) {
   console.log(`${name} is cool`);
 }
 printCool('Captain Reynolds');
+<<<<<<< HEAD
 
 // C. calculateCube
 // Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
@@ -316,3 +317,5 @@ function calculateCube(num) {
   console.log(`${num * num * num} is the volume of a cube with sides ${num}`);
 }
 calculateCube(3);
+=======
+>>>>>>> abded440f74b5e8f9d75437e3e9c5a52923d1699
