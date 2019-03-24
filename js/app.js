@@ -178,3 +178,8 @@ console.log(bank_account);
 //3. For example, a list of friends in a social media app (elements would
 //   be objects)
 
+
+
+//B. Easy does it:
+
+const quotes = ["The quick brown fox jumps over the lazy dog", "Four score and seven years ago, our fathers brought forth upon this continent a new nation", "There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy."];
