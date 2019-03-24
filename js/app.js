@@ -72,10 +72,26 @@ console.log("RUNNING");
 // 🔴 Commit.
 
 // D. The farm
-
 // Declare a variable animal. Set it to be either "cow" or something else.
+ let animal = "cow";
 // Write code that will print out "mooooo" if the it is equal to cow.
+ 
+let makeNoise = () => {
+     if (animal === "cow") {
+         console.log("mooooooo");
+     }};
+
+     makeNoise();
+
 // Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
+makeNoise = () => {
+    if (animal === "cow") {
+        console.log("mooooooo");
+    } else (console.log("Hey, you're not a cow!!"))
+    };
+
+    animal = "quack!";
+    makeNoise(); //WILL ONLY SHOW NEW MESSAGE IF ANIMAL IS REDEFINED BEFORE
 // Commit.
 // 🔴 Commit.
 
