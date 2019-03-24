@@ -108,4 +108,10 @@
 // }
 // savingsAccount();
 
+// already have done the assignment E.
+
+// an array is a list of values which can be strings and numbers.
+// unless there is an impur of the numbers in order the array is almost certain that it is not in order. 
+// In real life, these arrays can be used as clock in times for a person throughout their time at a company. Or for the transactions recorded in a bank account. 
+
 
