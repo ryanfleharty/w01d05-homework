@@ -440,10 +440,33 @@
 // that accepts two parameters(strings).The
 // function should
 // return an _array_ of numbers where each number is the length of the corresponding string.
-const getTwoLengths = (str1, str2) =>{
-    arr = [];
-    arr.push(str1.length);
-    arr.push(str2.length);
-    return arr
+// const getTwoLengths = (str1, str2) =>{
+//     arr = [];
+//     arr.push(str1.length);
+//     arr.push(str2.length);
+//     return arr
+// }
+// // `=> [4, 13]`
+// ###
+// F.
+// `getMultipleLengths`
+
+// Write a
+// function `getMultipleLengths`
+// that accepts a single parameter as an argument: an ** array ** of ** strings ** .The
+// function should
+// return an array of ** numbers ** where each number is the length of the corresponding string.
+const getMultipleLengths = (strArr) => { 
+    let resultArr = [];
+    for (i=0;i<strArr.length;i++){
+        resultArr.push(strArr[i].length);
+    }
+    return resultArr
 }
-// `=> [4, 13]`
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// `
+// ``
+
+// >
+// `=> [5, 4, 2, 2, 4]`
