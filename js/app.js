@@ -469,12 +469,41 @@ console.log(thomsCloset[1]);
 //them from now on.
 
 //Did it for practice and I don't think I did it interpolated last time.
-const greeting = 'Slimer!';
+// const greeting = 'Slimer!';
 
-const printGreeting = () => {
-     console.log(`Hello there, ${greeting}`); 
+// const printGreeting = () => {
+//      console.log(`Hello there, ${greeting}`); 
+// }
+
+// printGreeting();
+
+
+
+// B. printCool
+// Write a function printCool that accepts one parameter, name 
+//as an argument. The function should print the name and a 
+//message saying that that person is cool.
+// console.log(printCool("Captain Reynolds"));
+// => "Captain Reynolds is cool";
+
+const printCool = (name) => {
+    console.log(name + ' is cool.');
 }
 
-printGreeting();
+printCool('Captain Reynolds');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
