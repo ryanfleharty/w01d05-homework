@@ -134,10 +134,104 @@ console.log(sumFizzBuzz(100));
 // ARRAYS & CONTROL FLOW
 // A. TALK ABOUT IT
 // 1
-// Items
+// Elements
 // 2
 // No
 // 3
 // The names of people in a classroom
 
-// B. EASY DOES setInterval(function () {
+// B. EASY DOES IT
+// 1
+const hemingwayQuotes = ["Never mistake motion for action.","Happiness in intelligent people is the rarest thing I know.", "If you are lucky enough to have lived in Paris as a young man, then wherever you go for the rest of your life it stays with you, for Paris is a moveable feast."]
+
+// C. ACCESSING ELEMENTS
+const randomThings = [1, 10, "Hello", true];
+// 1
+randomThings[0];
+// 2
+randomThings[2] = "World";
+// 3
+console.log(randomThings[2]);
+
+// D. CHANGE VALUES
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+// 1
+ourClass[2];
+// 2
+ourClass[4] = "Octocat";
+// 3
+ourClass.push("Cloud City");
+
+// E. MIX IT UP
+const myArray = [5, 10, 500, 20]
+// 1
+myArray.push("Egon");
+myArray.push("Schiele")
+// 2
+myArray.shift();
+// 3
+myArray.unshift("Bob Marley");
+// 4
+myArray.pop()
+// 5
+myArray.reverse();
+// the .reverse function reversed the order of elements
+
+// F. BIGGIE SMALLS
+// 1-2
+let integer = 5;
+if (integer < 100) {
+  console.log("little number");
+} else {
+  console.log("big number");
+}
+
+// G. MONKEY IN THE MIDDLE
+// 1-3
+if (integer < 5) {
+  console.log("little number");
+} else if (integer > 10) {
+  console.log("big number");
+} else {
+  console.log("monkey");
+}
+
+// H. WHAT'S IN YOUR CLOSET
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+// 1
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+// 2
+kristynsCloset.splice(5,0,"raybans");
+// 3
+kristynsCloset[6] = "stained knit hat";
+// 4-7
+console.log(`Thom is looking fierce in a ${thomsCloset[0][2]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][2]}!`);
+// 8
+thomsCloset[1][2] = "Footie PJs";
