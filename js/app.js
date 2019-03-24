@@ -421,14 +421,29 @@
 // if it is a vowel, false otherwise.The vowel could be upper or lower
 // case.
 
-const isVowel = (char) => {
-    const trueLetters = ('A','E','I','O','U')
-    if (char.toUpperCase() === trueLetters){
-        return true
-    }else { 
-        return false
-    }
-}
-console.log(isVowel('a'))       
+// const isVowel = (char) => {
+//     const trueLetters = ('A','E','I','O','U')
+//     if (char.toUpperCase() === trueLetters){
+//         return true
+//     }else { 
+//         return false
+//     }
+// }
+// console.log(isVowel('a'))       
 
-//`=> true
+// ###
+// E.
+// `getTwoLengths`
+
+// Write a
+// function `getTwoLengths`
+// that accepts two parameters(strings).The
+// function should
+// return an _array_ of numbers where each number is the length of the corresponding string.
+const getTwoLengths = (str1, str2) =>{
+    arr = [];
+    arr.push(str1.length);
+    arr.push(str2.length);
+    return arr
+}
+// `=> [4, 13]`
