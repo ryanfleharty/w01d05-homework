@@ -313,27 +313,27 @@ const myArray = [5, 10, 500, 20]
 
 //1. Add the string "Egon" to the end of the array. Add another 
 //string of your choice to the end of the array.
-myArray.push("Egon");
-myArray.push("Poop");
-console.log(myArray);
+// myArray.push("Egon");
+// myArray.push("Poop");
+// console.log(myArray);
 
-//2. Remove the 5 from the beginning of the array.
-myArray.splice(0, 5);
-console.log(myArray);
+// //2. Remove the 5 from the beginning of the array.
+// myArray.splice(0, 5);
+// console.log(myArray);
 
-//3. Add the string "Bob Marley" to the beginning of the array.
-myArray.unshift("Bob Marley");
-console.log(myArray);
+// //3. Add the string "Bob Marley" to the beginning of the array.
+// myArray.unshift("Bob Marley");
+// console.log(myArray);
 
-//4. Remove the string of your choise from the end of the array.
-myArray.pop();
-console.log(myArray);
+// //4. Remove the string of your choise from the end of the array.
+// myArray.pop();
+// console.log(myArray);
 
-//5. Reverse this array using Array.prototype.reverse(). Did you 
-//mutate the array? What does mutate mean? Did the .reverse() 
-//method return anything?
-myArray.reverse();
-console.log(myArray);
+// //5. Reverse this array using Array.prototype.reverse(). Did you 
+// //mutate the array? What does mutate mean? Did the .reverse() 
+// //method return anything?
+// myArray.reverse();
+// console.log(myArray);
 //If all of the changes I made in 1-5 are commented out, yes, the 
 //array has been reversed but not mutated. Mutated means the array's
 //values would be changed.
@@ -341,3 +341,19 @@ console.log(myArray);
 //because there is only 1 value.
 
 
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+// Write an if ... else statement that:
+
+//1. console.log()s "little number" if the number is entered is 
+//less than 100
+let num = 12;
+if (num < 100) {
+    console.log('little number');
+}
+
+//2. console.log()s big number if the number is greater than or 
+//equal to 100.
+else {
+    console.log('big number');
+}
