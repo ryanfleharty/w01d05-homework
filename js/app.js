@@ -220,3 +220,15 @@ console.table(myArray);
 myArray.reverse();
 console.table(myArray);
 //Yes the reverse() function mutates the array because it changes the contents of the originally defined arrray to be reversed. It does not return a new array but does return the original location in memory for the argument array.
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+const intVar = 100;
+// Write an if ... else statement that:
+if (intVar < 100) {
+// 1. console.log()s "little number" if the number is entered is less than 100
+console.log("little number");
+// 2. console.log()s big number if the number is greater than or equal to 100.
+} else {
+  console.log("big number")
+}
