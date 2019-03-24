@@ -296,3 +296,22 @@ const getMultipleLengths = (wordArray) => {
 }
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+//Part 4G
+const maxOfThree = (num1, num2, num3) => {
+  if(num1 > num2 && num1 > num3) {
+    console.log(num1);
+    return num1;
+  } else if(num2 > num1 && num2 > num3) {
+    console.log(num2);
+    return num2;
+  } else if(num3 > num1 && num3 > num2) {
+    console.log(num3);
+    return num3;
+  } else {
+    console.log("None");
+    return null;
+  }
+}
+
+maxOfThree(5,1,6);
