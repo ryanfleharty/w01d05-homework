@@ -366,17 +366,90 @@ const myArray = [5, 10, 500, 20]
 
 //1. console.log() little number if the number entered is less 
 //than 5.
-let num1 = 7;
-if (num1 < 5) {
-    console.log('little number');
-}
+// let num1 = 7;
+// if (num1 < 5) {
+//     console.log('little number');
+// }
 
-//2. If the number entered is more than 10, log big number.
-else if (num1 > 10) {
-    console.log('big number');
-}
+// //2. If the number entered is more than 10, log big number.
+// else if (num1 > 10) {
+//     console.log('big number');
+// }
 
-//3. Otherwise, log "monkey". 
-else {
-    console.log('monkey');
-}
+// //3. Otherwise, log "monkey". 
+// else {
+//     console.log('monkey');
+// }
+
+
+
+
+// H. What's in Your Closet?
+// Below, we've given you examples of Kristyn and Thom's 
+//closets modeled as data in JavaScript.
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested 
+//data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+//1. What's Kristyn wearing today? Using bracket notation to 
+//access items in kristynsCloset, log the sentence "Kristyn is 
+//rocking that " + the third item in Kristyn's closet + " today!" 
+//to the console.
+console.log('Krystyn is rocking that ' + kristynsCloset[2] + ' today!');
+
+//2. Kristyn just bought some sweet shades! Add "raybans" to 
+//her closet after "yellow knit hat".
+kristynsCloset.splice(6,0, "raybans");
+console.log(kristynsCloset);
+
+//3. Kristyn spilled coffee on her hat... modify this item to 
+//read "stained knit hat" instead of yellow.
+kristynsCloset[5] = "stained yellow hat";
+console.log(kristynsCloset);
+
+//4. Put together an outfit for Thom! Using bracket notation, 
+//access the first element in Thom's shirts array.
+console.log(thomsCloset[0][0]);
+
+//5. In the same way, access one item from Thom's pants array.
+console.log(thomsCloset[1][1]);
+
+//6. Access one item from Thom's accessories array.
+console.log(thomsCloset[2][2]);
+
+//7. Log a sentence about what Thom's wearing. Example: "Thom 
+//is looking fierce in a grey button-up, jeans and wool scarf!"
+console.log("Thom's newest outfit is a " + thomsCloset[0][0] + " with a pair of " + thomsCloset[1][1] + " and " + thomsCloset[2][2] + ".");
+
+//8. Get more specific about what kind of PJs Thom's wearing 
+//this winter. Modify the name of his PJ pants to Footie Pajamas.
+thomsCloset[1][2] = 'Footie Pajamas';
+console.log(thomsCloset[1]);
