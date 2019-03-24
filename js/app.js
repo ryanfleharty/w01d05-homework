@@ -114,6 +114,9 @@
 // unless there is an impur of the numbers in order the array is almost certain that it is not in order. 
 // In real life, these arrays can be used as clock in times for a person throughout their time at a company. Or for the transactions recorded in a bank account. 
 
-let quotes = ["alright alright alright", "would you like some coffee?", "We're here to make you think about death and feel sad and stuff."];
+// let quotes = ["alright alright alright", "would you like some coffee?", "We're here to make you think about death and feel sad and stuff."];
 
+const randomThings = [1, 10, "Hello", true];
+    randomThings.splice(2,1, "World!");
+    console.log(randomThings);
 
