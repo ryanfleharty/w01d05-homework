@@ -1,6 +1,6 @@
 //WEEKEND HOMEWORK: WEEK 1
 
-//Part A
+//Part 1A
 //1. First, we declare the variable with const or let followed by the variable name. Then we use the assignment operator to connect it to its value. Then we define the value.
 //2. You can change the value of a variable by editing its original declaration or creating a new declaration with a new value.
 //3. You place the existing variable inside the definition of the new variable.
@@ -8,7 +8,7 @@
 //5. It's the best, that's what it is. It helps you put your thoughts in writing so you know how to code before you start coding.
 //6. 75% of coding should be spent in psuedocoding.
 
-//Part B
+//Part 1B
 /**
 let firstVariable = "Hello World";
 firstVariable = 36;
@@ -22,7 +22,8 @@ let greeting = "Hello, my name is " + yourName + ".";
 console.log(greeting);
 **/
 
-//Part C
+//Part 1C
+/**
 const a = 4;
 const b = 53;
 const c = 57;
@@ -39,3 +40,17 @@ console.log(e === 'Kevin');
 console.log(a < b < c);
 console.log(a * a === d);
 console.log(48 == '48');
+**/
+
+//Part 1D
+//Declare a variable animal. Set it to be either "cow" or something else.
+//Write code that will print out "mooooo" if the it is equal to cow.
+//If not equal to cow, print "Hey! You're not a cow."
+let animal = "cow";
+if(animal === "cow") {
+  console.log("Mooooo!");
+}
+animal = "cat";
+ if(animal != "cow") {
+   console.log("Hey, you're not a cow!");
+ }
