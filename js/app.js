@@ -516,20 +516,25 @@ const getMultipleLengths = (arr) => {
     }
     console.log(arrNums);
 }
+
 getMultipleLengths(["shadi", "isreal", "mailque", "peyton"]);
 
-// > `=> [5, 4, 2, 2, 4]`
 
-// :red_circle: Commit.
+// :red_circle: Commit.//DONE
 
 
 // ### G. `maxOfThree`
 
 // Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
-
-// ```javascript
-// console.log(maxOfThree(6, 9, 1));
-// ```
+let winner;
+const maxOfThree = (threeNums) => {
+    winner = Math.max(...threeNums);
+    for (let i = 0; i < threeNums.length; i++){
+        if (i === winner){
+            return winner
+        } else return winner
+    }};
+console.log(maxOfThree([1, 8 ,16]));
 
 // > => 9
 
