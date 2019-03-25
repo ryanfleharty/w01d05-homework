@@ -482,12 +482,22 @@ const isVowel = (vowel) => {
 
 console.log(isVowel("A"));
 
-// :red_circle: Commit.
-
+// :red_circle: Commit.//DONE
 
 // ### E. `getTwoLengths`
 
 // Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
+
+const getTwoLengths = (strOne, strTwo) => {
+    let lengOne = strOne.length;
+    let lengTwo = strTwo.length;
+    console.log(`${strOne} string length: ${lengOne} 
+${strTwo} string length: ${lengTwo}`);
+    let totes = lengOne + lengTwo;
+    console.log(`Total: ${totes}`);
+};
+
+getTwoLengths("Shadi", "Isreal");
 
 // ```javascript
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
