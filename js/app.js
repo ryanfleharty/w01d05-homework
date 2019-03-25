@@ -236,16 +236,40 @@
 //     }
 // maxOfThree();
 
-const printLongestWord = (string) => {
-    let longest = '';
-for (i = 0; i < string.length; i++) {
-         if (string[i].length => longest.length) {
-             longest = string[i].length;
-         }
+// const printLongestWord = (string) => {
+//     let longest = '';
+// for (i = 0; i < string.length; i++) {
+//          if (string[i].length > longest.length) {
+//              longest = string[i].length;
+//          }
+//      }
+//      return string[longest];
+//  }
+//  console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
-     }
-     return string[longest];
- }
- console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+// const reverseWordOrder = (str) => {
+//     let reversedString = '';
+//     for (let i = 0; i < str.length; i++) {
+//             reversedString += str[i];
+//     }
+//     return reversedString;
+// }
+// reversedWordOrder();
+
+// const randomMath = (num1, num2) => {
+//    return Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+// }
+// const randomMath2 = (num1, num2) => {
+//     return Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+// }
+// randomMath(1, 10);
+// randomMath2(1, 100);
 
 
+const user = {
+    name: "Cash Carti",
+    email: 'user@liluzi.gov',
+    age: 22,
+    purchased: [],
+}
