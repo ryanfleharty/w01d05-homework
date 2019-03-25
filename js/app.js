@@ -442,3 +442,18 @@ for(let i = 0; i < user.friend.purchased.length; i++){
 	console.log(user.friend.purchased[i]);
 }
 
+//G.
+const updateUser = () => {
+	user.age++;
+	user.name.toUpperCase();
+	return user;
+}
+
+const oldAndLoud = (person) => {
+	user.age++;
+	user.name.toUpperCase();
+	return user;
+}
+
+console.log(oldAndLoud(user.name));
+
