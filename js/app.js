@@ -404,3 +404,8 @@ console.log(user.email);
 user.age++;
 console.log(user.age);
 
+//C.
+
+user.location = "Los Angeles";
+console.log(user.location);
+
