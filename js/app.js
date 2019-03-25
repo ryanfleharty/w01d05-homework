@@ -332,7 +332,7 @@ myArray.reverse();
 // ### F. Biggie Smalls
 
 // Create a variable that contains an integer.
-let integer = 1110;
+let integer = 11;
 
 // Write an `if ... else` statement that:
 
@@ -345,7 +345,7 @@ if (integer < 100) {
 } else { console.log("big number")
 };
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### G. Monkey in the Middle
@@ -353,10 +353,14 @@ if (integer < 100) {
 // Write an `if ... else if ... else` statement:
 
 // 1. `console.log()` `little number` if the number entered is less than **5**.<br>
-
 // 2. If the number entered is more than 10, log `big number`.
-
 // 3. Otherwise, log "monkey". <br>
+
+if (integer < 5) {
+    console.log("LITTLE NUMBER")
+} else if (integer > 10) {
+    console.log("BIG NUMBER")
+} else (console.log("MONKEY"));
 
 // :red_circle: Commit.
 
