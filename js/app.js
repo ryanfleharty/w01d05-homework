@@ -428,6 +428,8 @@ console.log(thomOutfit);
 // :red_circle: Commit. //DONE
 
 
+
+
 // ## IV. Functions
 // ### A. `printGreeting`
 
@@ -499,21 +501,22 @@ ${strTwo} string length: ${lengTwo}`);
 
 getTwoLengths("Shadi", "Isreal");
 
-// ```javascript
-// console.log(getTwoLengths("Hank", "Hippopopalous"));
-// ```
-// > `=> [4, 13]`
 
-// :red_circle: Commit.
+
+// :red_circle: Commit.//DONE
 
 
 // ### F. `getMultipleLengths`
 
 // Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
-
-// ```javascript
-// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-// ```
+let arrNums = [];
+const getMultipleLengths = (arr) => {
+    for (let i = 0; i < arr.length; i++){
+        arrNums.push(arr[i].length);
+    }
+    console.log(arrNums);
+}
+getMultipleLengths(["shadi", "isreal", "mailque", "peyton"]);
 
 // > `=> [5, 4, 2, 2, 4]`
 
