@@ -386,7 +386,7 @@ console.log(randomInt());
 **/
 
 //const quotes = "Hiya Howya", "Whoopsie does it", "Clean em first", "Bundle the last", "Quick and crunchy";
-
+/**
 const randomPull = (quotes) => {
   for (let i = 0; i < quotes.length; i++) {
     quotes[i] = quotes[Math.floor(Math.random(1) * quotes.length)];
@@ -395,3 +395,13 @@ const randomPull = (quotes) => {
 }
 
 randomPull(["Hiya Howya", "Whoopsie does it", "Clean em first", "Bundle the last", "Quick and crunchy"]);
+**/
+
+//Part Objects
+//A User Object
+const user = {
+  name: "John",
+  email: "john@me.com",
+  age: 36,
+  purchased: [],
+}
