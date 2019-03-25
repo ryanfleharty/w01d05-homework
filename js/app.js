@@ -536,11 +536,55 @@
 // For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
 // power of 2`
 // is 225.
-const transmogrify = function (x, y, z) {
-    return Math.pow(x * y, z)}
+// const transmogrify = function (x, y, z) {
+//     return Math.pow(x * y, z)}
 
-transmogrify(5, 3, 2)
-console.log(transmogrify(5, 3, 2))
+// transmogrify(5, 3, 2)
+// console.log(transmogrify(5, 3, 2))
+// // `
+// // `` >
+// // `=> 225`
+
+// ** Without using `.split()`, `.reverse()`, or `.join()`, ** write a
+// function `reverseWordOrder`
+// that accepts a single argument, a string.The
+// function should
+// return a string with the order of the words reversed.Don 't worry about punctuation. 
+
+// See
+// if you can do it without googling.
+
+// Remember: Jim showed you today that you can index directly into a string:
+//     ``
+// `js
+// "hello world"[6]
 // `
 // `` >
-// `=> 225`
+// `=> "w"`
+
+// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
+const str = "I use Lâncome on my comb"
+let newString = []
+let revString = []
+let catString = ""
+//split sentence into array
+for (let i = 0; i < str.length; i++){newString.push(str[i])}
+// //create new array with those words in reverse order
+for (let i = newString.length; i--;){revString.push(newString[i])}
+// //loop over new array and concatinate strings
+for (let i = 0; i < catString.length; i++){catString+newString[i]}
+console.log(catString)
+
+// ``
+// `javascript
+// console.log(reverseWordOrder("Ishmael me Call"));
+// `
+// `` >
+// `=> "Call me Ishmael"`
+
+// ``
+// `js
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// `
+// `` >
+// `=> "comb my on Lâncome use I"`
