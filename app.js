@@ -44,7 +44,7 @@
     console.log(c > d);
     console.log('Name' === 'Name');
     console.log(true !== false);
-    console.log(false == false == false == false == false == false !== true);
+    console.log(false || false || false || false || false || false !== true);
     console.log(false === false)//f
     console.log(e === 'Kevin');
     console.log(a < b < c);
@@ -159,10 +159,22 @@ console.log(myArray);
 // Write an if ... else statement that:
 // console.log()s "little number" if the number is entered is less than 100
 // console.log()s big number if the number is greater than or equal to 100.
-let bs = 2000
-if (bs < 100){
+let numSize = 2000
+if (numSize < 100){
   console.log('little number');
 } else {
   console.log('BIG NUMBER');
 }
-console.log(bs);
+
+// Write an if ... else if ... else statement:
+// console.log() little number if the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, log "monkey".
+let digitSz = 9
+if(digitSz < 5){
+  console.log("little number");
+} else if (digitSz > 10){
+  console.log("big number");
+} else {
+  console.log("Monkey");
+}
