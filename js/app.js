@@ -256,10 +256,10 @@
 //                 wordList.Unshift(word);
 //                 word = '';
 //         } else {
-//             word = word + str[i];
+//             word = word += str[i];
 //         }
 //     }
-//     word.push(word);
+//     return wordList;
 // }
 // reversedWordOrder();
 
@@ -301,4 +301,8 @@ user.friend.purchased.push("The one ring");
 user.friend.purchased.push("A latte");
 console.log(user.friend.purchased[1]);
 
+
+for (let i = 0; i < user.purchased.length; i++) {
+    console.log(user.purchased[i]);
+}
 
