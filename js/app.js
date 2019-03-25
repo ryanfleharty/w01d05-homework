@@ -459,20 +459,28 @@ const calculateCube = (cubeNum) => {
 };
 calculateCube(4);
 
-
-
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### D. `isVowel`
 
 // Write a function `isVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
 
-// ```javascript
-// console.log(isVowel("a"));
-// ```
+const isVowel = (vowel) => {
+    if (vowel == "a" || vowel == "A"){
+        return true
+    } else if (vowel == "e" || vowel == "E"){
+        return true
+    } else if (vowel == "i" || vowel == "I"){
+        return true
+    } else if (vowel == "o" || vowel == "O") {
+        return true
+    } else if (vowel == "u" || vowel == "U") {
+        return true
+    } else {return false
+    }};
 
-// > `=> true`
+console.log(isVowel("A"));
 
 // :red_circle: Commit.
 
