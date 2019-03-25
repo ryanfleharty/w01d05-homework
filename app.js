@@ -122,3 +122,12 @@ let bankAccount; //declare a variable
 
 //Create an array that contains three quotes and store it in a variable called quotes.
 const quotes = ["when life gives you lemons...","when pigs fly", "what stays in vegas..."]
+
+//Given the following array const randomThings = [1, 10, "Hello", true]
+const randomThings = [1, 10, "Hello", true]
+  //How do you access the 1st element in the array?
+  //Change the value of "Hello" to "World".
+  //Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+      // (use [ ] to access any elements in a array)
+      randomThings[2] = "World"
+      console.log(randomThings);
