@@ -727,9 +727,10 @@ console.log(user.friend.purchased[1]);
 // ### F.Loops
 
 // 1. Write a _for loop_ that iterates over the User 's `purchased` array (NOT the friend'
+for(i=0;i<user.purchased.length;i++){console.log(user.purchased[i])};
 // s purchased array), and prints each element to the console.
 // 2. Write a _for loop_ that iterates over the Friend 's `purchased` array, and prints each element to the console.
-
+for(i=0;i<user.friend.purchased;i++){console.log(user.friend.purchased[i])};
 //     : red_circle: Commit.
 
 
@@ -746,7 +747,10 @@ console.log(user.friend.purchased[1]);
 // The
 // function does not need a `return`
 // statement, it will merely modify the user object.
-
+const updateUser = () => {
+    user.age++; 
+    user.name.toUpperCase()};
+updateUser();
 // 2. Write a
 // function `oldAndLoud`
 // that performs the exact same tasks as `updateUser`, but instead of hard - coding it to only work on our `user`
@@ -755,7 +759,10 @@ console.log(user.friend.purchased[1]);
 // function with `user`
 // as the argument.
 
-
+const oldAndLoud = (person)=> {
+    person.age++
+    user.name.toUpperCase();
+}
 //     : red_circle: Commit.
 
 
