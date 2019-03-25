@@ -238,3 +238,9 @@ const printCool = (name) => {
   console.log( `${name} is Cool!`);
 }
   printCool('Captain Reynolds')
+
+  //Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+const calculateCube = (l, w, h) => {
+  console.log(l*w*h);
+}
+calculateCube(5, 5, 5)
