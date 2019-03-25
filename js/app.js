@@ -343,6 +343,18 @@ const transmogrify = (num1, num2, num3) => {
 
 console.log(transmogrify(5, 3, 2));
 
+//J. 
+
+const reverseWordOrder = (str) => {
+	let reversed = "";
+	for(let i = str.length - 1; i >= 0; i--){
+		reversed += str[i];
+	}
+	return reversed;
+}
+
+console.log(reverseWordOrder("I use Lâncome on my comb"));
+
 
 
 
