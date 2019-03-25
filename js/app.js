@@ -409,3 +409,11 @@ console.log(user.age);
 user.location = "Los Angeles";
 console.log(user.location);
 
+//D.
+
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("merino jodhpurs");
+
+console.log(user.purchased[2]);
+
