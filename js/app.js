@@ -267,18 +267,22 @@ totalSum();
 
 const quotes = ["Quick to speak, slow to listen", "YOLO", "one death is a tragedy, one million is a statistic"];
 
-// :red_circle: Commit.
+// :red_circle: Commit.// DONE
 
 // ### C. Accessing elements
 
-// Given the following array `const randomThings = [1, 10, "Hello", true]`
+// Given the following array 
+
+const randomThings = [1, 10, "Hello", true];
 
 // 1. How do you access the 1st element in the array?
+randomThings[0];
 
 // 2. Change the value of `"Hello"` to `"World"`.
+randomThings[2] = "World";
 
 // 3. Check the value of the array to make sure it updated the array.  How?  Why, yes! `console.log()`;
-
+console.log(randomThings);
 // :red_circle: Commit.
 
 
