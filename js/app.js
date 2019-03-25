@@ -578,7 +578,7 @@ printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
 // 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
  
  const user = {
-    name: "12'",
+    name: "Shadi'",
     email: "saoutabachi@yahoo.com",
     age: 25,
     purchased: []
@@ -603,7 +603,7 @@ user.age = 26;
 // 1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
 user.location = "Denver";
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### D. Shopaholic!
@@ -617,7 +617,7 @@ user.purchased.push("Merino jodhpurs");
 // 4. Console.log just the "Merino jodhpurs" from the `purchased` array.
 console.log(user.purchased[2]);
 
-// :red_circle: Commit.
+// :red_circle: Commit.//DONE
 
 
 
@@ -668,7 +668,8 @@ for (let i = 0; i < user.purchased.length; i++){
 for (let i = 0; i < user.friend.purchased.length; i++){
     console.log(user.friend.purchased[i]);
 }
-// :red_circle: Commit.
+
+// :red_circle: Commit.//DONE
 
 
 // ### G. Functions can operate on objects
@@ -679,8 +680,22 @@ for (let i = 0; i < user.friend.purchased.length; i++){
 //   - make the user's name uppercase
 
 //   The function does not need a `return` statement, it will merely modify the user object.
+const updateUser = () => {
+        user.age = user.age + 1;
+        user.name = user.name.toUpperCase();
+    }
+updateUser();
 
-// 2. Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the function is called. Call your `oldAndLoud` function with `user` as the argument. 
+// 2. Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, 
+// but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, 
+// and have it modify the object that is passed in as an argument when the function is called. 
+// Call your `oldAndLoud` function with `user` as the argument. 
+const oldAndLoud = (person) => {
+    person.age = person.age + 1;
+    person.name = person.name.toUpperCase();
+}
+
+oldAndLoud(user);
 
 
 // :red_circle: Commit.
