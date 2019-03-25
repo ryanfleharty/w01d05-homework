@@ -411,3 +411,36 @@ const reverseWordOrder = (str) => {
 };
 console.log(reverseWordOrder("Ishmael me Call"));
 console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+// . Get down and dirty with Math.random()
+// 1. Write a function that will return a random integer between 1 and 10. Test it.
+const getRandOneToTen = () => {
+  return Math.floor(Math.random() * 10 + 1);
+};
+console.log(getRandOneToTen());
+// 2. Write a function that will return a random integer between 10 and 100. Test it.
+const getRandTenToHundred = () => {
+  return Math.floor(Math.random() * (100 - 10 + 1) + 10);
+};
+console.log(getRandTenToHundred());
+// 3. Write a function that will return a random number between 532 and 13267. Test it.
+const getRandWeirdNumRanges = () => {
+  return Math.random() * (13267 - 532 + 1) + 532;
+};
+console.log(getRandWeirdNumRanges());
+// 4. Write a function that will return a random number between 1 and 10. Test it.
+const getRandNumOneToTen = () => {
+  return Math.random() * (10 - 1) + 1;
+};
+console.log(getRandNumOneToTen());
+// 5. Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array. Call your function a few times, passing in the quotes array. Give it a nice semantic name like getRandomElement.
+quotes.push('I was all covered in the sound.');
+quotes.push('This town is a monolith, this town is a crowded movie.');
+const getRandomElement = (arr) => {
+  const randomIndex = Math.floor(Math.random() * ((arr.length - 1) + 1));
+  return (arr[randomIndex]);
+};
+console.log(getRandomElement(quotes));
+
+//Objects
+//Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
