@@ -460,3 +460,9 @@ user.email = 'jake.s.test@gmail.com';
 // 2. Our user has had a birthday! Without changing the original user object, increment the age value using the postfix operator. Hint: age++
 user.age++;
 console.table(user);
+
+// C. Adding keys and values
+// You have decided to add your user's location to the data that you want to collect.
+// 1. Without changing the original user object, add a new key location to the object, and give it a value or some-or-other location (a string).
+user.location = 'Denver';
+console.table(user);
