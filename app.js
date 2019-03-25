@@ -232,3 +232,9 @@ console.log(thomsCloset[1]);
 
 //Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
 //Done it
+
+//Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
+const printCool = (name) => {
+  console.log( `${name} is Cool!`);
+}
+  printCool('Captain Reynolds')
