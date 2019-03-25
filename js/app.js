@@ -428,3 +428,12 @@ user.friend.age = 55;
 user.friend.purchased.push("The One Ring");
 user.friend.purchased.push("latte");
 console.log(user.friend.purchased[1]);
+
+//Part 4F
+for(let i = 0; i <user.purchased.length; i++){
+    console.log(user.purchased[i]);
+}
+
+for(let i = 0; i < user.friend.purchased.length; i++){
+    console.log(user.friend.purchased[i]);
+}
