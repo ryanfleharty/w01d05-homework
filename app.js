@@ -98,3 +98,11 @@ for(let i = 0; i<=100; i++){
     console.log(text1);
   }
 }
+// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+let bankAccount; //declare a variable
+  let sum = 0 // set a value
+  for (let i = 1; i <= 100; i++){ //creating a loop to get the sum of numbers 1-10
+    sum += i*2; //sum amount
+  }
+  console.log(sum);
