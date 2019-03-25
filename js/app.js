@@ -397,14 +397,17 @@ const reverseWordOrder = (str) => {
   let curWordLastIndex = str.length - 1;
   let endOfWordFlag = false;
   for (let i = str.length; i >= 0; i--) {
-    if (str[i] === ' ' || i === 0) {
+    if (str[i] === ' ') {
       endOfWordFlag = true;
-      strWordsRev += str.slice(i, curWordLastIndex + 1);
+      strWordsRev += (str.slice(i + 1, curWordLastIndex + 1) + ' ');
     } else if (endOfWordFlag === true) {
-      curWordLastIndex = i + 1;
+      curWordLastIndex = i;
       endOfWordFlag = false;
-    } // else { //do nothing and loop //}
+    } // else { //do nothing and loop}
   }
+  // handle/append first word in original str with index 0 to end
+  strWordsRev += (str.slice(0, curWordLastIndex + 1));
   return (strWordsRev);
 };
 console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
