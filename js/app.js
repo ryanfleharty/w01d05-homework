@@ -776,12 +776,21 @@ const user = {
 }
 
 
+
 // B. Update the user
-// Our user has changed his or her email address. Without changing the original 
+//1. Our user has changed his or her email address. Without changing the original 
 //user object, update the email value to a new email address.
-// Our user has had a birthday! Without changing the original user object, 
-//increment the age value using the postfix operator. Hint: age++
 
 user.email = 'frank1985@something.com';
 console.log(user);
+
+//2. Our user has had a birthday! Without changing the original user object, 
+//increment the age value using the postfix operator. Hint: age++
+
+user.age++;
+console.log(user);
+
+
+
+
 
