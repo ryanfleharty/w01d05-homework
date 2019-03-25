@@ -509,10 +509,9 @@ console.log(transmogrify(5, 3, 2));
 //   string argument and reverses the words in the string. 
 
 const revWordOrder = (string) => {
-   
+    let stringTwo = string + " ";
     let reverseSentence = "";
     let word = "";
-    let stringTwo = string + " ";
 
     for (let i = 0; i < stringTwo.length; i++){
         if (stringTwo[i] !== " "){
@@ -522,7 +521,8 @@ const revWordOrder = (string) => {
             word = "";
         }
     }
-    return reverseSentence;
+    let reverseSentenceLessOne = reverseSentence.substring(0, reverseSentence.length - 1);
+    return reverseSentenceLessOne;
 }
 
 console.log(revWordOrder("flip it and reverse it come on please work"));
