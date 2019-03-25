@@ -242,12 +242,154 @@ let totalSum = () => {
 };
 totalSum();
 
+// :red_circle: Commit. //DONE
 
-// Are you having dejà vu? This just in! From the "Read the entire problem before you start" dept: This problem was on a previous assignment.  
-// You may skip it **if you've already done it**, just include a comment saying that you've already done it. 
-// If you've now done the problem twice, perhaps next time you'll read the whole problem before starting it.
+// ## III. Arrays & Control flow
+// ### A. Talk about it:
+
+// 1. What are the things in an array called?
+
+
+// 2. Do Arrays guarantee those things will be in order?
+
+// 3. What real-life thing could you model with an array?
 
 // :red_circle: Commit.
+
+
+// ### B. Easy Does It
+
+// 1. Create an array that contains three quotes and store it in a variable called `quotes`.
+
+// :red_circle: Commit.
+
+// ### C. Accessing elements
+
+// Given the following array `const randomThings = [1, 10, "Hello", true]`
+
+// 1. How do you access the 1st element in the array?
+
+// 2. Change the value of `"Hello"` to `"World"`.
+
+// 3. Check the value of the array to make sure it updated the array.  How?  Why, yes! `console.log()`;
+
+// :red_circle: Commit.
+
+
+// ### D. Change values
+
+// Given the following array `const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]`
+
+// 1. What would you write to access the 3rd element of the array?
+
+// 2. Change the value of "Github" to "Octocat"
+
+// 3. Add a new element, "Cloud City" to the array.
+
+//:red_circle: Commit. //DONE
+
+
+// ### E. Mix It Up
+
+// Given the following array: 
+
+const myArray = [5, 10, 500, 20];
+
+// 1. Add the string `"Egon"` to the end of the array. Add another string of your choice to the end of the array.
+myArray.push("Egon");
+myArray.push("Shadi");
+// 2. Remove the `5` from the beginning of the array.
+
+// 3. Add the string `"Bob Marley"` to the beginning of the array.
+
+// 4. Remove the string of your choise from the end of the array.
+
+// 5. Reverse this array using `Array.prototype.reverse()`.  Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything?
+
+// :red_circle: Commit.
+
+
+// ### F. Biggie Smalls
+
+// Create a variable that contains an integer.
+
+// Write an `if ... else` statement that:
+
+// 1. `console.log()`s "little number" if the number is entered is less than **100**
+
+// 2. `console.log()`s `big number` if the number is greater than or equal to 100.
+
+// :red_circle: Commit.
+
+
+// ### G. Monkey in the Middle
+
+// Write an `if ... else if ... else` statement:
+
+// 1. `console.log()` `little number` if the number entered is less than **5**.<br>
+
+// 2. If the number entered is more than 10, log `big number`.
+
+// 3. Otherwise, log "monkey". <br>
+
+// :red_circle: Commit.
+
+
+// ### H. What's in Your Closet?
+
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+
+// ```javascript
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
+
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
+// ```
+
+// 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
+
+// 2. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
+
+// 3. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
+
+// 4. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
+
+// 5. In the same way, access one item from Thom's pants array.
+
+// 6. Access one item from Thom's accessories array.
+
+// 7. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
+
+// 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
+
+// :red_circle: Commit.
+
 
 
 
