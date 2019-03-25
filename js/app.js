@@ -303,12 +303,23 @@ console.log(newArray);
 
 //F.
 
-const getMultipleLengths = (arr) => {
+// let multipleLengths = [];
 
+// const getMultipleLengths = (arr) => {
+// 	for(let i = 0; i < arr.length; i++){
+// 		multipleLenghts[0].forEach(arr.length);
+// 	}
+
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+//G.
+
+const maxOfThree = (num1, num2, num3) => {
+	return Math.max(num1, num2, num3);
 }
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-
+console.log(maxOfThree(17, 9, 1));
 
 
 
