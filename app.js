@@ -229,3 +229,6 @@ console.log(thomsCloset[2][1]);
 console.log(`Thom is looking fierce in a ${thomsCloset[0][1]}, ${thomsCloset[1][2]}, and ${thomsCloset[2][1]}!`);
 thomsCloset[1][2] = "Footie Pajamas"
 console.log(thomsCloset[1]);
+
+//Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
+//Done it
