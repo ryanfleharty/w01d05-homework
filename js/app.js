@@ -568,10 +568,7 @@ printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
 // For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
 // power of 2` is 225.
 
-// ```javascript
-// console.log(transmogrify(5, 3, 2));
-// ```
-// > `=> 225`
+const 
 
 // :red_circle: Commit.
 
