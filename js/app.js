@@ -545,6 +545,12 @@
 // // `` >
 // // `=> 225`
 
+//***Transmogrify (Attempt 2)
+const transmogrified = (x,y,z) => {
+return (x*y)**z
+}
+transmogrified(5,3,2)
+
 // ** Without using `.split()`, `.reverse()`, or `.join()`, ** write a
 // function `reverseWordOrder`
 // that accepts a single argument, a string.The
@@ -592,17 +598,19 @@
 //###
 //K.Get down and dirty with `Math.random()`
 
-// 1. Write a
+//1. Write a
 // function that will
 // return a random integer between 1 and 10. Test it.
-const randomNumberOneToTen = (one,ten) => {
-    return Math.floor(Math.random() * (ten - one) + one)
+const oneToTen = function () {
+    return  Math.floor(Math.random() * (10 - 1) + 1)
 }
+
 //console.log (randomNumberOneToTen(1,10))
 // 2. Write a
 // function that will
 // return a random integer between 10 and 100. Test it.
-const randomNumberTenToOneHundred = () => {
+
+const tenToOne = function () {
     return Math.floor(Math.random() * (100 - 10) + 10)
 }
 // 3. Write a
@@ -611,304 +619,174 @@ const randomNumberTenToOneHundred = () => {
 // 4. Write a
 // function that will
 // return a random number between 1 and 10. Test it.
-const randomNumberOneishToTenish = (one,ten) => {
-    return (Math.random() * (ten - one) + one)
+const oneishToTenish = function () {
+    return (Math.random() * (10 - 1) + 1)
+}
+const oneToThree = function () {
+return Math.floor(Math.random() * (3 - 1)) + 1
 }
 // 5. Add a few more quotes to the quotes array from question III - B - 1 above.Write a
 // function that will take an array as a parameter, and
 // return a random element from that array.Call your
 // function a few times, passing in the quotes array.Give it a nice semantic name like `getRandomElement`.
-
-
-// Let 's set up an object data structure. Let'
-// s say we have a website that sells products, and we have a user of our website, and we want to store that user 's data. The object data structure is a good way to organize the data from our user.
-
-// ### A.Make a user object
-
-// 1. Create an object called `user`.
-    const user = {
-        name:"Ricky Reverser",
-        email:"RR@hotmail.com",
-        age:3,
-        purchased:[],
+// 1. Create an array that contains three quotes and store it in a variable called `quotes`.
+const quotes = ["You can take a horse to water, but you can't make him drink", "You can teach old dogs new tricks", "JS is fun!"]
+const randomQuotes = function() {
+    let returnQuote;
+    if (oneToThree() === 3) {
+    returnQuote = quotes[0]}
+    else if (oneToThree() === 2) {
+    returnQuote = quotes[1]
     }
-// 2. Write in to the object the key - value pairs
-// for `name`, `email`, `age`, and `purchased`.Set the value of `purchased`
-// to an empty array `[]`.Set the other values to whatever you would like.
-
-//     : red_circle: Commit.
-
-// ### B.Update the user
-
-// 1. Our user has changed his or her email address.Without changing the original `user`
-// object, update the `email`
-    user.email = "joe@shmoe.com";
-// value to a new email address.
-// 2. Our user has had a birthday!Without changing the original `user`
-// object, increment the `age`
-// value using the postfix operator.Hint: `age++`
-    user.age++;
-//     : red_circle: Commit.
-
-
-// ### C.Adding keys and values
-
-// You have decided to add your user 's location to the data that you want to collect.
-
-// 1. Without changing the original `user`
-// object, add a new key `location`
-// to the object, and give it a value or some - or - other location(a string).
-user['location'] = "place"
-//     : red_circle: Commit.
-
-
-// ### D.Shopaholic!
-
-//     1. Our user has purchased an item!They have purchased some "carbohydrates".Using `.push()`, add the string "carbohydrates"
-// to the `purchased`
-// array.
-    user.purchased.push("carbohydrates");
-// 2. Our user has purchased an item!They have purchased some "peace of mind".Using `.push()`, add the string "peace of mind"
-// to the `purchased`
-// array.
-    user.purchased.push("peace of mind");
-// 3. Our user has purchased an item!They have purchased some "Merino jodhpurs".Using `.push()`, add the string "Merino jodhpurs"
-// to the `purchased`
-// array.
-    user.purchased.push("Merino jodhpurs");
-// 4. Console.log just the "Merino jodhpurs"
-// from the `purchased`
-// array.
-    console.log(user.purchased[2])
-
-//     : red_circle: Commit.
-
-
-// ### E.Object - within - object
-
-// Remember that you can add an object to an existing object in the same way that you can add any new property / value pair.
-
-// If we want to give our user a `friend`
-// with a `name`
-// and `age`, we could write:
-
-// 1. Write a `friend`
-// object into your `user`
-// object and give the friend a name, age, location, and purchased array(empty
-//     for now)
-user.friend = {
-    name: "Jonny Transmogrify",
-    age: 99,
-    location: "toledo",
-    purchased: [],
+    else {returnQuote = quotes[2]}
+ console.log (returnQuote)
 }
-// 2. Console.log just the friend 's name
-   console.log(user.friend.name)
-// 3. Console.log just the friend 's location
-    console.log(user.friend.location);
-// 4. CHANGE the friend 's age to 55
-    user.friend.age = 55;
-// 5. The `friend`
-// has purchased "The One Ring".Use `.push()`
-// to add "The One Ring"
-// to the friend 's `purchased` array.
-    user.friend.purchased.push("The One Ring");
-// 6. The `friend`
-// has purchased "A latte".Use `.push()`
-// to add "A latte"
-// to the friend 's `purchased` array.
-    user.friend.purchased.push("A latte");
-// 7. Console.log just "A latte"
-// from the friend 's `purchased` array.
-console.log(user.friend.purchased[1]);
-//     : red_circle: Commit.
+   
+   
+
+// // Let 's set up an object data structure. Let'
+// // s say we have a website that sells products, and we have a user of our website, and we want to store that user 's data. The object data structure is a good way to organize the data from our user.
+
+// // ### A.Make a user object
+
+// // 1. Create an object called `user`.
+//     const user = {
+//         name:"Ricky Reverser",
+//         email:"RR@hotmail.com",
+//         age:3,
+//         purchased:[],
+//     }
+// // 2. Write in to the object the key - value pairs
+// // for `name`, `email`, `age`, and `purchased`.Set the value of `purchased`
+// // to an empty array `[]`.Set the other values to whatever you would like.
+
+// //     : red_circle: Commit.
+
+// // ### B.Update the user
+
+// // 1. Our user has changed his or her email address.Without changing the original `user`
+// // object, update the `email`
+//     user.email = "joe@shmoe.com";
+// // value to a new email address.
+// // 2. Our user has had a birthday!Without changing the original `user`
+// // object, increment the `age`
+// // value using the postfix operator.Hint: `age++`
+//     user.age++;
+// //     : red_circle: Commit.
 
 
-// ### F.Loops
+// // ### C.Adding keys and values
 
-// 1. Write a _for loop_ that iterates over the User 's `purchased` array (NOT the friend'
-for(i=0;i<user.purchased.length;i++){console.log(user.purchased[i])};
-// s purchased array), and prints each element to the console.
-// 2. Write a _for loop_ that iterates over the Friend 's `purchased` array, and prints each element to the console.
-for(i=0;i<user.friend.purchased;i++){console.log(user.friend.purchased[i])};
-//     : red_circle: Commit.
+// // You have decided to add your user 's location to the data that you want to collect.
 
-
-// ### G.Functions can operate on objects
-
-// 1. Write a single
-// function `updateUser`
-// that takes no parameters.When the
-// function is run, it should:
-
-//     -it should increment the user 's age by 1 -
-//     make the user 's name uppercase
-
-// The
-// function does not need a `return`
-// statement, it will merely modify the user object.
-const updateUser = () => {
-    user.age++; 
-    user.name.toUpperCase()};
-updateUser();
-// 2. Write a
-// function `oldAndLoud`
-// that performs the exact same tasks as `updateUser`, but instead of hard - coding it to only work on our `user`
-// object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the
-// function is called.Call your `oldAndLoud`
-// function with `user`
-// as the argument.
-
-const oldAndLoud = (person)=> {
-    person.age++
-    user.name.toUpperCase();
-}
-//     : red_circle: Commit.
+// // 1. Without changing the original `user`
+// // object, add a new key `location`
+// // to the object, and give it a value or some - or - other location(a string).
+// user['location'] = "place"
+// //     : red_circle: Commit.
 
 
+// // ### D.Shopaholic!
 
-//     <
-//     br >
-//     <
-//     hr >
+// //     1. Our user has purchased an item!They have purchased some "carbohydrates".Using `.push()`, add the string "carbohydrates"
+// // to the `purchased`
+// // array.
+//     user.purchased.push("carbohydrates");
+// // 2. Our user has purchased an item!They have purchased some "peace of mind".Using `.push()`, add the string "peace of mind"
+// // to the `purchased`
+// // array.
+//     user.purchased.push("peace of mind");
+// // 3. Our user has purchased an item!They have purchased some "Merino jodhpurs".Using `.push()`, add the string "Merino jodhpurs"
+// // to the `purchased`
+// // array.
+//     user.purchased.push("Merino jodhpurs");
+// // 4. Console.log just the "Merino jodhpurs"
+// // from the `purchased`
+// // array.
+//     console.log(user.purchased[2])
 
-//     #Hungry
-// for More ?
-
-//     ##Cat Combinator
-
-// ### 1. Mama cat
-//     *
-//     Define an object called `cat1`
-// that contains the following properties:
-//     *
-//     name *
-//     breed *
-//     age(a number)
-
-//     *
-//     console.log the cat 's age *
-//     console.log the cat 's breed
+// //     : red_circle: Commit.
 
 
-// ### 2. Papa cat
-//     *
-//     Define an object called `cat2`
-// that also contains the properties:
-//     *
-//     name *
-//     breed *
-//     age(a number)
+// // ### E.Object - within - object
 
+// // Remember that you can add an object to an existing object in the same way that you can add any new property / value pair.
 
-// ### 3. Combine Cats!
+// // If we want to give our user a `friend`
+// // with a `name`
+// // and `age`, we could write:
 
-//     The cats are multiplying!
-
-//     Write a
-// function `combineCats`
-// that has two parameters `mama`, and `papa`.The
-// function will take two arguments--each a cat object.
-
-//     *Pass `cat1`
-// and `cat2`
-// as arguments to the `combineCats`
-// function.The
-// function should console.log them.
-
-// Example:
-
-//     ``
-// `javascript
-// combineCats(cat1, cat2)
-// `
-// ``
-
-// >
-// {
-//     name: "Joe",
-//     age: 19,
-//     breed: "Mog"
+// // 1. Write a `friend`
+// // object into your `user`
+// // object and give the friend a name, age, location, and purchased array(empty
+// //     for now)
+// user.friend = {
+//     name: "Jonny Transmogrify",
+//     age: 99,
+//     location: "toledo",
+//     purchased: [],
 // }
+// // 2. Console.log just the friend 's name
+//    console.log(user.friend.name)
+// // 3. Console.log just the friend 's location
+//     console.log(user.friend.location);
+// // 4. CHANGE the friend 's age to 55
+//     user.friend.age = 55;
+// // 5. The `friend`
+// // has purchased "The One Ring".Use `.push()`
+// // to add "The One Ring"
+// // to the friend 's `purchased` array.
+//     user.friend.purchased.push("The One Ring");
+// // 6. The `friend`
+// // has purchased "A latte".Use `.push()`
+// // to add "A latte"
+// // to the friend 's `purchased` array.
+//     user.friend.purchased.push("A latte");
+// // 7. Console.log just "A latte"
+// // from the friend 's `purchased` array.
+// console.log(user.friend.purchased[1]);
+// //     : red_circle: Commit.
 
-// >
-// {
-//     name: "Jam",
-//     age: 45,
-//     breed: "Siamese"
+
+// // ### F.Loops
+
+// // 1. Write a _for loop_ that iterates over the User 's `purchased` array (NOT the friend'
+// for(i=0;i<user.purchased.length;i++){console.log(user.purchased[i])};
+// // s purchased array), and prints each element to the console.
+// // 2. Write a _for loop_ that iterates over the Friend 's `purchased` array, and prints each element to the console.
+// for(i=0;i<user.friend.purchased;i++){console.log(user.friend.purchased[i])};
+// //     : red_circle: Commit.
+
+
+// // ### G.Functions can operate on objects
+
+// // 1. Write a single
+// // function `updateUser`
+// // that takes no parameters.When the
+// // function is run, it should:
+
+// //     -it should increment the user 's age by 1 -
+// //     make the user 's name uppercase
+
+// // The
+// // function does not need a `return`
+// // statement, it will merely modify the user object.
+// const updateUser = () => {
+//     user.age++; 
+//     user.name.toUpperCase()};
+// updateUser();
+// // 2. Write a
+// // function `oldAndLoud`
+// // that performs the exact same tasks as `updateUser`, but instead of hard - coding it to only work on our `user`
+// // object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the
+// // function is called.Call your `oldAndLoud`
+// // function with `user`
+// // as the argument.
+
+// const oldAndLoud = (person)=> {
+//     person.age++
+//     user.name.toUpperCase();
 // }
+// //     : red_circle: Commit.
 
 
-// **
-// This is to demonstrate that functions can take objects as arguments **
-
-//     You could also invoke the `combineCats`
-// function by writing the objects straight into the parentheses:
-
-//     ``
-// `javascript
-// combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" });
-// `
-// `` <
-// br >
-
-//     *
-//     Make it so the `combineCats`
-// function will
-// return a combination of the two incoming cats *
-//     The result should be an object wherein the *
-//     name is a concatenation of the parents ' names *
-//     the age is 1 *
-//     the breed is each of the parents ' breeds with a hyphen in between
-
-// Example:
-
-//     ``
-// `javascript
-// console.log(combineCats(cat1, cat2));
-// `
-// ``
-
-// Result:
-
-//     ![](https: //i.imgur.com/CEB2ire.png)
-
-//         **
-//         This is to demonstrate that a
-//         function can
-//         return an object **
-
-//             <
-//             br >
-//             <
-//             hr >
-
-//             ##4. Cat brain bender
-
-//         If `combineCats`
-//         returns an ** object ** , and
-//         if `combineCats`
-//         takes ** objects ** as ** arguments ** , then it stands to reason that:
-
-//         `catCombinator`
-//         can use ** itself ** as its own argument.
-
-//         Take a second to stew on that...
-
-//         What is the result of:
-
-//         ``
-//         `javascript
-// console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
-// `
-//         ``
-
-//         Whoa...
-
-//         The above console.log is ** two levels ** deep of combineCats.
-
-//         *Write a console.log that is ** three levels ** deep of combineCats.combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
-
-//         Your output should look something like:
-
-//         ![](https: //i.imgur.com/zuTzm5X.png)
