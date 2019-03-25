@@ -142,7 +142,7 @@ console.log(printMsg());
         console.log(i);
     };
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 // ### B. Get even
 
@@ -156,29 +156,30 @@ console.log(printMsg());
         console.log(`${i} is the even number`);
     };
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### C. Give me Five
-
 // 1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
 
-// >Example Output:
-// ```
-// I found a 5. High five!
-// I found a 10. High five!
-// ```
+    for (let i = 5; i <= 100; i ++) {
+        if (i % 5 === 0){
+            console.log(`I found a ${i}. High Five!`);
+        }};
 
 // 2. Add to the code from above to print out "I found a `number`. Three is a crowd" if the number is a multiple of three.
+    for (let i = 3; i <= 100; i ++) {
+        if (i % 3 === 0){
+            console.log(`I found a ${i}. Three is a crowd`);
+        }};
 
-// >Example Output:
-// ```
-// I found a 3. Three is a crowd
-// I found a 5. High five!
-// I found a 6. Three is a crowd
-// I found a 9. Three is a crowd
-// I found a 10. High five!
-// ```
+
+for (let i = 3; i <= 100; i ++) {
+    if (i % 5 === 0){
+        console.log(`I found a ${i}. High Five!`);
+    } if (i % 3 === 0){
+            console.log(`I found a ${i}. Three is a crowd`);
+        }};
 
 // :red_circle: Commit.
 
