@@ -755,3 +755,22 @@ const getRandomElement = (arr) => {
 console.log(getRandomElement('Life is short. Smile while you still have teeth.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.', '4 out of 3 people struggle with math.', 'You can stop driving me crazy, I can walk from here.', "I don't like morning people...or mornings...or people."));
 
 
+
+
+// Objects
+// Let's set up an object data structure. Let's say we have a website that 
+//sells products, and we have a user of our website, and we want to store that 
+//user's data. The object data structure is a good way to organize the data 
+//from our user.
+
+// A. Make a user object
+//1. Create an object called user.
+user {
+//2. Write in to the object the key-value pairs for name, email, age, and 
+//purchased. Set the value of purchased to an empty array []. Set the other 
+//values to whatever you would like.
+    name: 'Frank Smith',
+    email: 'frank@something.com',
+    age: 34,
+    puchased: [],
+}
