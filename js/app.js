@@ -286,6 +286,7 @@ getTwoLengths("Cat", "Dog");
 
 //Part 4F
 //Hat tip to Adam Wolfman for helping me out with this one.
+/**
 const getMultipleLengths = (wordArray) => {
   let wordLengths = [];
   for (let i = 0; i < wordArray.length; i++) {
@@ -315,3 +316,24 @@ const maxOfThree = (num1, num2, num3) => {
 }
 
 maxOfThree(5,1,6);
+**/
+//Part 4H
+//Write a function that accepts a single argument, an array of strings. The method should return the longest word. In a tie, return the first.
+//Interesting: setting a variable to null allows you to create an empty variable.
+//let words = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]
+
+const printLongestWord = (wordArray) => {
+  wordLengths = [];
+  for (let i = 0; i < wordArray.length; i++) {
+    let wordLength = wordArray[i].length;
+    wordLengths.push(wordLength);
+  } for(let i = 0; i < wordLengths.length; i++) {
+    if(wordLengths[i] > wordLengths.length) {
+      return wordArray[i];
+    }
+  }
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+//I am patting myself on the back so hard right now for getting this one. Phew!
