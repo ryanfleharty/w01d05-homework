@@ -181,16 +181,35 @@ for (let i = 3; i <= 100; i ++) {
             console.log(`I found a ${i}. Three is a crowd`);
         }};
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### D. Savings account
-
 // 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
-
-// >Check your work! Your banck_account should have $55 in it.
+    let numbers = [1,2,3,4,5,6,7,8,9,10];
+    var bankAccount = 0;                        //DECLARE GLOBALLY
+    let numberSum = () => {
+        for (let i = 0; i < numbers.length; i++) {
+            bankAccount = bankAccount += numbers[i];   //+= add to variable bankAccount which starts at zero
+        };
+        console.log(bankAccount);  //Will display info in console
+    };
+    numberSum();
+   
+// >Check your work! Your bank_account should have $55 in it.
 
 // 2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+
+    var bankAccount2 = 0;                        
+    let numberSum2 = () => {
+        for (let i = 0; i <= 100; i++) {
+            bankAccount2 = (bankAccount2 += i);  
+            bankAccount3 = bankAccount2 * 2; 
+        };
+        console.log(bankAccount3);  
+    };
+    numberSum2();
+
 
 // >Check your work! Your banck_account should have $10,100 in it.
 
