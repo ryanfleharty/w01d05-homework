@@ -131,3 +131,12 @@ const randomThings = [1, 10, "Hello", true]
       // (use [ ] to access any elements in a array)
       randomThings[2] = "World"
       console.log(randomThings);
+
+/*What would you write to access the 3rd element of the array?
+Change the value of "Github" to "Octocat"
+Add a new element, "Cloud City" to the array.*/
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+  ourClass[2]
+  ourClass[4] = "Octocat"
+  ourClass[5] = "Cloud City"
+  console.log(ourClass);
