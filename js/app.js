@@ -249,11 +249,17 @@
 
 
 // const reverseWordOrder = (str) => {
-//     let reversedString = '';
+//     let wordList = [];
+//     let word = '';
 //     for (let i = 0; i < str.length; i++) {
-//             reversedString += str[i];
+//         if (str[i] === ' ') {
+//                 wordList.Unshift(word);
+//                 word = '';
+//         } else {
+//             word = word + str[i];
+//         }
 //     }
-//     return reversedString;
+//     word.push(word);
 // }
 // reversedWordOrder();
 
@@ -282,5 +288,17 @@ user.purchased.push("peace of mind");
 user.purchased.push("Merino jodhpurs");
 console.log(user.purchased[2]);
 
+user.friend = {
+    name: "homeboy",
+    age: 21,
+    location: "The block",
+    purchased: [],
+}
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The one ring");
+user.friend.purchased.push("A latte");
+console.log(user.friend.purchased[1]);
 
 
