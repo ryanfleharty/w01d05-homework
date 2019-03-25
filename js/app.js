@@ -566,7 +566,34 @@ printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
 //OUT OF TIME
 
 // ### K. Get down and dirty with `Math.random()`
-//OUT OF TIME
+
+// 1.  Write a function that will return a random integer between 1 and 10. Test it.
+Math.floor(Math.random() * 10);
+console.log(Math.floor(Math.random() * 10));
+// 2.  Write a function that will return a random integer between 10 and 100. Test it.
+console.log(Math.floor(Math.random() * 100)+ 10);
+// 3.  Write a function that will return a random number between 532 and 13267. Test it.
+const ranNum = () => {
+    console.log(Math.floor(Math.random() * 13267)+ 532);
+}
+ranNum();
+// 4.  Write a function that will return a random number between 1 and 10. Test it.
+const ranNumTwo = () => {
+    console.log(Math.floor(Math.random() * 10)+ 1);
+}
+ranNumTwo();
+// 5.  Add a few more quotes to the quotes array from question III-B-1 above. 
+// Write a function that will take an array as a parameter, and return a random element from that array.  
+// Call your function a few times, passing in the quotes array.  
+// Give it a nice semantic name like `getRandomElement`.
+
+const getRandomQuote = () => {
+    let max = quotes.length;
+    let random = Math.floor(Math.random()* max);
+    console.log(quotes[random]);
+}
+getRandomQuote();
+
 
 // ## Objects
 
@@ -697,13 +724,10 @@ const oldAndLoud = (person) => {
 
 oldAndLoud(user);
 
-
-// :red_circle: Commit.
-
+// :red_circle: Commit. //DONE
 
 
-// <br>
-// <hr></hr>
+
 
 
 
