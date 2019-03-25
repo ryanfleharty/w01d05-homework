@@ -405,3 +405,12 @@ const user = {
   age: 36,
   purchased: [],
 }
+
+user.email = "jjmoney@money.com";
+console.log(user.email);
+user.age++;
+console.log(user.age);
+user.location = "Denver";
+console.log(user.location);
+user.purchased.push("Merino jodhpurs");
+console.log(user.purchased[0]);
