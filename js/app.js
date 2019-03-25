@@ -658,7 +658,7 @@ const randomNumberOneishToTenish = (one,ten) => {
 // 1. Without changing the original `user`
 // object, add a new key `location`
 // to the object, and give it a value or some - or - other location(a string).
-
+user['location'] = "place"
 //     : red_circle: Commit.
 
 
