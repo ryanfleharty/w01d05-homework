@@ -244,22 +244,28 @@ totalSum();
 
 // :red_circle: Commit. //DONE
 
+
 // ## III. Arrays & Control flow
 // ### A. Talk about it:
 
 // 1. What are the things in an array called?
 
+                //AN ELEMENT
 
 // 2. Do Arrays guarantee those things will be in order?
+                //YES at least by Index Number
 
 // 3. What real-life thing could you model with an array?
+                // a List
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### B. Easy Does It
 
 // 1. Create an array that contains three quotes and store it in a variable called `quotes`.
+
+const quotes = ["Quick to speak, slow to listen", "YOLO", "one death is a tragedy, one million is a statistic"];
 
 // :red_circle: Commit.
 
