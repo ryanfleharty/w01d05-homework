@@ -209,12 +209,43 @@
 // }
 // isVowel("e");
 
-const getTwoLengths = (str1, str2) => {
+// const getTwoLengths = (str1, str2) => {
     
-    let strOne = str1;
-    let strTwo = str2;
-    let str = [strOne.length, strTwo.length];
-    console.log(str);
+//     let strOne = str1;
+//     let strTwo = str2;
+//     let str = [strOne.length, strTwo.length];
+//     console.log(str);
    
-}
-getTwoLengths("lmao", "oof");
+// }
+// getTwoLengths("lmao", "oof");
+
+// const getMultipleLengths = (str) => {
+    
+//     let stringArray = str[i];
+//     let string = stringArray.length;
+//     for( let i = 0; i < str.length; i++) {
+
+//     }
+//     console.log(string);
+// }
+// getMultipleLengths(["i", "am", "going", "crazy"]);
+
+// const maxOfThree = (int) => {
+//         return Math.max.apply(Math, int);
+//          console.log(maxOfThree(int));
+//     }
+// maxOfThree();
+
+const printLongestWord = (string) => {
+    let longest = '';
+for (i = 0; i < string.length; i++) {
+         if (string[i].length => longest.length) {
+             longest = string[i].length;
+         }
+
+     }
+     return string[longest];
+ }
+ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+
