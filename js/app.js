@@ -199,12 +199,22 @@
 // }
 // calculateCube(5);
 
-const isVowel = (vowel) => {
-    if (vowel === "a" || vowel === "i" || vowel === "e" || vowel === "o" || vowel === "u"
-    || vowel === "A" || vowel === "I" || vowel === "E" || vowel === "O" || vowel === "U") {
-        console.log('true');
-    } else {
-        console.log('False')
-    }
+// const isVowel = (vowel) => {
+//     if (vowel === "a" || vowel === "i" || vowel === "e" || vowel === "o" || vowel === "u"
+//     || vowel === "A" || vowel === "I" || vowel === "E" || vowel === "O" || vowel === "U") {
+//         console.log('true');
+//     } else {
+//         console.log('False')
+//     }
+// }
+// isVowel("e");
+
+const getTwoLengths = (str1, str2) => {
+    
+    let strOne = str1;
+    let strTwo = str2;
+    let str = [strOne.length, strTwo.length];
+    console.log(str);
+   
 }
-isVowel("e");
+getTwoLengths("lmao", "oof");
