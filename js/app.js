@@ -534,24 +534,29 @@ const maxOfThree = (threeNums) => {
             return winner
         } else return winner
     }};
-console.log(maxOfThree([1, 8 ,16]));
+console.log(maxOfThree([1,8,16]));
 
-// > => 9
 
-// :red_circle: Commit.
+// :red_circle: Commit.//DONE
 
 
 // ### H. `printLongestWord`
 
 // Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
-// ```javascript
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-// ```
+const printLongestWord = (wordArr) => {
+    let arrWinner = "";                                     //NEED to declare empty string SHOULD I DECLARE GLOBALLY?
+    for(let i =0; i < wordArr.length; i++){
+        if (arrWinner.length < wordArr[i].length){          //needed to specifiy you are comparing .length to .lenght[i]
+            arrWinner = wordArr[i];
+        }
+    }
+    console.log(arrWinner);
+}
+printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
 
-// > `=> "Peanutbutter"`
 
-// :red_circle: Commit.
+// :red_circle: Commit.// DONE
 
 
 // ### I. `transmogrify`
