@@ -274,7 +274,13 @@ const user = {
     purchased: [],
 }
 user.email = "Playboi@cashcarti.com";
-user.age = age++;
+user.age = user.age++;
 user.location = "Atlanta";
+
+user.purchased.push("Carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+console.log(user.purchased[2]);
+
 
 
