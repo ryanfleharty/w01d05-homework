@@ -560,54 +560,114 @@ printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
 
 
 // ### I. `transmogrify`
-
-// Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
-
-// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
-
-// For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
-// power of 2` is 225.
-
-const 
-
-// :red_circle: Commit.
-
+// OUT OF TIME
 
 // ### J. `reverseWordOrder` v2
-
-// **Without using `.split()`, `.reverse()`, or `.join()`,** write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation. 
-
-// See if you can do it without googling.
-
-// Remember: Jim showed you today that you can index directly into a string: 
-// ```js
-// "hello world"[6]
-// ```
-// > `=> "w"`
-
-// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
-
-// ```javascript
-// console.log(reverseWordOrder("Ishmael me Call"));
-// ```
-// > `=> "Call me Ishmael"`
-
-// ```js
-// console.log(reverseWordOrder("I use Lâncome on my comb"));
-// ```
-// > `=> "comb my on Lâncome use I"`
-
-// :red_circle: Commit.
+//OUT OF TIME
 
 // ### K. Get down and dirty with `Math.random()`
+//OUT OF TIME
 
-// 1.  Write a function that will return a random integer between 1 and 10. Test it.
-// 2.  Write a function that will return a random integer between 10 and 100. Test it.
-// 3.  Write a function that will return a random number between 532 and 13267. Test it.
-// 4.  Write a function that will return a random number between 1 and 10. Test it.
-// 5.  Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array.  Call your function a few times, passing in the quotes array.  Give it a nice semantic name like `getRandomElement`.
+// ## Objects
+
+// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+
+// ### A. Make a user object
+
+// 1. Create an object called `user`.
+// 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
+ 
+ const user = {
+    name: "12'",
+    email: "saoutabachi@yahoo.com",
+    age: 25,
+    purchased: []
+}
 
 // :red_circle: Commit.
+
+// ### B. Update the user
+
+// 1. Our user has changed his or her email address. Without changing the original `user` object, update the `email` value to a new email address.
+user.email = "shadibachi.com";
+// 2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`
+user.age = 26;
+
+// :red_circle: Commit.
+
+
+// ### C. Adding keys and values
+
+// You have decided to add your user's location to the data that you want to collect.
+
+// 1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
+
+// :red_circle: Commit.
+
+
+// ### D. Shopaholic!
+
+// 1. Our user has purchased an item! They have purchased some "carbohydrates". Using `.push()`, add the string "carbohydrates" to the `purchased` array.
+// 2. Our user has purchased an item! They have purchased some "peace of mind". Using `.push()`, add the string "peace of mind" to the `purchased` array.
+// 3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using `.push()`, add the string "Merino jodhpurs" to the `purchased` array.
+// 4. Console.log just the "Merino jodhpurs" from the `purchased` array.
+
+// :red_circle: Commit.
+
+
+// ### E. Object-within-object
+
+// Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
+
+// If we want to give our user a `friend` with a `name` and `age`, we could write:
+
+// ```javascript
+// user.friend = {
+//     name: "Grace Hopper",
+//     age: 85
+// }
+// ```
+
+// When we console.log `user`, we would see the `friend` object added to our user object.
+
+// 1. Write a `friend` object into your `user` object and give the friend a name, age, location, and purchased array (empty for now)
+// 2. Console.log just the friend's name
+// 3. Console.log just the friend's location
+// 4. CHANGE the friend's age to 55
+// 5. The `friend` has purchased "The One Ring". Use `.push()` to add "The One Ring" to the friend's `purchased` array.
+// 6. The `friend` has purchased "A latte". Use `.push()` to add "A latte" to the friend's `purchased` array.
+// 7. Console.log just "A latte" from the friend's `purchased` array.
+
+// :red_circle: Commit.
+
+
+// ### F. Loops
+
+// 1. Write a _for loop_ that iterates over the User's `purchased` array (NOT the friend's purchased array), and prints each element to the console.
+// 2. Write a _for loop_ that iterates over the Friend's `purchased` array, and prints each element to the console.
+
+// :red_circle: Commit.
+
+
+// ### G. Functions can operate on objects
+
+// 1. Write a single function `updateUser` that takes no parameters. When the function is run, it should:
+
+//   - it should increment the user's age by 1
+//   - make the user's name uppercase
+
+//   The function does not need a `return` statement, it will merely modify the user object.
+
+// 2. Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the function is called. Call your `oldAndLoud` function with `user` as the argument. 
+
+
+// :red_circle: Commit.
+
+
+
+// <br>
+// <hr></hr>
+
 
 
 
