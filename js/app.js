@@ -417,6 +417,8 @@ user.purchased.push("merino jodhpurs");
 
 console.log(user.purchased[2]);
 
+//E.
+
 user.friend = {};
 user.friend.name = "Grace";
 user.friend.age = 85;
@@ -430,4 +432,13 @@ user.friend.age = 55;
 user.friend.purchased.push("The One Ring");
 user.friend.purchased.push("A latte");
 console.log(user.friend.purchased[1]);
+
+//F.
+for(let i = 0; i <user.purchased.length; i++){
+	console.log(user.purchased[i]);
+}
+
+for(let i = 0; i < user.friend.purchased.length; i++){
+	console.log(user.friend.purchased[i]);
+}
 
