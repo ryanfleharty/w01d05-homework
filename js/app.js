@@ -35,20 +35,20 @@
 // let firstVariable
 
 // Assign it the value of the string "Hello World"
-let firstVariable = "Hello World";
+// let firstVariable = "Hello World";
 
 // Change the value of this variable to some number.
-firstVariable = 3;
+// firstVariable = 3;
 
 // Store the value of firstVariable in a new variable called 
 //secondVariable
-let secondVariable = firstVariable;
+// let secondVariable = firstVariable;
 
 // Change the value of secondVariable to any string.
-secondVariable = 'Here is something';
+// secondVariable = 'Here is something';
 
 // What is the value of firstVariable?
-'Here is something'
+// 'Here is something'
 
 //2. Create a variable called yourName and set it equal to your 
 //name as a string. Then, write an expression that takes the 
@@ -56,8 +56,8 @@ secondVariable = 'Here is something';
 //it returns a new string with them concatenated.
 // ex: Hello, my name is Jean Valjean
 
-let yourName = 'Destiny Hillis';
-'Hello my name is ' + yourName + '.';
+// let yourName = 'Destiny Hillis';
+// 'Hello my name is ' + yourName + '.';
 
 
 
@@ -91,7 +91,7 @@ let yourName = 'Destiny Hillis';
 // D. The farm
 //1. Declare a variable animal. Set it to be either "cow" or 
 //something else.
-let animal = 'cow';
+//let animal = 'cow';
 
 //2. Write code that will print out "mooooo" if the it is equal 
 //to cow.
@@ -272,13 +272,13 @@ let animal = 'cow';
 // B. Easy Does It
 //1. Create an array that contains three quotes and store it in a 
 //variable called quotes.
-const quotes = ['Life is short. Smile while you still have feet.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.'];
+// const quotes = ['Life is short. Smile while you still have teeth.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.'];
 
 
 
 // C. Accessing elements
 //Given the following array 
-const randomThings = [1, 10, "Hello", true]
+// const randomThings = [1, 10, "Hello", true]
 
 // //1. How do you access the 1st element in the array?
 // randomThings[0];
@@ -309,7 +309,7 @@ const randomThings = [1, 10, "Hello", true]
 
 // E. Mix It Up
 // Given the following array: 
-const myArray = [5, 10, 500, 20]
+// const myArray = [5, 10, 500, 20]
 
 //1. Add the string "Egon" to the end of the array. Add another 
 //string of your choice to the end of the array.
@@ -388,37 +388,37 @@ const myArray = [5, 10, 500, 20]
 // Below, we've given you examples of Kristyn and Thom's 
 //closets modeled as data in JavaScript.
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
 // Thom's closet is more complicated. Check out this nested 
 //data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 //1. What's Kristyn wearing today? Using bracket notation to 
 //access items in kristynsCloset, log the sentence "Kristyn is 
 //rocking that " + the third item in Kristyn's closet + " today!" 
@@ -682,20 +682,18 @@ const thomsCloset = [
 //console.log(reverseWordOrder("Ishmael me Call"));
 
 
-const reverseWordOrder = (str) => { 
+// const reverseWordOrder = (str) => { 
     
-    let reversed = "";
+//     let reversed = "";
     
-    for (let i = str.length -1; i >= 0; i--) {
-        reversed += str[i];
-    }
-        return reversed;
-    }
+//     for (let i = str.length -1; i >= 0; i--) {
+//         reversed += str[i];
+//     }
+//         return reversed;
+//     }
 
-    
-
-console.log(reverseWordOrder("Ishmael me Call"));
-console.log(reverseWordOrder("I use Lâncome on my comb"));
+// console.log(reverseWordOrder("Ishmael me Call"));
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 //maybe for words into new array?
 
@@ -710,3 +708,50 @@ console.log(reverseWordOrder("I use Lâncome on my comb"));
 // }
 
 // console.log(rev);
+
+
+
+// K. Get down and dirty with Math.random()
+//1. Write a function that will return a random integer between 1 and 10. Test it.
+const random1 = (num) => {
+    return Math.floor((Math.random() * 10) + 1);
+}
+console.log(random1());
+
+
+
+//2. Write a function that will return a random integer between 10 and 100. Test it.
+const random2 = () => {
+    min = Math.ceil(10);
+    max = Math.floor(100);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+console.log(random2());
+
+//3. Write a function that will return a random number between 532 and 13267. Test it.
+const random3 = () => {
+    return Math.random() * (13267 - 532) + 532;
+}
+console.log(random3());
+
+//4. Write a function that will return a random number between 1 and 10. Test it.
+const random4 = () => {
+    return Math.random() * (10 - 1) + 1;
+}
+console.log(random4());
+
+//5. Add a few more quotes to the quotes array from question III-B-1 above. 
+//Write a function that will take an array as a parameter, and return a random 
+//element from that array. Call your function a few times, passing in the quotes 
+//array. Give it a nice semantic name like getRandomElement.
+//NOT WORKING...
+
+const getRandomElement = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+    return Math.floor(Math.random() * arr.length);
+    }
+}
+
+console.log(getRandomElement('Life is short. Smile while you still have teeth.', 'Sorry for the mean, awful, accurate things I said', 'An apple a day keeps anyone away if you throw it hard enough.', '4 out of 3 people struggle with math.', 'You can stop driving me crazy, I can walk from here.', "I don't like morning people...or mornings...or people."));
+
+
