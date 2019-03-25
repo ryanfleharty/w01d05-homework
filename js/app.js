@@ -443,11 +443,10 @@ printGreeting("Shadi");
 
 // Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
 
-// ```javascript
-// console.log(printCool("Captain Reynolds"));
-// ```
-
-// > `=> "Captain Reynolds is cool";`
+const printCool = (name) => {
+    console.log(`${name} is so damn cool!`)
+}
+printCool("Shadi");
 
 // :red_circle: Commit.
 
