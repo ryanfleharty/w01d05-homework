@@ -437,3 +437,13 @@ for(let i = 0; i <user.purchased.length; i++){
 for(let i = 0; i < user.friend.purchased.length; i++){
     console.log(user.friend.purchased[i]);
 }
+
+//Part 4G
+const updateUser = () => {
+  user.age = user.age + 1;
+  user.name.toUpperCase();
+  console.log(user.age);
+  console.log(user.name);
+}
+
+updateUser();
