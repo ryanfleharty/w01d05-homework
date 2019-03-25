@@ -417,3 +417,17 @@ user.purchased.push("merino jodhpurs");
 
 console.log(user.purchased[2]);
 
+user.friend = {};
+user.friend.name = "Grace";
+user.friend.age = 85;
+user.friend.location = "Seattle";
+user.friend.purchased = [];
+
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("A latte");
+console.log(user.friend.purchased[1]);
+
