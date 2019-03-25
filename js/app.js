@@ -387,4 +387,13 @@ const getRandomElement = (arr) => {
 console.log(getRandomElement("The mountains are calling and I must go.", "And that has made all the difference.", 
 "Que sera sera.", "Monkey see monkey do.", "Hello New York!"));
 
+//OBJECTS
+//A. 
+const user = {
+	name: "Alexandra",
+	email: "athornton.co@gmail.com",
+	age: 24,
+	purchased: []
+}
+
 
