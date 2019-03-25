@@ -505,30 +505,29 @@ const transmogrify = (num1, num2, num3) => {
 console.log(transmogrify(5, 3, 2));
 
 
-// //J. reverseWordOrder - write a function that accepts a single
-// //   string argument and reverses the words in the string. 
+//J. reverseWordOrder - write a function that accepts a single
+//   string argument and reverses the words in the string. 
 
-// // function takes in a string of multiple words
-// const reverseWordOrder = (string) => {
-//     //set up two empty string arrays, first for the final reversed string
-//     let newString = '';
-//     //second one to push the letters to until you run in to a space
-//     let getWord = '';
+const revWordOrder = (string) => {
+   
+    let reverseSentence = "";
+    let word = "";
+    let stringTwo = string + " ";
+
+    for (let i = 0; i < stringTwo.length; i++){
+        if (stringTwo[i] !== " "){
+            word = word + stringTwo[i];
+        } else if (stringTwo[i] === " "){
+            reverseSentence = word + " " + reverseSentence;
+            word = "";
+        }
+    }
+    return reverseSentence;
+}
+
+console.log(revWordOrder("flip it and reverse it come on please work"));
 
 
-//     // do while loop that pushes the letters to getWord until the letter
-//     // it is looking at is equal to " ". 
-
-//     // for loop that unshifts the words in getWord to newString that have 
-//     // been pushed to getWord
-
-
-
-
-//     return console.log(getWord);
-// };
-
-// console.log(reverseWordOrder("this would look better backwards"));
 
 
 //K. Get down and dirty with Math.random()
@@ -693,7 +692,5 @@ const modAnyUser = (person) => {
     person.age = person.age += 1;
     person.name.toUpperCase();
 };
-
-
 
 
