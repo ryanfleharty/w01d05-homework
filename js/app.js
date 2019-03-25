@@ -396,4 +396,11 @@ const user = {
 	purchased: []
 }
 
+//B.
+
+user.email = "alth9593@colorado.edu";
+console.log(user.email);
+
+user.age++;
+console.log(user.age);
 
