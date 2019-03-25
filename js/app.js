@@ -275,3 +275,6 @@ const user = {
 }
 user.email = "Playboi@cashcarti.com";
 user.age = age++;
+user.location = "Atlanta";
+
+
