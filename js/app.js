@@ -273,36 +273,50 @@
 // randomMath2(1, 100);
 
 
-const user = {
-    name: "Cash Carti",
-    email: 'user@liluzi.gov',
-    age: 22,
-    purchased: [],
-}
-user.email = "Playboi@cashcarti.com";
-user.age = user.age++;
-user.location = "Atlanta";
+// const user = {
+//     name: "Cash Carti",
+//     email: 'user@liluzi.gov',
+//     age: 22,
+//     purchased: [],
+// }
+// user.email = "Playboi@cashcarti.com";
+// user.age = user.age++;
+// user.location = "Atlanta";
 
-user.purchased.push("Carbohydrates");
-user.purchased.push("peace of mind");
-user.purchased.push("Merino jodhpurs");
-console.log(user.purchased[2]);
+// user.purchased.push("Carbohydrates");
+// user.purchased.push("peace of mind");
+// user.purchased.push("Merino jodhpurs");
+// console.log(user.purchased[2]);
 
-user.friend = {
-    name: "homeboy",
-    age: 21,
-    location: "The block",
-    purchased: [],
-}
-console.log(user.friend.name);
-console.log(user.friend.location);
-user.friend.age = 55;
-user.friend.purchased.push("The one ring");
-user.friend.purchased.push("A latte");
-console.log(user.friend.purchased[1]);
+// user.friend = {
+//     name: "homeboy",
+//     age: 21,
+//     location: "The block",
+//     purchased: [],
+// }
+// console.log(user.friend.name);
+// console.log(user.friend.location);
+// user.friend.age = 55;
+// user.friend.purchased.push("The one ring");
+// user.friend.purchased.push("A latte");
+// console.log(user.friend.purchased[1]);
 
 
-for (let i = 0; i < user.purchased.length; i++) {
-    console.log(user.purchased[i]);
-}
+// for (let i = 0; i < user.purchased.length; i++) {
+//     console.log(user.purchased[i]);
+// }
 
+// for (let i = 0; i < user.friend.purchased.length; i++) {
+//     console.log(user.friend.purchased[i]);
+// }
+
+// const updateUser = () => {
+//     user.age = user.age++;
+//     user.name = user.name.toUpperCase(name)
+// }
+
+// const oldAndLoud = (person) => {
+//     person.age = person.age++;
+//     person.name = person.name.toUpperCase(name)
+// }
+// oldAndLoud(user);
