@@ -414,3 +414,17 @@ user.location = "Denver";
 console.log(user.location);
 user.purchased.push("Merino jodhpurs");
 console.log(user.purchased[0]);
+
+//E Object Within Object
+user.friend = {
+  name: "Gary G",
+  location: "Georgia",
+  purchased: [],
+}
+
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("latte");
+console.log(user.friend.purchased[1]);
