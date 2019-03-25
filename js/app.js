@@ -284,6 +284,30 @@ const isVowel = (letter) => {
 
 console.log(isVowel("d"));
 
+//E.
+
+let newArray = [];
+
+const getTwoLengths = (str1, str2) => {
+	for (let i = 0; i < str1.length; i++){
+		newArray[0] = str1.length;
+	} for (let x = 0; x < str2.length; x++){
+		//console.log(str2.length);
+		newArray[1] = str2.length;
+	}
+}
+getTwoLengths("alex", "hello");
+console.log(newArray);
+
+
+
+//F.
+
+const getMultipleLengths = (arr) => {
+
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
 
 
 
