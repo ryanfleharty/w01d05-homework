@@ -22,7 +22,7 @@ console.log('Up and running');
 // 5. What is pseudocoding and why should you do it?
 // Pseudocoding is writing out in words (sometimes with code snippets for shorthand), the steps you plan to code to solve a problem.
 // 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-// A good rule of thumb is about 75% or more planning and 25% writing code.
+// As I recall, a good rule of thumb is about 75% or more planning and 25% writing code.
 
 // B. Strings
 // 1. Create a variable called firstVariable.
@@ -96,20 +96,20 @@ if (age >= 16) {
   console.log("Sorry, you're too young.");
 }
 
-// // II. Loops
-// // A. The basics
-// // Write a loop that will print out all the numbers from 0 to 10, inclusive.
-// for (let i = 0; i < 11; i++) {
-//   console.log(i);
-// }
-// // Write a loop that will print out all the numbers from 10 up to and including 400.
-// for (let i = 10; i <= 400; i++) {
-//   console.log(i);
-// }
-// // Write a loop that will print out every third number starting with 12 and going no higher than 4000.
-// for (let i = 12; i <= 4000; i += 3) {
-//   console.log(i);
-// }
+// II. Loops
+// A. The basics
+// Write a loop that will print out all the numbers from 0 to 10, inclusive.
+for (let i = 0; i < 11; i++) {
+  console.log(i);
+}
+// Write a loop that will print out all the numbers from 10 up to and including 400.
+for (let i = 10; i <= 400; i++) {
+  console.log(i);
+}
+// Write a loop that will print out every third number starting with 12 and going no higher than 4000.
+for (let i = 12; i <= 4000; i += 3) {
+  console.log(i);
+}
 
 // // B. Get Even
 // // 1. Print out the even numbers that are within the range of 1 - 100.
@@ -377,7 +377,7 @@ const printLongestWord = (arrStr) => {
   }
   return curLongestStr;
 };
-console.log(printLongestWord(["BoJack", "Princesutter", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 // I. transmogrify
 // Write a Javascript function called transmogrify. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
@@ -516,3 +516,23 @@ for (let i = 0; i < user.purchased.length; i++) {
 for (let i = 0; i < user.friend.purchased.length; i++) {
   console.log(user.friend.purchased[i]);
 }
+
+// G. Functions can operate on objects
+// 1. Write a single function updateUser that takes no parameters. When the function is run, it should:
+// - it should increment the user's age by 1
+// - make the user's name uppercase
+// The function does not need a return statement, it will merely modify the user object.
+const updateUser = () => {
+  user.age++;
+  user.name = user.name.toLocaleUpperCase();
+};
+console.log(user);
+updateUser();
+console.log(user);
+// 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
+const oldAndLoud = (person) => {
+  person.age++;
+  person.name = person.name.toLocaleUpperCase();
+};
+oldAndLoud(user);
+console.log(user);
