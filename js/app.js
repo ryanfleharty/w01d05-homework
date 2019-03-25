@@ -357,8 +357,34 @@ console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 
 
+//K.
 
+const randomNumber = (num1, num2) => {
+	return Math.floor(Math.random () * (num2 - num1 + 1)) + num1;
+}
 
+console.log(randomNumber(1, 10));
 
+const randomNumberTwo = (num1, num2) => {
+	return Math.floor(Math.random () * (num2 - num1 + 1)) + num1;
+}
+
+console.log(randomNumberTwo(10, 100));
+
+const randomNumberThree = (num1, num2) => {
+	return Math.floor(Math.random () * (num2 - num1 + 1)) + num1;
+}
+
+console.log(randomNumberThree(532, 13267));
+
+let moreQuotes = ["The mountains are calling and I must go.", "And that has made all the difference.", 
+"Que sera sera.", "Monkey see monkey do.", "Hello New York!"];
+
+const getRandomElement = (arr) => {
+	return arr[Math.floor(Math.random() * arr.length)];
+}
+
+console.log(getRandomElement("The mountains are calling and I must go.", "And that has made all the difference.", 
+"Que sera sera.", "Monkey see monkey do.", "Hello New York!"));
 
 
