@@ -449,7 +449,14 @@ console.log(getRandomElement(quotes));
 const user = {};
 // 2. Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchased to an empty array []. Set the other values to whatever you would like.
 user.name = 'Jake';
-user.email = 'jake.s.test@gmail.com';
+user.email = 'jake.s.test@yahoo.com';
 user.age = 34;
 user.purchased = [];
+console.table(user);
+
+// B. Update the user
+// 1. Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
+user.email = 'jake.s.test@gmail.com';
+// 2. Our user has had a birthday! Without changing the original user object, increment the age value using the postfix operator. Hint: age++
+user.age++;
 console.table(user);
