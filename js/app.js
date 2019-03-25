@@ -448,18 +448,18 @@ const printCool = (name) => {
 }
 printCool("Shadi");
 
-// :red_circle: Commit.
+// :red_circle: Commit. //DONE
 
 
 // ### C. `calculateCube`
 
-// Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
+const calculateCube = (cubeNum) => {
+    cubeNum = cubeNum ** 3;
+    console.log(cubeNum);
+};
+calculateCube(4);
 
-// ```javascript
-// console.log(calculateCube(5));
-// ```
 
-// > => 125
 
 // :red_circle: Commit.
 
