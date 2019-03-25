@@ -321,7 +321,7 @@ maxOfThree(5,1,6);
 //Write a function that accepts a single argument, an array of strings. The method should return the longest word. In a tie, return the first.
 //Interesting: setting a variable to null allows you to create an empty variable.
 //let words = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]
-
+/**
 const printLongestWord = (wordArray) => {
   wordLengths = [];
   for (let i = 0; i < wordArray.length; i++) {
@@ -346,3 +346,52 @@ const transmogrify = (num1, num2, num3) => {
 }
 
 console.log(transmogrify(2, 2, 2));
+**/
+//Part 4J
+//Write a function that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation. No built-in functions.
+//
+
+//Part 4k
+/**
+const randomInt = () => {
+  randomized = Math.round(Math.random() * 10);
+  return randomized;
+}
+
+console.log(randomInt());
+**/
+/**
+const randomInt = () => {
+  randomized = Math.round(Math.random(10) * 100);
+  return randomized;
+}
+
+console.log(randomInt());
+**/
+/**
+const randomInt = () => {
+  randomized = Math.round(Math.random(532) * 13267);
+  return randomized;
+}
+
+console.log(randomInt());
+**/
+/**
+const randomInt = () => {
+  randomized = Math.random(1) * 10;
+  return randomized;
+}
+
+console.log(randomInt());
+**/
+
+//const quotes = "Hiya Howya", "Whoopsie does it", "Clean em first", "Bundle the last", "Quick and crunchy";
+
+const randomPull = (quotes) => {
+  for (let i = 0; i < quotes.length; i++) {
+    quotes[i] = quotes[Math.floor(Math.random(1) * quotes.length)];
+    console.log(quotes[i]);
+  }
+}
+
+randomPull(["Hiya Howya", "Whoopsie does it", "Clean em first", "Bundle the last", "Quick and crunchy"]);
