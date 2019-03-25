@@ -584,7 +584,7 @@ printLongestWord(["shadi", "billy","mashal", "hasoooonti"])
     purchased: []
 }
 
-// :red_circle: Commit.
+// :red_circle: Commit.//DONE
 
 // ### B. Update the user
 
@@ -593,7 +593,7 @@ user.email = "shadibachi.com";
 // 2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`
 user.age = 26;
 
-// :red_circle: Commit.
+// :red_circle: Commit.//DONE
 
 
 // ### C. Adding keys and values
@@ -601,6 +601,7 @@ user.age = 26;
 // You have decided to add your user's location to the data that you want to collect.
 
 // 1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
+user.location = "Denver";
 
 // :red_circle: Commit.
 
