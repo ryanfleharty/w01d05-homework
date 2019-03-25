@@ -140,3 +140,17 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
   ourClass[4] = "Octocat"
   ourClass[5] = "Cloud City"
   console.log(ourClass);
+
+/*Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
+Remove the 5 from the beginning of the array.
+Add the string "Bob Marley" to the beginning of the array.
+Remove the string of your choise from the end of the array.
+Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse() method return anything?*/
+const myArray = [5, 10, 500, 20]
+myArray.push('egon')
+myArray.push('Davis')
+myArray.shift()
+myArray.unshift('Bob Marley')
+myArray.pop()
+myArray.reverse()
+console.log(myArray);
