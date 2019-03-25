@@ -119,3 +119,6 @@ let bankAccount; //declare a variable
   //yes, it is a data strucutre. the order that the indexes start with 0 being the first element.
 // What real-life thing could you model with an array?
   // a grocery list, contains all the elements you need, but will need to know where to find it to access the element.
+
+//Create an array that contains three quotes and store it in a variable called quotes.
+const quotes = ["when life gives you lemons...","when pigs fly", "what stays in vegas..."]
