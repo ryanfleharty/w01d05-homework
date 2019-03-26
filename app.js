@@ -314,3 +314,13 @@ const transmogrify = (digit1, digit2, digit3) =>{
   return Math.pow(multiple, digit3)
 }
 console.log(transmogrify(5, 3, 2));
+
+// Without using .split(), .reverse(), or .join(), write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+const reverseWordOrder = (word) => {
+  let reversed = ""
+  for ( let i = word.length -1; i >= 0; i--){
+    reversed += word[i]
+  }
+  return reversed
+}
+console.log(reverseWordOrder("Ishmael me Call"))
