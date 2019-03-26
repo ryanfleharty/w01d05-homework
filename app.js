@@ -310,6 +310,7 @@ return longest
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 const transmogrify = (digit1, digit2, digit3) =>{
-
+  let multiple = digit1 * digit2
+  return Math.pow(multiple, digit3)
 }
 console.log(transmogrify(5, 3, 2));
