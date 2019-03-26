@@ -5,7 +5,7 @@
   // you can change the value by writing the variable first, then = "new value" would follow
 
 // How do we assign an existing variable to a new variable?
-  //make an assosiative array
+  // declare a new variable with let and = "existing variable" will follow
 
 // Remind me, what are declare, assign, and define?
   //declare is to create a variable, assign and define is to set a value for the variable.
@@ -45,7 +45,7 @@
     console.log('Name' === 'Name');
     console.log(true !== false);
     console.log(false || false || false || false || false || false !== true);
-    console.log(false === false)//f
+    console.log(false === false)
     console.log(e === 'Kevin');
     console.log(a < b < c);
     console.log(a === a != d);
@@ -67,45 +67,62 @@ console.log(animal);
 // Write code that will print out "Here are the keys", if the age is 16 years or older.
 //If the age is younger than 16, a message should print "Sorry, you're too young."
 let yearsOld = 10
+let message
 if(yearsOld >= 16){
-  yearsOld = "Here are the keys"
+  message = "Here are the keys"
 } else {
-  yearsOld = "sorry, you're too young"
+  message = "sorry, you're too young"
 }
-console.log(yearsOld);
+console.log(message);
 
 // Write a loop that will print out all the numbers from 0 to 10, inclusive.
-for(let i = 0; i <= 10; i++)
+for(let i = 0; i <= 10; i++){
 console.log(i);
+}
 // Write a loop that will print out all the numbers from 10 up to and including 400.
-for(let i = 10; i <= 400; i++)
+for(let i = 10; i <= 400; i++){
 console.log(i);
+}
 // Write a loop that will print out every third number starting with 12 and going no higher than 4000.
-for (let i = 12; i <= 4000; i+=3)
+for (let i = 12; i <= 4000; i+=3){
 console.log(i);
-
+}
 // Print out the even numbers that are within the range of 1 - 100.
 // Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
-for(let i = 0; i<=100; i+=2)
+for(let i = 0; i<=100; i+=2){
 console.log(`${i} <-- is an even number`);
-
+}
 //For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
 //Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
 for(let i = 0; i<=100; i++){
-  console.log(`I found a ${i}. High five!`);
-  if (i % 3 == 0){
-    let text1 = "three is a crowd"
+  if (i % 5 == 0){
+    let text1 = "I found a number. High five!"
     console.log(text1);
+  } else if (i % 3 == 0){
+    let text2 = "I found a number. Three is a crowd"
+    console.log(text2);
   }
 }
+
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-let bankAccount; //declare a variable
-  let sum = 0 // set a value
-  for (let i = 1; i <= 100; i++){ //creating a loop to get the sum of numbers 1-10
-    sum += i*2; //sum amount
-  }
-  console.log(sum);
+// let bankAccount; //declare a variable
+//   let sum = 0 // set a value
+//   for (let i = 1; i <= 100; i++){ //creating a loop to get the sum of numbers 1-10
+//     sum += i*2; //sum amount
+//   }
+//   console.log(sum);
+let bankAccount = 0
+for( let i = 1; i <= 10; i++){
+   bankAccount += i
+}
+console.log(bankAccount);
+
+let bonusAmount = 0
+for (let i = 1; i <= 100; i++){
+  bonusAmount += i * 2
+}
+console.log("bonusAmt", bonusAmount);
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000. If a previous question you've done has helpful bits of code in it that partially solves this problem, look back at them.
@@ -126,6 +143,7 @@ const quotes = ["when life gives you lemons...","when pigs fly", "what stays in 
 //Given the following array const randomThings = [1, 10, "Hello", true]
 const randomThings = [1, 10, "Hello", true]
   //How do you access the 1st element in the array?
+  randomThings[0]
   //Change the value of "Hello" to "World".
   //Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
       // (use [ ] to access any elements in a array)
@@ -246,33 +264,52 @@ const calculateCube = (l, w, h) => {
 calculateCube(5, 5, 5)
 
 //Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
-const isVowel = (string) => {
-  let vowel = "a"
-  if (string === vowel){
-  return true
-} else{
-  return false
+const isVowel = (char) => {
+let vowels = "a e i o u"
+return vowels.includes(char)
 }
-}
-console.log(isVowel("a"));
 
 //Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
-const getTwoLengths = (length1, length2) => {
-  let arr = length1
-    return arr.length
+const getTwoLengths = (word1, word2) => {
+  let lengths = []
+  let length1 = word1.length
+  let length2 = word2.length
+  lengths.push(length1)
+  lengths.push(length2)
+  return lengths
 }
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+console.log("length",getTwoLengths("Hank", "Hippopopalous"));
 
 // Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
-const getMultipleLengths = (count) => {
-  let word = count
-    return word.length
+const getMultipleLengths = (words) => {
+  let lengths = []
+  for ( let i = 0; i < words.length; i++){
+    lengths.push(words[i].length)
   }
+  return lengths
+}
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 //Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
-  const maxOfThree = (num1, num2, num3) => {
+  let maxOfThree = (num1, num2, num3) => {
     let max = Math.max(num1,num2,num3)
     return max
   }
   console.log(maxOfThree(6, 9, 1));
+
+  //Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array
+let printLongestWord = (arr) => {
+let longest = arr[0]
+for (let i = 0; i < arr.length; i++){
+  if (longest.length < arr[i].length){
+    longest = arr[i]
+  }
+}
+return longest
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+const transmogrify = (digit1, digit2, digit3) =>{
+
+}
+console.log(transmogrify(5, 3, 2));
